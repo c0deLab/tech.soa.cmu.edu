@@ -5,17 +5,19 @@ layout: default
 <div class="small-12 medium-8 columns">
   <h1 class="section-heading">Tutorials</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+    {% for tutorial in site.tutorials %}
+    <div class="small-12 medium-4 columns thumbnail-tile">
+        <a class="post-link" href="{{ tutorial.url | prepend: site.baseurl }}">
+            <div class="thumbnail-container">
+            <img class="thumbnail-image" src="img/thumbnails/{{ tutorial.thumbnail }}">
+            <span class="thumbnail-text">{{ tutorial.tile-name }}</span>
+            <!--{% if post.banner %}
+            <span class="banner">{{ post.banner }}</span>
+            {% endif %}-->
+            </div>
+        </a>
+    </div>
     {% endfor %}
-  </ul>
 </div>
 
 <div class="small-12 medium-4 columns">

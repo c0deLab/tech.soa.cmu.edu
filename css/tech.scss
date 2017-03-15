@@ -61,6 +61,41 @@ header{
   
 }
 
+.thumbnail-tile {
+    margin-bottom: 30px;
+}
+
+  .thumbnail-container {
+    position: relative;
+    display: block;
+    background-color: #000;
+    opacity: 1;
+  }
+  
+  .thumbnail-container:hover .thumbnail-text {
+    opacity: 1;
+  }
+  
+  .thumbnail-container:hover .thumbnail-image {
+    opacity: 0.6;
+  }
+  
+  .thumbnail-image {
+    width: 100%;
+    opacity: 1;
+  }
+  
+  .thumbnail-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #FFF;
+    opacity: 0;
+  }
+
+
+
+
 footer{
   background-color: $slightly-grey;
   color: #b5b5b5;
