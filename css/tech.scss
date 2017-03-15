@@ -56,4 +56,56 @@ header{
 
 footer{
   background-color: $slightly-grey;
+  color: #b5b5b5;
+}
+
+.footerLeft{
+  line-height: 45px;
+}
+
+.footerRight{
+  line-height: 45px;
+}
+
+div.medium-4.columns.footerRight{
+  text-align:right;
+}
+
+.footerCenter{
+  text-align: center;
+}
+
+.copyright{
+/*    font-size: 18px;*/
+/*    font-weight: 600;*/
+//    color: #b5b5b5;
+}
+.rehanLogo{
+  height: 18px;
+}
+.soaLogo{
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.cmuLogo{
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.site-footer{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.noSelect{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    user-drag: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
 }
