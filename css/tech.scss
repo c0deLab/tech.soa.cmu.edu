@@ -1,0 +1,59 @@
+---
+
+---
+
+$tech-black: #252525;
+$slightly-grey: #f2f2f2;
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+$light: 300;
+$regular: 400;
+$bold: 700;
+$black: 900;
+
+html, body, h1, h2, h3, h4, h5, h6{
+  font-family: 'Lato', sans-serif;
+  color: $tech-black;
+}
+
+.page-content{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+header{
+  
+  margin-top: 30px;
+  margin-bottom: 10px;
+  
+  .site-title{
+    font-size: 48px;
+    font-weight: $bold;
+  }
+  
+  .nav{
+    font-size: 20px;
+  }
+  
+  a:hover{
+    text-decoration: none;
+  }
+  
+  .nav-item{
+    color: $tech-black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .nav-item:hover{
+    background-color: $slightly-grey;  
+  }
+  
+}
+
+footer{
+  background-color: $slightly-grey;
+}
