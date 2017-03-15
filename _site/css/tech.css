@@ -7,6 +7,12 @@ html, body, h1, h2, h3, h4, h5, h6 {
   margin-left: 10px;
   margin-right: 10px; }
 
+.section-heading {
+  font-size: 32px;
+  font-weight: 700;
+  border-bottom: 3px solid #252525;
+  margin-bottom: 20px; }
+
 header {
   margin-top: 30px;
   margin-bottom: 10px; }
