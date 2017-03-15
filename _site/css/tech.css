@@ -12,6 +12,11 @@ html, body, h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   border-bottom: 3px solid #252525;
   margin-bottom: 20px; }
+  .section-heading a {
+    color: #252525; }
+  .section-heading a:hover {
+    text-decoration: none;
+    color: aquamarine; }
 
 header {
   margin-top: 30px;
@@ -22,7 +27,8 @@ header {
   header .nav {
     font-size: 20px; }
   header a:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #252525; }
   header .nav-item {
     color: #252525;
     padding-left: 10px;
@@ -57,6 +63,26 @@ header {
   left: 10px;
   color: #FFF;
   opacity: 0; }
+
+.resource-container {
+  margin-bottom: 40px; }
+  .resource-container p {
+    padding: 0;
+    margin: 0; }
+  .resource-container .metadata {
+    font-size: 12px;
+    font-weight: 300; }
+  .resource-container .resource-title {
+    font-size: 20px;
+    font-weight: 700; }
+
+a {
+  color: #252525;
+  text-decoration: none; }
+
+a:hover {
+  color: aquamarine;
+  text-decoration: none; }
 
 footer {
   background-color: #f2f2f2;

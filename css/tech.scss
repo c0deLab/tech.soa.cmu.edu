@@ -27,6 +27,14 @@ html, body, h1, h2, h3, h4, h5, h6{
   font-weight: $bold;
   border-bottom: 3px solid $tech-black;
   margin-bottom: 20px;
+  
+  a{
+    color: $tech-black;
+  }
+  a:hover{
+    text-decoration: none;
+    color: aquamarine;
+  }
 }
 
 header{
@@ -45,6 +53,7 @@ header{
   
   a:hover{
     text-decoration: none;
+    color: $tech-black;
   }
   
   .nav-item{
@@ -94,7 +103,36 @@ header{
   }
 
 
+.resource-container{
+  
+  margin-bottom: 40px;
+  
+  p{
+    padding: 0;
+    margin: 0;
+  }
+  .metadata{
+    font-size: 12px;
+    font-weight: $light;
+  }
+  .resource-title{
+    font-size: 20px;
+    font-weight: $bold;
+  }
+  .description{
+    
+  }
+}
 
+a{
+  color: $tech-black;
+  text-decoration: none;
+}
+
+a:hover{
+  color: aquamarine;
+  text-decoration: none;
+}
 
 footer{
   background-color: $slightly-grey;

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Dzgn.IO Toolkit"
-link: "http://toolkit.dzgn.io"
+title:  "Dzgn.IO Web Dev Workshop"
+link: "http://dzgn.io/wdw"
 date:   2017-03-05
 categories: webdev
 ---
