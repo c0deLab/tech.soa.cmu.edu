@@ -47,6 +47,10 @@ header{
     font-weight: $bold;
   }
   
+  .site-title, .site-title:visited{
+    color: $tech-black;
+  }
+  
   .nav{
     font-size: 20px;
   }
@@ -124,6 +128,15 @@ header{
   }
 }
 
+.post-title{
+  font-size: 38px;
+  font-weight: $bold;
+}
+
+.post-meta{
+  font-size: 16px;
+}
+
 a{
   color: $tech-black;
   text-decoration: none;
@@ -135,6 +148,17 @@ a:hover{
 }
 
 a:visited{
+}
+
+.post-content{
+  
+  p{
+    font-size: 18px;
+  }
+}
+iframe{
+  height: 600px;
+  width: 100%;
 }
 
 footer{

@@ -24,6 +24,8 @@ header {
   header .site-title {
     font-size: 48px;
     font-weight: 700; }
+  header .site-title, header .site-title:visited {
+    color: #252525; }
   header .nav {
     font-size: 20px; }
   header a:hover {
@@ -76,6 +78,13 @@ header {
     font-size: 20px;
     font-weight: 700; }
 
+.post-title {
+  font-size: 38px;
+  font-weight: 700; }
+
+.post-meta {
+  font-size: 16px; }
+
 a {
   color: #252525;
   text-decoration: none; }
@@ -83,6 +92,13 @@ a {
 a:hover {
   color: aquamarine;
   text-decoration: none; }
+
+.post-content p {
+  font-size: 18px; }
+
+iframe {
+  height: 600px;
+  width: 100%; }
 
 footer {
   background-color: #f2f2f2;

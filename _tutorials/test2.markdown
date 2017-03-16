@@ -4,6 +4,6 @@ title:  "CNC Setup"
 tile-name: CNC Setup
 thumbnail: tid.png
 date:   2017-03-05
-categories: webdev
+tags: rhino
 ---
 explain a little about what this
