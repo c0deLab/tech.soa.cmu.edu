@@ -32,9 +32,11 @@ layout: default
     
       <div class="tag-section">
         {% for tag in resource.tags %}
-          <div class="tag-container">
-            <p class="tag-text">{{ tag }}</p>
-          </div>
+          <a href="">
+            <div class="tag-container {{ tag }}">
+              <p class="tag-text">{{ tag }}</p>
+            </div>
+          </a>
         {% endfor %}
       </div>
   </div>
