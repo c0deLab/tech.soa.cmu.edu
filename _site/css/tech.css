@@ -105,6 +105,8 @@ a:hover {
   display: inline-block; }
   .tag-container .tag-text {
     font-size: 14px; }
+  .tag-container a {
+    color: #252525; }
 
 .tag-container:hover {
   background-color: #252525; }
