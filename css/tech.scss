@@ -190,6 +190,17 @@ iframe{
   width: 100%;
 }
 
+.highlight{
+  border-radius: 5px;
+  pre{
+    padding: 20px;
+    border-radius: 5px;
+    code{
+      background-color: transparent;
+    }
+  }
+}
+
 footer{
   background-color: $slightly-grey;
   color: #b5b5b5;

@@ -119,6 +119,14 @@ iframe {
   height: 600px;
   width: 100%; }
 
+.highlight {
+  border-radius: 5px; }
+  .highlight pre {
+    padding: 20px;
+    border-radius: 5px; }
+    .highlight pre code {
+      background-color: transparent; }
+
 footer {
   background-color: #f2f2f2;
   color: #b5b5b5; }

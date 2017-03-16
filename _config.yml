@@ -19,7 +19,7 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-
+  
 collections:
   tutorials:
     output: true
