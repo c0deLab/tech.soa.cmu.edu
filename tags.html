@@ -1,0 +1,23 @@
+---
+layout: default
+permalink: /tags/
+---
+
+<h1 class="post-title">Tags</h1>
+
+{% assign tags =  site.tutorials | map: 'tags' | join: ','  | split: ',' | uniq %}
+
+{% for tag in tags %}
+  {{ tag }}
+{% endfor %}
+
+{% for tag in tags %}
+  <h3 class="tag-title">{{ tag }}</h3>
+  <ul>
+  {% for tutorials in site.tutorials %}
+    {% if tutorials.tags contains tag %}
+    <li><a href="{{ site.baseurl }}{{ tutorials.url }}">{{ tutorials.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+{% endfor %}

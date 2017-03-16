@@ -7,6 +7,7 @@ date: 2017-03-05
 
 author: Rehan Butt
 tags: rhino cam branding
+categories: rhino
 ---
 
 ![Hero Image](/img/test/hero.png)
