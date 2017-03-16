@@ -156,6 +156,30 @@ a:visited{
     font-size: 18px;
   }
 }
+
+.tag-section{
+  margin-top: 10px;
+}
+
+.tag-container{
+  padding: 3px 5px 3px 5px;
+  border: 1.5px solid $tech-black;
+  display: inline-block;
+  
+  .tag-text{
+    font-size: 14px;
+    
+  }
+}
+
+.tag-container:hover{
+  background-color: $tech-black;
+  
+  .tag-text{
+    color: white;
+  }
+}
+
 iframe{
   height: 600px;
   width: 100%;
