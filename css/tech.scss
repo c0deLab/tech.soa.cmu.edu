@@ -251,3 +251,39 @@ div.medium-4.columns.footerRight{
     -moz-user-select: none;
     -webkit-user-drag: none;
 }
+
+
+/*measurments pulled from foundation css file*/
+
+/*for mobile friendly styling*/
+@media screen and (max-width: 40em) {
+
+  header{
+    background-size: 400%;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+
+  footerLeft, div.medium-4.columns.footerRight, footer{
+    text-align: center;
+  }
+
+  .footerCenter{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  iframe{
+    height: 220px;
+  }
+
+}
+
+/*for tablet friendly styling*/
+@media screen and (max-width: 64em) {
+
+  iframe{
+    height: 360px;
+  }
+}
+/* ************************************** */
