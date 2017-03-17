@@ -203,6 +203,10 @@ iframe{
   }
 }
 
+.columns:last-child:not(:first-child){
+  float: left;
+}
+
 footer{
   background-color: $slightly-grey;
   color: #b5b5b5;

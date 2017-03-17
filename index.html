@@ -32,7 +32,7 @@ layout: default
     
       <div class="tag-section">
         {% for tag in resource.tags %}
-          <a href="">
+          <a href="/tags/#{{ tag  | prepend: site.baseurl }}">
             <div class="tag-container {{ tag }}">
               <p class="tag-text">{{ tag }}</p>
             </div>

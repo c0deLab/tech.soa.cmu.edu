@@ -129,6 +129,9 @@ iframe {
     .highlight pre code {
       background-color: transparent; }
 
+.columns:last-child:not(:first-child) {
+  float: left; }
+
 footer {
   background-color: #f2f2f2;
   color: #b5b5b5; }
