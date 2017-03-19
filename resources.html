@@ -3,3 +3,21 @@ layout: page
 title: Resources
 permalink: /resources/
 ---
+
+{% for resource in site.resources %}
+  <div class="resource-container small-12 medium-6 columns">
+    <p class="metadata">{{ resource.link | truncate: 30 }}</p>
+    <p class="resource-title"><a href="{{ resource.url }}">{{ resource.title }}</a></p>
+    <p class="description">{{ resource.content | truncate: 150 }}</p>
+    
+      <div class="tag-section">
+        {% for tag in resource.tags %}
+          <a href="/tags/#{{ tag  | prepend: site.baseurl }}">
+            <div class="tag-container {{ tag }}">
+              <p class="tag-text">{{ tag }}</p>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+  </div>
+  {% endfor %}
