@@ -1,0 +1,295 @@
+---
+
+---
+
+$tech-black: #252525;
+$slightly-grey: #f2f2f2;
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+$light: 300;
+$regular: 400;
+$bold: 700;
+$black: 900;
+
+html, body, h1, h2, h3, h4, h5, h6{
+  font-family: 'Lato', sans-serif;
+  color: $tech-black;
+}
+
+.page-content{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.section-heading{
+  font-size: 32px;
+  font-weight: $bold;
+  border-bottom: 3px solid $tech-black;
+  margin-bottom: 20px;
+  
+  a{
+    color: $tech-black;
+  }
+  a:hover{
+    text-decoration: none;
+    color: aquamarine;
+  }
+}
+
+header{
+  
+  margin-top: 30px;
+  margin-bottom: 10px;
+  
+  .site-title{
+    font-size: 48px;
+    font-weight: $bold;
+  }
+  
+  .site-title, .site-title:visited{
+    color: $tech-black;
+  }
+  
+  .nav{
+    font-size: 20px;
+  }
+  
+  a:hover{
+    text-decoration: none;
+    color: $tech-black;
+  }
+  
+  .nav-item{
+    color: $tech-black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .nav-item:hover{
+    background-color: $slightly-grey;  
+  }
+  
+}
+
+.thumbnail-tile {
+    margin-bottom: 30px;
+}
+
+  .thumbnail-container {
+    position: relative;
+    display: block;
+    background-color: #000;
+    opacity: 1;
+  }
+  
+  .thumbnail-container:hover .thumbnail-text {
+    opacity: 1;
+  }
+  
+  .thumbnail-container:hover .thumbnail-image {
+    opacity: 0.6;
+  }
+  
+  .thumbnail-image {
+    width: 100%;
+    opacity: 1;
+  }
+  
+  .thumbnail-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #FFF;
+    opacity: 0;
+  }
+
+
+.resource-container{
+  
+  margin-bottom: 40px;
+  
+  p{
+    padding: 0;
+    margin: 0;
+  }
+  .metadata{
+    font-size: 12px;
+    font-weight: $light;
+  }
+  .resource-title{
+    font-size: 20px;
+    font-weight: $bold;
+  }
+  .description{
+    
+  }
+}
+
+.post-title{
+  font-size: 38px;
+  font-weight: $bold;
+}
+
+.post-meta{
+  font-size: 16px;
+}
+
+a{
+  color: $tech-black;
+  text-decoration: none;
+}
+
+a:hover{
+  color: aquamarine;
+  text-decoration: none;
+}
+
+a:visited{
+}
+
+.post-content{
+  
+  p{
+    font-size: 18px;
+  }
+}
+
+.tag-section{
+  margin-top: 10px;
+}
+
+.tag-container{
+  padding: 3px 5px 3px 5px;
+  border: 1.5px solid $tech-black;
+  display: inline-block;
+  
+  .tag-text{
+    font-size: 14px;
+  }
+  a{
+    color: $tech-black;
+  }
+}
+
+.tag-container:hover{
+  background-color: $tech-black;
+  
+  .tag-text{
+    color: white;
+  }
+}
+
+.webdev:hover{
+  background-color: blueviolet;
+  border: 1.5px solid blueviolet;
+}
+
+iframe{
+  height: 500px;
+  width: 100%;
+}
+
+.highlight{
+  border-radius: 5px;
+  pre{
+    padding: 20px;
+    border-radius: 5px;
+    code{
+      background-color: transparent;
+    }
+  }
+}
+
+.columns:last-child:not(:first-child){
+  float: left;
+}
+
+footer{
+  background-color: $slightly-grey;
+  color: #b5b5b5;
+}
+
+.footerLeft{
+  line-height: 45px;
+}
+
+.footerRight{
+  line-height: 45px;
+}
+
+div.medium-4.columns.footerRight{
+  text-align:right;
+}
+
+.footerCenter{
+  text-align: center;
+}
+
+.rehanLogo{
+  height: 18px;
+}
+.soaLogo{
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.cmuLogo{
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.site-footer{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.noSelect{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    user-drag: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+}
+
+
+/*measurments pulled from foundation css file*/
+
+/*for mobile friendly styling*/
+@media screen and (max-width: 40em) {
+
+  header{
+    background-size: 400%;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+
+  footerLeft, div.medium-4.columns.footerRight, footer{
+    text-align: center;
+  }
+
+  .footerCenter{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  iframe{
+    height: 220px;
+  }
+
+}
+
+/*for tablet friendly styling*/
+@media screen and (max-width: 64em) {
+
+  iframe{
+    height: 360px;
+  }
+}
+/* ************************************** */

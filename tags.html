@@ -1,0 +1,63 @@
+---
+layout: default
+permalink: /tags/
+---
+
+<h1 class="post-title">Tags</h1>
+
+{% assign tags =  site.tutorials | map: 'tags' | join: ','  | split: ',' | uniq %}
+
+{% assign tags =  site.tutorials | map: 'tags' | join: ','  | split: ',' | uniq %}
+
+
+
+  <div class="tag-section">
+{% for tag in tags %}
+          <a href="#{{ tag }}">
+            <div class="tag-container {{ tag }}">
+              <p class="tag-text">{{ tag }}</p>
+            </div>
+          </a>
+{% endfor %}
+    </div>
+
+{% for tag in tags %}
+  <div class="row">
+  <a name="{{ tag }}"><h3 class="tag-title">{{ tag }}</h3></a>
+  {% for tutorials in site.tutorials %}
+    {% if tutorials.tags contains tag %}
+      <div class="small-12 medium-3 columns thumbnail-tile">
+        <a class="post-link" href="{{ tutorials.url | prepend: site.baseurl }}">
+            <div class="thumbnail-container">
+              <img class="thumbnail-image" src="/img/thumbnails/{{ tutorials.thumbnail | prepend: site.baseurl }}">
+              <span class="thumbnail-text">{{ tutorials.tile-name }}</span>
+            </div>
+        </a>
+      </div>
+    {% endif %}
+  {% endfor %}
+  </div>
+
+  {% for resource in site.resources %}
+  {% if resource.tags contains tag %}
+  <div class="resource-container">
+    <p class="metadata">{{ resource.link | truncate: 30 }}</p>
+    <p class="resource-title"><a href="{{ resources.url }}">{{ resource.title }}</a></p>
+    <p class="description">{{ resource.content | truncate: 150 }}</p>
+    
+<!--
+      <div class="tag-section">
+        {% for tag in resource.tags %}
+          <a href="/tags/#{{ tag  | prepend: site.baseurl }}">
+            <div class="tag-container {{ tag }}">
+              <p class="tag-text">{{ tag }}</p>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+-->
+  </div>
+  {% endif %}
+  {% endfor %}
+
+{% endfor %}
