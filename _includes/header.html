@@ -13,7 +13,7 @@
         </svg>
       </a>
 
-      <div class="nav">
+      <div class="trigger nav">
         {% for my_page in site.pages %}
           {% if my_page.title %}
           <a class="nav-item" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
