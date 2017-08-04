@@ -14,9 +14,9 @@ html, body, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px; }
   .section-heading a {
     color: #252525; }
-  .section-heading a:hover {
-    text-decoration: none;
-    color: aquamarine; }
+    .section-heading a:hover {
+      text-decoration: none;
+      color: aquamarine; }
 
 header {
   margin-top: 30px;
@@ -41,7 +41,6 @@ header {
     background-color: #f2f2f2; }
   header .site-nav {
     top: 45px;
-    background-color: #f2f2f2;
     border: none;
     border-radius: none; }
 
@@ -71,15 +70,15 @@ header {
   color: #FFF;
   opacity: 0; }
 
-.resource-container {
+.reference-container {
   margin-bottom: 40px; }
-  .resource-container p {
+  .reference-container p {
     padding: 0;
     margin: 0; }
-  .resource-container .metadata {
+  .reference-container .metadata {
     font-size: 12px;
     font-weight: 300; }
-  .resource-container .resource-title {
+  .reference-container .reference-title {
     font-size: 20px;
     font-weight: 700; }
 
@@ -93,10 +92,11 @@ header {
 a {
   color: #252525;
   text-decoration: none; }
-
-a:hover {
-  color: aquamarine;
-  text-decoration: none; }
+  a:visited {
+    color: #252525; }
+  a:hover {
+    color: aquamarine;
+    text-decoration: none; }
 
 .post-content p {
   font-size: 18px; }
@@ -140,35 +140,27 @@ iframe {
 footer {
   background-color: #f2f2f2;
   color: #b5b5b5; }
-
-.footerLeft {
-  line-height: 45px; }
-
-.footerRight {
-  line-height: 45px; }
-
-div.medium-4.columns.footerRight {
-  text-align: right; }
-
-.footerCenter {
-  text-align: center; }
-
-.rehanLogo {
-  height: 18px; }
-
-.soaLogo {
-  height: 40px;
-  padding-left: 20px;
-  padding-right: 20px; }
-
-.cmuLogo {
-  height: 40px;
-  padding-left: 20px;
-  padding-right: 20px; }
-
-.site-footer {
-  padding-top: 20px;
-  padding-bottom: 20px; }
+  footer .footerLeft {
+    line-height: 45px; }
+  footer .footerRight {
+    line-height: 45px; }
+  footer div.medium-4.columns.footerRight {
+    text-align: right; }
+  footer .footerCenter {
+    text-align: center; }
+  footer .rehanLogo {
+    height: 18px; }
+  footer .soaLogo {
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px; }
+  footer .cmuLogo {
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px; }
+  footer .site-footer {
+    padding-top: 20px;
+    padding-bottom: 20px; }
 
 .noSelect {
   -webkit-touch-callout: none;
@@ -187,6 +179,8 @@ div.medium-4.columns.footerRight {
     margin-bottom: 10px;
     margin-left: 20px;
     margin-right: 20px; }
+    header .site-nav {
+      background-color: #f2f2f2; }
 
   footerLeft, div.medium-4.columns.footerRight, footer {
     text-align: center; }

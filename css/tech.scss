@@ -4,6 +4,7 @@
 
 $tech-black: #252525;
 $slightly-grey: #f2f2f2;
+$tech-accent: aquamarine;
 
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
 
@@ -30,10 +31,10 @@ html, body, h1, h2, h3, h4, h5, h6{
   
   a{
     color: $tech-black;
-  }
-  a:hover{
-    text-decoration: none;
-    color: aquamarine;
+    &:hover{
+      text-decoration: none;
+      color: $tech-accent;
+    }
   }
 }
 
@@ -74,7 +75,7 @@ header{
 
   .site-nav{
     top: 45px;
-    background-color: $slightly-grey;
+//    background-color: $slightly-grey;
     border: none;
     border-radius: none;
   }
@@ -114,7 +115,7 @@ header{
   }
 
 
-.resource-container{
+.reference-container{
   
   margin-bottom: 40px;
   
@@ -126,7 +127,7 @@ header{
     font-size: 12px;
     font-weight: $light;
   }
-  .resource-title{
+  .reference-title{
     font-size: 20px;
     font-weight: $bold;
   }
@@ -147,15 +148,15 @@ header{
 a{
   color: $tech-black;
   text-decoration: none;
+  &:visited{
+    color: $tech-black;
+  }
+  &:hover{
+    color: $tech-accent;
+    text-decoration: none;
+  }
 }
 
-a:hover{
-  color: aquamarine;
-  text-decoration: none;
-}
-
-a:visited{
-}
 
 .post-content{
   
@@ -217,41 +218,41 @@ iframe{
 footer{
   background-color: $slightly-grey;
   color: #b5b5b5;
-}
 
-.footerLeft{
-  line-height: 45px;
-}
+  .footerLeft{
+    line-height: 45px;
+  }
 
-.footerRight{
-  line-height: 45px;
-}
+  .footerRight{
+    line-height: 45px;
+  }
 
-div.medium-4.columns.footerRight{
-  text-align:right;
-}
+  div.medium-4.columns.footerRight{
+    text-align:right;
+  }
 
-.footerCenter{
-  text-align: center;
-}
+  .footerCenter{
+    text-align: center;
+  }
 
-.rehanLogo{
-  height: 18px;
-}
-.soaLogo{
-  height: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.cmuLogo{
-  height: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
+  .rehanLogo{
+    height: 18px;
+  }
+  .soaLogo{
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .cmuLogo{
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-.site-footer{
-  padding-top: 20px;
-  padding-bottom: 20px;
+  .site-footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 .noSelect{
@@ -275,6 +276,9 @@ div.medium-4.columns.footerRight{
     margin-bottom: 10px;
     margin-left: 20px;
     margin-right: 20px;
+    .site-nav{
+      background-color: $slightly-grey;
+    }
   }
 
   footerLeft, div.medium-4.columns.footerRight, footer{

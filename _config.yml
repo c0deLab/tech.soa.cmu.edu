@@ -24,5 +24,8 @@ collections:
   tutorials:
     output: true
 
-  resources:
+  references:
+    output: true
+    
+  facilities:
     output: true

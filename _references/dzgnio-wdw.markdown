@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Dzgn.IO Web Dev Workshop"
-link: "http://dzgn.io/wdw"
+link: "https://dzgn.io/works/wdw.html"
 date:   2017-03-05
 tags: webdev
 ---
