@@ -22,16 +22,16 @@ layout: default
 </div>
 
 <div class="small-12 medium-4 columns">
-  <h1 class="section-heading"><a href="/resources">Resources</a></h1>
+  <h1 class="section-heading"><a href="/references">References</a></h1>
   
-  {% for resource in site.resources %}
-  <div class="resource-container">
-    <p class="metadata">{{ resource.link | truncate: 30 }}</p>
-    <p class="resource-title"><a href="{{ resource.url }}">{{ resource.title }}</a></p>
-    <p class="description">{{ resource.content | truncate: 150 }}</p>
+  {% for reference in site.references %}
+  <div class="reference-container">
+    <p class="metadata">{{ reference.link | truncate: 30 }}</p>
+    <p class="reference-title"><a href="{{ reference.url }}">{{ reference.title }}</a></p>
+    <p class="description">{{ reference.content | truncate: 150 }}</p>
     
       <div class="tag-section">
-        {% for tag in resource.tags %}
+        {% for tag in reference.tags %}
           <a href="/tags/#{{ tag  | prepend: site.baseurl }}">
             <div class="tag-container {{ tag }}">
               <p class="tag-text">{{ tag }}</p>

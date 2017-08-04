@@ -114,7 +114,7 @@ header{
   }
 
 
-.resource-container{
+.reference-container{
   
   margin-bottom: 40px;
   
@@ -126,7 +126,7 @@ header{
     font-size: 12px;
     font-weight: $light;
   }
-  .resource-title{
+  .reference-title{
     font-size: 20px;
     font-weight: $bold;
   }
@@ -147,15 +147,15 @@ header{
 a{
   color: $tech-black;
   text-decoration: none;
+  &:visited{
+    color: aquamarine;
+  }
+  &:hover{
+    color: aquamarine;
+    text-decoration: none;
+  }
 }
 
-a:hover{
-  color: aquamarine;
-  text-decoration: none;
-}
-
-a:visited{
-}
 
 .post-content{
   

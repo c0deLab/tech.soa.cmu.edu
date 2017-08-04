@@ -1,0 +1,23 @@
+---
+layout: page
+title: References
+permalink: /references/
+---
+
+{% for reference in site.references %}
+  <div class="reference-container small-12 medium-6 columns">
+    <p class="metadata">{{ reference.link | truncate: 30 }}</p>
+    <p class="reference-title"><a href="{{ reference.url }}">{{ reference.title }}</a></p>
+    <p class="description">{{ reference.content | truncate: 150 }}</p>
+    
+      <div class="tag-section">
+        {% for tag in reference.tags %}
+          <a href="/tags/#{{ tag  | prepend: site.baseurl }}">
+            <div class="tag-container {{ tag }}">
+              <p class="tag-text">{{ tag }}</p>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+  </div>
+  {% endfor %}
