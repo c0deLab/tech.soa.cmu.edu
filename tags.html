@@ -5,10 +5,11 @@ permalink: /tags/
 
 <h1 class="post-title">Tags</h1>
 
-{% assign tags =  site.tutorials | map: 'tags' | join: ','  | split: ',' | uniq %}
+{% assign tags_tut =  site.tutorials | map: 'tags' | join: ','  | split: ',' | uniq %}
 
-{% assign tags =  site.tutorials | map: 'tags' | join: ','  | split: ',' | uniq %}
+{% assign tags_ref =  site.references | map: 'tags' | join: ','  | split: ',' | uniq %}
 
+{% assign tags =  tags_tut | concat: tags_ref | uniq %}
 
 
   <div class="tag-section">
@@ -41,8 +42,8 @@ permalink: /tags/
   {% for reference in site.references %}
   {% if reference.tags contains tag %}
   <div class="reference-container">
-    <p class="metadata">{{ reference.link | truncate: 30 }}</p>
-    <p class="reference-title"><a href="{{ references.url }}">{{ reference.title }}</a></p>
+    <p class="metadata"><a target="_blank" href="{{ reference.link }}">{{ reference.link | truncate: 30 }}</a></p>
+    <p class="reference-title"><a href="{{ reference.url }}">{{ reference.title }}</a></p>
     <p class="description">{{ reference.content | truncate: 150 }}</p>
     
 <!--

@@ -5,8 +5,8 @@ layout: default
 <div class="small-12 medium-8 columns">
   <h1 class="section-heading"><a href="/tutorials">Tutorials</a></h1>
 
-    {% for tutorial in site.tutorials %}
-    <div class="small-12 medium-4 columns thumbnail-tile">
+    {% for tutorial in site.tutorials limit: 12 %}
+    <div class="small-12 medium-6 large-4 columns thumbnail-tile">
         <a class="post-link" href="{{ tutorial.url | prepend: site.baseurl }}">
             <div class="thumbnail-container">
             <img class="thumbnail-image" src="img/thumbnails/{{ tutorial.thumbnail }}">
@@ -18,13 +18,14 @@ layout: default
         </a>
     </div>
     {% endfor %}
+    <a href="/tutorials">Show More</a>
   
 </div>
 
 <div class="small-12 medium-4 columns">
   <h1 class="section-heading"><a href="/references">References</a></h1>
   
-  {% for reference in site.references %}
+  {% for reference in site.references limit: 5 %}
   <div class="reference-container">
     <p class="metadata"><a target="_blank" href="{{ reference.link }}">{{ reference.link | truncate: 30 }}</a></p>
     <p class="reference-title"><a href="{{ reference.url }}">{{ reference.title }}</a></p>
@@ -41,6 +42,6 @@ layout: default
       </div>
   </div>
   {% endfor %}
-  
+  <a href="/references">Show More</a>
 </div>
 
