@@ -6,7 +6,7 @@ tile-name: CNC Setup
 date: 2017-03-05
 
 author: Rehan Butt
-tags: rhino cam branding
+tags: cam branding
 categories: rhino
 ---
 
