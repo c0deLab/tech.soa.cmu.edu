@@ -1,5 +1,5 @@
 ---
-#for Jekyll
+// for Jekyll
 ---
 
 $tech-black: #252525;
@@ -217,41 +217,41 @@ iframe{
 footer{
   background-color: $slightly-grey;
   color: #b5b5b5;
-}
 
-.footerLeft{
-  line-height: 45px;
-}
+  .footerLeft{
+    line-height: 45px;
+  }
 
-.footerRight{
-  line-height: 45px;
-}
+  .footerRight{
+    line-height: 45px;
+  }
 
-div.medium-4.columns.footerRight{
-  text-align:right;
-}
+  div.medium-4.columns.footerRight{
+    text-align:right;
+  }
 
-.footerCenter{
-  text-align: center;
-}
+  .footerCenter{
+    text-align: center;
+  }
 
-.rehanLogo{
-  height: 18px;
-}
-.soaLogo{
-  height: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.cmuLogo{
-  height: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
+  .rehanLogo{
+    height: 18px;
+  }
+  .soaLogo{
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .cmuLogo{
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-.site-footer{
-  padding-top: 20px;
-  padding-bottom: 20px;
+  .site-footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 .noSelect{
