@@ -26,3 +26,6 @@ collections:
 
   references:
     output: true
+    
+  facilities:
+    output: true
