@@ -1,5 +1,5 @@
 ---
-// for Jekyll
+
 ---
 
 $tech-black: #252525;
@@ -74,7 +74,7 @@ header{
 
   .site-nav{
     top: 45px;
-    background-color: $slightly-grey;
+//    background-color: $slightly-grey;
     border: none;
     border-radius: none;
   }
@@ -275,6 +275,9 @@ footer{
     margin-bottom: 10px;
     margin-left: 20px;
     margin-right: 20px;
+    .site-nav{
+      background-color: $slightly-grey;
+    }
   }
 
   footerLeft, div.medium-4.columns.footerRight, footer{

@@ -41,7 +41,6 @@ header {
     background-color: #f2f2f2; }
   header .site-nav {
     top: 45px;
-    background-color: #f2f2f2;
     border: none;
     border-radius: none; }
 
@@ -141,35 +140,27 @@ iframe {
 footer {
   background-color: #f2f2f2;
   color: #b5b5b5; }
-
-.footerLeft {
-  line-height: 45px; }
-
-.footerRight {
-  line-height: 45px; }
-
-div.medium-4.columns.footerRight {
-  text-align: right; }
-
-.footerCenter {
-  text-align: center; }
-
-.rehanLogo {
-  height: 18px; }
-
-.soaLogo {
-  height: 40px;
-  padding-left: 20px;
-  padding-right: 20px; }
-
-.cmuLogo {
-  height: 40px;
-  padding-left: 20px;
-  padding-right: 20px; }
-
-.site-footer {
-  padding-top: 20px;
-  padding-bottom: 20px; }
+  footer .footerLeft {
+    line-height: 45px; }
+  footer .footerRight {
+    line-height: 45px; }
+  footer div.medium-4.columns.footerRight {
+    text-align: right; }
+  footer .footerCenter {
+    text-align: center; }
+  footer .rehanLogo {
+    height: 18px; }
+  footer .soaLogo {
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px; }
+  footer .cmuLogo {
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px; }
+  footer .site-footer {
+    padding-top: 20px;
+    padding-bottom: 20px; }
 
 .noSelect {
   -webkit-touch-callout: none;
@@ -188,6 +179,8 @@ div.medium-4.columns.footerRight {
     margin-bottom: 10px;
     margin-left: 20px;
     margin-right: 20px; }
+    header .site-nav {
+      background-color: #f2f2f2; }
 
   footerLeft, div.medium-4.columns.footerRight, footer {
     text-align: center; }

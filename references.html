@@ -6,7 +6,7 @@ permalink: /references/
 
 {% for reference in site.references %}
   <div class="reference-container small-12 medium-6 columns">
-    <p class="metadata">{{ reference.link | truncate: 30 }}</p>
+    <p class="metadata"><a target="_blank" href="{{ reference.link }}">{{ reference.link | truncate: 30 }}</a></p>
     <p class="reference-title"><a href="{{ reference.url }}">{{ reference.title }}</a></p>
     <p class="description">{{ reference.content | truncate: 150 }}</p>
     
