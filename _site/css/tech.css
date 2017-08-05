@@ -16,7 +16,7 @@ html, body, h1, h2, h3, h4, h5, h6 {
     color: #252525; }
     .section-heading a:hover {
       text-decoration: none;
-      color: aquamarine; }
+      color: #00e59f; }
 
 header {
   margin-top: 30px;
@@ -95,7 +95,7 @@ a {
   a:visited {
     color: #252525; }
   a:hover {
-    color: aquamarine;
+    color: #00e59f;
     text-decoration: none; }
 
 .post-content p {
