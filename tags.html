@@ -6,11 +6,18 @@ permalink: /tags/
 <h1 class="post-title">Tags</h1>
 
 {% assign tags_tut =  site.tutorials | map: 'tags' | join: ','  | split: ',' | uniq %}
-
 {% assign tags_ref =  site.references | map: 'tags' | join: ','  | split: ',' | uniq %}
 
-{% assign tags =  tags_tut | concat: tags_ref | uniq %}
+{% assign tags = site.emptyArray %}
 
+{% for tag in tags_tut %}
+  {% assign tags = tags | push: tag %}
+{% endfor %}
+{% for tag in tags_ref %}
+  {% assign tags = tags | push: tag %}
+{% endfor %}
+
+{% assign tags = tags | uniq %}
 
   <div class="tag-section">
 {% for tag in tags %}
