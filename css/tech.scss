@@ -292,8 +292,13 @@ footer{
     }
   }
 
-  footerLeft, div.medium-4.columns.footerRight, footer{
+  .footerLeft, footer{
     text-align: center;
+  }
+  footer{
+    div.medium-4.columns.footerRight{
+      text-align: center;
+    }
   }
 
   .footerCenter{
