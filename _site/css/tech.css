@@ -113,12 +113,11 @@ a {
 
 .post-content p {
   font-size: 18px; }
-
-div[itemprop="articleBody"] a {
+.post-content[itemprop="articleBody"] a {
   background-color: #00e59f;
   padding-left: 2px;
   padding-right: 2px; }
-  div[itemprop="articleBody"] a:hover {
+  .post-content[itemprop="articleBody"] a:hover {
     background-color: #19ffb9;
     color: #252525; }
 
