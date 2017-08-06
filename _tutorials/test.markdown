@@ -23,7 +23,7 @@ this is what a video embed looks. please update width to be `100%` otherwise it 
 
 and this is how you include a link into stuff [link](http://cmu.edu). want to see where the link goes?
 
-{% highlight html %}
+{% highlight html linenos %}
 <!--This is what a code block looks like.-->
 
 <iframe width="100%" height="600" src="https://www.youtube.com/embed/w0ZcpQ547Gg?rel=0" frameborder="0" allowfullscreen>
