@@ -10,5 +10,3 @@ Hello SoA community member. Welcome! This page will give you all you need to kno
 
 
 `{% raw %}{% highlight html linenos %}{% endraw %}`
-
-hello
