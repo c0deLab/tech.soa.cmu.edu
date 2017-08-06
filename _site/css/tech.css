@@ -82,6 +82,19 @@ header {
     font-size: 20px;
     font-weight: 700; }
 
+.registration-container {
+  padding: 0px 3px 0px 3px;
+  margin-left: 10px;
+  border: 1.5px solid #252525;
+  display: inline-flex; }
+  .registration-container .registration-text {
+    font-size: 14px; }
+  .registration-container:hover {
+    background-color: #00e59f;
+    border: 1.5px solid #00e59f; }
+    .registration-container:hover .registration-text {
+      color: white; }
+
 .post-title {
   font-size: 38px;
   font-weight: 700; }

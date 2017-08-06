@@ -135,6 +135,25 @@ header{
   }
 }
 
+.registration-container{
+  padding: 0px 3px 0px 3px;
+  margin-left: 10px;
+  border: 1.5px solid $tech-black;
+  display: inline-flex;
+  
+  .registration-text{
+    font-size: 14px;
+  }
+  
+  &:hover{
+    background-color: $tech-accent;
+    border: 1.5px solid $tech-accent;
+    .registration-text{
+      color: white;
+    }
+  }
+}
+
 .post-title{
   font-size: 38px;
   font-weight: $bold;

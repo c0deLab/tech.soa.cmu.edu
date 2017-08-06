@@ -9,7 +9,13 @@ permalink: /workshops/
     <p class="metadata">{{ workshop.details | truncate: 30 }}</p>
     <p class="reference-title">
       <a href="{{ workshop.url }}">{{ workshop.title }}</a>
-      <a href="{{ workshop.registration }}"><img class="link-icon" src="{{ "/img/linkicon.svg" | prepend: site.baseurl }}"></a>
+      <a href="{{ workshop.registration }}">
+        {% if workshop.registration %}
+        <span class="registration-container">
+          <span class="registration-text">Register</span>
+        </span>
+        {% endif %}
+      </a>
     </p>
     
     <p class="datetime"><time datetime="{{ page.start-date | date_to_xmlschema }}" itemprop="dateTimeStart">{{ workshop.start-date | date: "%b %-d, %Y %H:%M%P" }}</time> - <time datetime="{{ page.end-date | date_to_xmlschema }}" itemprop="dateTimeEnd">{{ workshop.end-date | date: "%b %-d, %Y %H:%M%P" }}</time></p>
