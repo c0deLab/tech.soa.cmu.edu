@@ -113,13 +113,11 @@ a {
 
 .post-content p {
   font-size: 18px; }
-.post-content a {
+
+div[itemprop="articleBoby"] a {
   background-color: #00e59f;
   padding-left: 2px;
   padding-right: 2px; }
-  .post-content a:hover {
-    background-color: #19ffb9;
-    color: #252525; }
 
 /*Tag Styling*/
 .tag-section {

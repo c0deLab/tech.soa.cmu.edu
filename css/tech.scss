@@ -180,16 +180,20 @@ a{
   p{
     font-size: 18px;
   }
-  a{
-//    color: $tech-accent;
+}
+
+div[itemprop="articleBoby"] a{
+//    a{
+//    // check for itemprop articleBody
+////    color: $tech-accent;
     background-color: $tech-accent;
     padding-left: 2px;
     padding-right: 2px;
-    &:hover{
-      background-color: lighten($tech-accent, 10%);
-      color: $tech-black;
-    }
-  }
+//    &:hover{
+//      background-color: lighten($tech-accent, 10%);
+//      color: $tech-black;
+//    }
+//  }
 }
 
 /*Tag Styling*/
