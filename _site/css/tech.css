@@ -109,7 +109,8 @@ a {
   border: 1.5px solid #252525;
   display: inline-block; }
   .tag-container .tag-text {
-    font-size: 14px; }
+    font-size: 14px;
+    margin-bottom: 0; }
   .tag-container a {
     color: #252525; }
 
