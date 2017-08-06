@@ -5,6 +5,8 @@ details: Laser Cutter Training
 start-date: 2017-10-05 12:00:00 -0500
 end-date: 2017-10-05 12:10:00 -0500
 registration: llink
+location:
+Instructor:
 tags: linkkkk
 ---
 
