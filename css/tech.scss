@@ -75,7 +75,6 @@ header{
 
   .site-nav{
     top: 45px;
-//    background-color: $slightly-grey;
     border: none;
     border-radius: none;
   }
@@ -157,7 +156,6 @@ a{
   }
 }
 
-
 .post-content{
   
   p{
@@ -222,10 +220,26 @@ iframe{
   margin-top: -2px;
 }
 
+.noSelect{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    user-drag: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+}
+
+
+/*Foundation Override*/
 .columns:last-child:not(:first-child){
   float: left;
 }
+/*Foundation Override Ended*/
 
+
+/*Footer Styling*/
 footer{
   background-color: $slightly-grey;
   color: #b5b5b5;
@@ -265,22 +279,11 @@ footer{
     padding-bottom: 20px;
   }
 }
-
-.noSelect{
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    user-drag: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-}
+/*Footer Styling Ended*/
 
 
 /*measurments pulled from foundation css file*/
-
-/*for mobile friendly styling*/
+/*Mobile Friendly Styling*/
 @media screen and (max-width: 40em) {
 
   header{
@@ -311,12 +314,14 @@ footer{
   }
 
 }
+/*Mobile Friendly Styling Ended*/
 
-/*for tablet friendly styling*/
+
+/*Tablet Friendly Styling*/
 @media screen and (max-width: 64em) {
 
   iframe{
     height: 360px;
   }
 }
-/* ************************************** */
+/*Tablet Friendly Styling Ended*/
