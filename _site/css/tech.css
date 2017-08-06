@@ -176,9 +176,17 @@ iframe {
   border-radius: 5px; }
   .highlight pre {
     padding: 20px;
-    border-radius: 5px; }
+    border-radius: 5px;
+    border: none; }
     .highlight pre code {
       background-color: transparent; }
+      .highlight pre code pre {
+        padding: 0px;
+        padding-left: 20px; }
+    .highlight pre .lineno {
+      margin: 0px;
+      padding: 0px;
+      color: white; }
 
 .datetime {
   font-weight: 300; }
