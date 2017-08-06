@@ -143,9 +143,22 @@ iframe {
   margin-left: 5px;
   margin-top: -2px; }
 
+.noSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  user-drag: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none; }
+
+/*Foundation Override*/
 .columns:last-child:not(:first-child) {
   float: left; }
 
+/*Foundation Override Ended*/
+/*Footer Styling*/
 footer {
   background-color: #f2f2f2;
   color: #b5b5b5; }
@@ -171,18 +184,9 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px; }
 
-.noSelect {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  user-drag: none;
-  -moz-user-select: none;
-  -webkit-user-drag: none; }
-
+/*Footer Styling Ended*/
 /*measurments pulled from foundation css file*/
-/*for mobile friendly styling*/
+/*Mobile Friendly Styling*/
 @media screen and (max-width: 40em) {
   header {
     margin-bottom: 10px;
@@ -191,7 +195,10 @@ footer {
     header .site-nav {
       background-color: #f2f2f2; }
 
-  footerLeft, div.medium-4.columns.footerRight, footer {
+  .footerLeft, footer {
+    text-align: center; }
+
+  footer div.medium-4.columns.footerRight {
     text-align: center; }
 
   .footerCenter {
@@ -200,8 +207,9 @@ footer {
 
   iframe {
     height: 220px; } }
-/*for tablet friendly styling*/
+/*Mobile Friendly Styling Ended*/
+/*Tablet Friendly Styling*/
 @media screen and (max-width: 64em) {
   iframe {
     height: 360px; } }
-/* ************************************** */
+/*Tablet Friendly Styling Ended*/
