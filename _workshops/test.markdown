@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: workshop
 title: Workshop Title
 details: Laser Cutter Training
 start-date: 2017-03-05 12:00:00 -0500
