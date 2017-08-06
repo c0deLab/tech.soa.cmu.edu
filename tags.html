@@ -78,7 +78,7 @@ permalink: /tags/
       </a>
     </p>
     
-    <p class="datetime"><time datetime="{{ page.start-date | date_to_xmlschema }}" itemprop="dateTimeStart">{{ workshop.start-date | date: "%b %-d, %Y %H:%M%P" }}</time> - <time datetime="{{ page.end-date | date_to_xmlschema }}" itemprop="dateTimeEnd">{{ workshop.end-date | date: "%b %-d, %Y %H:%M%P" }}</time></p>
+    <p class="datetime"><time datetime="{{ workshop.start-date | date_to_xmlschema }}" itemprop="dateTimeStart">{{ workshop.start-date | date: "%b %-d, %Y %H:%M%P" }}</time> - <time datetime="{{ workshop.end-date | date_to_xmlschema }}" itemprop="dateTimeEnd">{{ workshop.end-date | date: "%b %-d, %Y %H:%M%P" }}</time></p>
     <p class="description">{{ workshop.content | truncate: 150 }}</p>
     
       <div class="tag-section">

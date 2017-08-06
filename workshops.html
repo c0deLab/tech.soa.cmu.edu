@@ -18,11 +18,16 @@ permalink: /workshops/
       </a>
     </p>
     
+<<<<<<< HEAD
     <p class="datetime"><time datetime="{{ page.start-date | date_to_xmlschema }}" itemprop="dateTimeStart">{{ workshop.start-date | date: "%b %-d, %Y %H:%M%P" }}</time> - <time datetime="{{ page.end-date | date_to_xmlschema }}" itemprop="dateTimeEnd">{{ workshop.end-date | date: "%b %-d, %Y %H:%M%P" }}</time></p>
     {% if workshop.location %}
     <p class="where-who">{{ workshop.location }} | {{ workshop.instructor }}</p>
     {% endif %}
     <p class="description">{{ workshop.details | truncate: 150 }}</p>
+=======
+    <p class="datetime"><time datetime="{{ workshop.start-date | date_to_xmlschema }}" itemprop="dateTimeStart">{{ workshop.start-date | date: "%b %-d, %Y %H:%M%P" }}</time> - <time datetime="{{ workshop.end-date | date_to_xmlschema }}" itemprop="dateTimeEnd">{{ workshop.end-date | date: "%b %-d, %Y %H:%M%P" }}</time></p>
+    <p class="description">{{ workshop.content | truncate: 150 }}</p>
+>>>>>>> origin/development
     
       <div class="tag-section">
         {% for tag in workshop.tags %}
