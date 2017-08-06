@@ -114,6 +114,7 @@ a {
 .post-content p {
   font-size: 18px; }
 
+/*Tag Styling*/
 .tag-section {
   margin-top: 30px;
   margin-bottom: 20px; }
@@ -137,6 +138,7 @@ a {
   background-color: blueviolet;
   border: 1.5px solid blueviolet; }
 
+/*Tag Styling Ended*/
 iframe {
   height: 500px;
   width: 100%; }
@@ -151,11 +153,6 @@ iframe {
 
 .datetime {
   font-weight: 300; }
-
-.link-icon {
-  height: 12px;
-  margin-left: 5px;
-  margin-top: -2px; }
 
 .noSelect {
   -webkit-touch-callout: none;
