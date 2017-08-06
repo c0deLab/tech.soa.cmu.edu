@@ -1,10 +1,12 @@
 ---
-layout: post
+layout: workshop
 title: Workshop Title
 details: Laser Cutter Training
 start-date: 2017-08-07 12:00:00 -0500
 end-date: 2017-08-07 12:10:00 -0500
 registration:
+location:
+Instructor:
 tags: rhino
 ---
 

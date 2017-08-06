@@ -193,6 +193,38 @@ a{
   }
 }
 
+.where-who{
+  font-weight: $light;
+}
+
+.where-who-meta{
+  margin-bottom: 0px;
+}
+
+.description-meta{
+  margin-bottom: 0px;
+}
+
+.registration-container-meta{
+  padding: 3px 5px 5px 5px;
+  margin-left: 10px;
+  border: 1.5px solid $tech-black;
+  display: inline-flex;
+  
+  .registration-text-meta{
+    font-size: 20px;
+//    line-height: 30px;
+  }
+  
+  &:hover{
+    background-color: $tech-accent;
+    border: 1.5px solid $tech-accent;
+    .registration-text-meta{
+      color: white;
+    }
+  }
+}
+
 /*Tag Styling*/
 .tag-section{
   margin-top: 30px;

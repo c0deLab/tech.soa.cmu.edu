@@ -6,7 +6,7 @@ permalink: /workshops/
 
 {% for workshop in site.workshops %}
   <div class="reference-container small-12 medium-6 columns">
-    <p class="metadata">{{ workshop.details | truncate: 30 }}</p>
+<!--    <p class="metadata">{{ workshop.details | truncate: 30 }}</p>-->
     <p class="reference-title">
       <a href="{{ workshop.url }}">{{ workshop.title }}</a>
       <a target="_blank" href="{{ workshop.registration }}">
@@ -19,7 +19,10 @@ permalink: /workshops/
     </p>
     
     <p class="datetime"><time datetime="{{ page.start-date | date_to_xmlschema }}" itemprop="dateTimeStart">{{ workshop.start-date | date: "%b %-d, %Y %H:%M%P" }}</time> - <time datetime="{{ page.end-date | date_to_xmlschema }}" itemprop="dateTimeEnd">{{ workshop.end-date | date: "%b %-d, %Y %H:%M%P" }}</time></p>
-    <p class="description">{{ workshop.content | truncate: 150 }}</p>
+    {% if workshop.location %}
+    <p class="where-who">{{ workshop.location }} | {{ workshop.instructor }}</p>
+    {% endif %}
+    <p class="description">{{ workshop.details | truncate: 150 }}</p>
     
       <div class="tag-section">
         {% for tag in workshop.tags %}

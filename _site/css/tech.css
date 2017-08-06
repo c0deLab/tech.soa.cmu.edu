@@ -121,6 +121,28 @@ a {
     background-color: #19ffb9;
     color: #252525; }
 
+.where-who {
+  font-weight: 300; }
+
+.where-who-meta {
+  margin-bottom: 0px; }
+
+.description-meta {
+  margin-bottom: 0px; }
+
+.registration-container-meta {
+  padding: 3px 5px 5px 5px;
+  margin-left: 10px;
+  border: 1.5px solid #252525;
+  display: inline-flex; }
+  .registration-container-meta .registration-text-meta {
+    font-size: 20px; }
+  .registration-container-meta:hover {
+    background-color: #00e59f;
+    border: 1.5px solid #00e59f; }
+    .registration-container-meta:hover .registration-text-meta {
+      color: white; }
+
 /*Tag Styling*/
 .tag-section {
   margin-top: 30px;
