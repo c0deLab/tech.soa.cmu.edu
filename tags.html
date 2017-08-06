@@ -7,6 +7,7 @@ permalink: /tags/
 
 {% assign tags_tut =  site.tutorials | map: 'tags' | join: ','  | split: ',' | uniq %}
 {% assign tags_ref =  site.references | map: 'tags' | join: ','  | split: ',' | uniq %}
+{% assign tags_wor =  site.workshops | map: 'tags' | join: ','  | split: ',' | uniq %}
 
 {% assign tags = site.emptyArray %}
 
@@ -16,8 +17,11 @@ permalink: /tags/
 {% for tag in tags_ref %}
   {% assign tags = tags | push: tag %}
 {% endfor %}
+{% for tag in tags_wor %}
+  {% assign tags = tags | push: tag %}
+{% endfor %}
 
-{% assign tags = tags | uniq %}
+{% assign tags = tags | sort | uniq %}
 
   <div class="tag-section">
 {% for tag in tags %}
@@ -29,9 +33,11 @@ permalink: /tags/
 {% endfor %}
     </div>
 
+
 {% for tag in tags %}
-  <div class="row">
-  <a name="{{ tag }}"><h3 class="tag-title">{{ tag }}</h3></a>
+<div class="row">
+  
+  <a name="{{ tag }}"><h3 class="tag-title section-heading">{{ tag }}</h3></a>
   {% for tutorials in site.tutorials %}
     {% if tutorials.tags contains tag %}
       <div class="small-12 medium-3 columns thumbnail-tile">
@@ -44,18 +50,33 @@ permalink: /tags/
       </div>
     {% endif %}
   {% endfor %}
-  </div>
 
   {% for reference in site.references %}
   {% if reference.tags contains tag %}
-  <div class="reference-container">
-    <p class="metadata"><a target="_blank" href="{{ reference.link }}">{{ reference.link | truncate: 30 }}</a></p>
-    <p class="reference-title"><a href="{{ reference.url }}">{{ reference.title }}</a></p>
-    <p class="description">{{ reference.content | truncate: 150 }}</p>
+  <div class="small-12 medium-3 columns">
+    <div class="reference-container">
+      <p class="metadata"><a target="_blank" href="{{ reference.link }}">{{ reference.link | truncate: 30 }}</a></p>
+      <p class="reference-title"><a href="{{ reference.url }}">{{ reference.title }}</a></p>
+      <p class="description">{{ reference.content | truncate: 150 }}</p>
+    </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+  
+  {% for workshop in site.workshops %}
+  {% if workshop.tags contains tag %}
+  <div class="reference-container small-12 medium-3 columns">
+    <p class="metadata">{{ workshop.details | truncate: 30 }}</p>
+    <p class="reference-title">
+      <a href="{{ workshop.url }}">{{ workshop.title }}</a>
+      <a href="{{ workshop.registration }}"><img class="link-icon" src="{{ "/img/linkicon.svg" | prepend: site.baseurl }}"></a>
+    </p>
     
-<!--
+    <p class="datetime"><time datetime="{{ page.start-date | date_to_xmlschema }}" itemprop="dateTimeStart">{{ workshop.start-date | date: "%b %-d, %Y %H:%M%P" }}</time> - <time datetime="{{ page.end-date | date_to_xmlschema }}" itemprop="dateTimeEnd">{{ workshop.end-date | date: "%b %-d, %Y %H:%M%P" }}</time></p>
+    <p class="description">{{ workshop.content | truncate: 150 }}</p>
+    
       <div class="tag-section">
-        {% for tag in reference.tags %}
+        {% for tag in workshop.tags %}
           <a href="/tags/#{{ tag  | prepend: site.baseurl }}">
             <div class="tag-container {{ tag }}">
               <p class="tag-text">{{ tag }}</p>
@@ -63,9 +84,9 @@ permalink: /tags/
           </a>
         {% endfor %}
       </div>
--->
   </div>
   {% endif %}
   {% endfor %}
-
+  
+</div>
 {% endfor %}
