@@ -53,6 +53,7 @@ Again create a `.markdown` file, but this time in the `_tutorials` folder. The f
 
 All file names need be lowercase and all files should be `1MB` or smaller where the image length should be no longer then `1400px` on the longer side. `png` files are recommended over `jpg`. You can optimize the images using [imageOptim](https://imageoptim.com/mac) for Mac and [XnView](http://www.xnview.com/en/xnview/) for Windows.
 
+`date` should be the publish date following the `YYYY-MM-DD` convention. `tile-name` is a short version of the tutorial name that appears on hover of the thumbnail tile. `author` being your name.
 
 {% highlight markdown linenos %}
 
@@ -90,6 +91,8 @@ and this is how you include a link into stuff [link](http://cmu.edu). want to se
 
 
 #### Workshop
+
+Again create a `.markdown` file, this time in the `_workshops` folder. The file name should be unique and be the name of the workshop, words seperated by a `-` ie. `intro-design-thinking.markdown`. `start-date` is the start date and time of the workshop follwing the convention `YYYY-MM-DD HH:MM:SS TIMEZONE`. The same convention applies for the `end-date`. `location` being the location of the workshop ie. `Hunt Basement Cluster` or `dFab`. And the `instructor` being the instructor or instructors ie. `Jony Ive` or `Jony Ive &  Harry Potter`.
 
 {% highlight markdown linenos %}
 
