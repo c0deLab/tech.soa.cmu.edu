@@ -261,6 +261,12 @@ a{
   background-color: blueviolet;
   border: 1.5px solid blueviolet;
 }
+
+.rendering:hover{
+  background-color: tomato;
+  border: 1.5px solid tomato;
+}
+
 /*Tag Styling Ended*/
 
 iframe{
@@ -285,7 +291,7 @@ iframe{
     }
     .lineno{
       padding: 0px;
-      color: white;
+      color: #aaaaaa;
     }
 //    td{
 //      vertical-align: top;

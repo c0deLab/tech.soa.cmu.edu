@@ -170,6 +170,10 @@ a {
   background-color: blueviolet;
   border: 1.5px solid blueviolet; }
 
+.rendering:hover {
+  background-color: tomato;
+  border: 1.5px solid tomato; }
+
 /*Tag Styling Ended*/
 iframe {
   height: 500px;
@@ -189,7 +193,7 @@ iframe {
         padding-left: 20px; }
     .highlight pre .lineno {
       padding: 0px;
-      color: white; }
+      color: #aaaaaa; }
 
 .menu-icon {
   margin-bottom: 8px; }
