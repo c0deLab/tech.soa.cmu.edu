@@ -104,9 +104,145 @@
 
 <h3 id="something-wrong">Something Wrong?</h3>
 
-<p>Open a issue <a href="https://github.com/c0deLab/tech.soa.cmu.edu/issues">here</a></p>
+<p>If you think you’ve found a bug open a issue <a href="https://github.com/c0deLab/tech.soa.cmu.edu/issues">here.</a> You will need a GitHub account to do so. When opening a issue be precise as possible for quickest response. Images / screenshots are great ways to help pass the information along.</p>
 
-<p><code class="highlighter-rouge"><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">highlight</span><span class="w"> </span><span class="err">html</span><span class="w"> </span><span class="err">linenos</span><span class="w"> </span><span class="err">%</span><span class="p">}</span></code></p>
+<h3 id="share-some-awesome-content-with-the-rest-of-us">Share Some Awesome Content with the Rest of Us</h3>
+
+<p>Add a new reference, tutorial or a workshop. First thing you need to do is create a <a href="https://github.com">GitHub</a> account if you don’t already have one. and fork the <code class="highlighter-rouge">tech.soa.cmu.edu</code> repository. A fork is a copy of a repository or repo. Forking a repository allows you to freely experiment with changes without affecting the original project.
+In the top right corner of the <a href="https://github.com/c0deLab/tech.soa.cmu.edu">repository</a> page you will see the fork button. From here you can make changes to your copy of the repo. The easiest way to use GitHub on your machine is with the <a href="https://desktop.github.com">desktop apps</a>. The other thing you will need is a text editor, I recommend <a href="http://brackets.io">Brackets</a> or <a href="https://atom.io">Atom</a>.</p>
+
+<p>When you are ready to submit your changes to us, first make sure you have committed them to your fork of the repo. Then submit a pull request to the <code class="highlighter-rouge">dev</code> branch of the main <code class="highlighter-rouge">tech.soa.cmu.edu</code> repo. Here are further details on how to create a <a href="https://help.github.com/articles/creating-a-pull-request/">pull request.</a></p>
+
+<h4 id="tag-master-list">Tag Master List</h4>
+
+<ul>
+  <li>cnc</li>
+  <li>lasercutting</li>
+  <li>grasshopper</li>
+  <li>rhino</li>
+  <li>rendering</li>
+  <li>webdev</li>
+  <li>ui-ux</li>
+  <li>printing</li>
+</ul>
+
+<h4 id="reference">Reference</h4>
+
+<p>Create a <code class="highlighter-rouge">.markdown</code> file in the <code class="highlighter-rouge">_references</code> folder, where the file name should be unique, following a convention of <code class="highlighter-rouge">organization-product.markdown</code> ie. <code class="highlighter-rouge">google-fonts.markdown</code> where a <code class="highlighter-rouge">-</code> is placed between each word. Below is a sample file for a reference. <code class="highlighter-rouge">title</code> should be a product name. <code class="highlighter-rouge">link</code> is the web url for the reference, make sure to include the full url with <code class="highlighter-rouge">http://</code>. <code class="highlighter-rouge">date</code> is the date you are publishing this page. <code class="highlighter-rouge">tags</code> is a list of space seperated tags pull from the tag master list above.
+Finally the main section should be a description of the reference.</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="code"><pre><span class="nn">---</span>
+<span class="s">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="s">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Dzgn.IO</span><span class="nv"> </span><span class="s">Toolkit"</span>
+<span class="s">link</span><span class="pi">:</span> <span class="s2">"</span><span class="s">http://toolkit.dzgn.io"</span>
+<span class="s">date</span><span class="pi">:</span> <span class="s">2017-03-05</span>
+<span class="s">tags</span><span class="pi">:</span> <span class="s">webdev</span>
+<span class="nn">---</span>
+
+A open set of web development resources to help you develop better and quicker with simple styling blocks.<span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h4 id="tutorial">Tutorial</h4>
+
+<p>Again create a <code class="highlighter-rouge">.markdown</code> file, but this time in the <code class="highlighter-rouge">_tutorials</code> folder. The file name should be unique and be the tutorial name, words seperated by a <code class="highlighter-rouge">-</code> ie. <code class="highlighter-rouge">cnc-setup.markdown</code>. If any media files such as images need to accompany this tutorial, they should be held in a folder, with the same name as the tutorial located in the img folder. ie. <code class="highlighter-rouge">img/cnc-setup/</code>. All tutorials require a thumbnail of size <code class="highlighter-rouge">500px</code> by <code class="highlighter-rouge">375px</code>, which should be placed in <code class="highlighter-rouge">img/thumbnails/</code> folder. Again the file name for the thumbnail should be the same as the tutorial ie. <code class="highlighter-rouge">cnc-setup.png</code>.</p>
+
+<p>All file names need be lowercase and all files should be <code class="highlighter-rouge">1MB</code> or smaller where the image length should be no longer then <code class="highlighter-rouge">1400px</code> on the longer side. <code class="highlighter-rouge">png</code> files are recommended over <code class="highlighter-rouge">jpg</code>. You can optimize the images using <a href="https://imageoptim.com/mac">imageOptim</a> for Mac and <a href="http://www.xnview.com/en/xnview/">XnView</a> for Windows.</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29</pre></td><td class="code"><pre><span class="nn">---</span>
+<span class="s">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="s">title</span><span class="pi">:</span> <span class="s">CNC Setup</span>
+<span class="s">thumbnail</span><span class="pi">:</span> <span class="s">tid.png</span>
+<span class="s">tile-name</span><span class="pi">:</span> <span class="s">CNC Setup</span>
+<span class="s">date</span><span class="pi">:</span> <span class="s">2017-03-05</span>
+
+<span class="s">author</span><span class="pi">:</span> <span class="s">Rehan Butt</span>
+<span class="s">tags</span><span class="pi">:</span> <span class="s">cam branding</span>
+<span class="nn">---</span>
+
+<span class="p">![</span><span class="nv">Hero Image</span><span class="p">](</span><span class="sx">/img/test/hero.png</span><span class="p">)</span>
+
+Your short description goes here. 100 word max.
+
+this is what an image looks like
+<span class="p">![</span><span class="nv">2 Word Image Description</span><span class="p">](</span><span class="sx">/img/test/thisImage.png</span><span class="p">)</span>
+
+this is what a video embed looks. please update width to be <span class="sb">`100%`</span> otherwise it will break on mobile devices.
+
+<span class="nt">&lt;iframe</span> <span class="na">src=</span><span class="s">"https://www.youtube.com/embed/IdneKLhsWOQ"</span> <span class="na">frameborder=</span><span class="s">"0"</span> <span class="na">allowfullscreen</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+
+and this is how you include a link into stuff <span class="p">[</span><span class="nv">link</span><span class="p">](</span><span class="sx">http://cmu.edu</span><span class="p">)</span>. want to see where the link goes?
+
+{% highlight html linenos %}
+<span class="c">&lt;!--This is what a code block looks like.--&gt;</span>
+<span class="nt">&lt;iframe</span> <span class="na">width=</span><span class="s">"100%"</span> <span class="na">height=</span><span class="s">"600"</span> <span class="na">src=</span><span class="s">"https://www.youtube.com/embed/w0ZcpQ547Gg?rel=0"</span> <span class="na">frameborder=</span><span class="s">"0"</span> <span class="na">allowfullscreen</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/iframe&gt;</span>
+{% endhighlight %}<span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h4 id="workshop">Workshop</h4>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13</pre></td><td class="code"><pre><span class="nn">---</span>
+<span class="s">layout</span><span class="pi">:</span> <span class="s">workshop</span>
+<span class="s">title</span><span class="pi">:</span> <span class="s">Intro to Design Thinking</span>
+<span class="s">details</span><span class="pi">:</span> <span class="s">Prerequisite for UX Series</span>
+<span class="s">start-date</span><span class="pi">:</span> <span class="s">2017-10-05 10:00:00 -0500</span>
+<span class="s">end-date</span><span class="pi">:</span> <span class="s">2017-10-05 10:10:00 -0500</span>
+<span class="s">registration</span><span class="pi">:</span> <span class="s">http://registrationlink.com</span>
+<span class="s">location</span><span class="pi">:</span> <span class="s">CFA Mac Cluster</span>
+<span class="s">instructor</span><span class="pi">:</span> <span class="s">Jony Ive</span>
+<span class="s">tags</span><span class="pi">:</span> <span class="s">ui-ux webdev</span>
+<span class="nn">---</span>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo mi dolor, sed lacinia urna lobortis lobortis. Praesent odio dolor, laoreet sed ultricies sed, rutrum eget dolor. Integer congue nisl nec odio accumsan, non interdum justo eleifend. Ut tincidunt lectus ut leo cursus euismod. Nam eu enim et felis ornare suscipit. Nulla at elit ut ipsum porttitor faucibus. Nam non pellentesque quam, quis tempus sem. Nam rutrum vehicula mi. Aliquam odio nunc, facilisis vel lectus bibendum, feugiat pellentesque metus. Etiam sit amet libero et nisi luctus molestie eget sit amet metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla sed massa et leo accumsan tincidunt. Nam suscipit nisl quam, sed tempus nulla rutrum sit amet. In nec lobortis purus. Duis placerat dignissim lectus. Fusce tristique, leo in hendrerit pellentesque, nisi ante pulvinar nisl, at rutrum libero magna a velit.<span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
     </div>
 

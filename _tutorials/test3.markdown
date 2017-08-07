@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "CNC Setup"
-tile-name: CNC Setup
+title: CNC Setup
 thumbnail: tid.png
-date:   2017-03-05
-tags: rhino webdev
+tile-name: CNC Setup
+date: 2017-03-05
+
+author: Rehan Butt
+tags: cam branding
 ---
 explain a little about what this
