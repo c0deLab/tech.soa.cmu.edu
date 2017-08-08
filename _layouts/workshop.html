@@ -16,7 +16,7 @@ layout: default
         {% endif %}
       </h1>
       <p class="post-meta">
-        <time datetime="{{ page.start-date | date_to_xmlschema }}" itemprop="dateTimeStart">{{ page.start-date | date: "%b %-d, %Y %I:%M%P" }}</time> - <time datetime="{{ page.end-date | date_to_xmlschema }}" itemprop="dateTimeEnd">{{ page.end-date | date: "%b %-d, %Y %I:%M%P" }}</time>
+        <time datetime="{{ page.start-date | date_to_xmlschema }}" itemprop="dateTimeStart">{{ page.start-date | date: "%A, %b %-d %Y %I:%M%P" }}</time> - <time datetime="{{ page.end-date | date_to_xmlschema }}" itemprop="dateTimeEnd">{{ page.end-date | date: "%I:%M%P" }}</time>
         {% if page.location %}
           <p class="where-who-meta">{{ page.location }} | {{ page.instructor }}</p>
         {% endif %}
