@@ -30,8 +30,7 @@ When you are ready to submit your changes to us, first make sure you have commit
 
 #### Reference
 
-Create a `.markdown` file in the `_references` folder, where the file name should be unique, following a convention of `organization-product.markdown` ie. `google-fonts.markdown` where a `-` is placed between each word. Below is a sample file for a reference. `title` should be a product name. `link` is the web url for the reference, make sure to include the full url with `http://`. `date` is the date you are publishing this page. `tags` is a list of space seperated tags pull from the tag master list above.
-Finally the main section should be a description of the reference.
+Create a `.markdown` file in the `_references` folder, where the file name should be unique, following a convention of `organization-product.markdown` ie. `google-fonts.markdown` where a `-` is placed between each word. Below is a sample file for a reference. `title` should be a product name. `link` is the web url for the reference, make sure to include the full url with `http://`. `date` is the date you are publishing this page. `tags` is a list of comma seperated tags pulled from the tag master list above. Finally the main section should be a description of the reference.
 
 {% highlight markdown linenos %}
 
