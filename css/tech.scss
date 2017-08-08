@@ -42,6 +42,13 @@ html, body, h1, h2, h3, h4, h5, h6{
   }
 }
 
+::selection {
+  background: $tech-accent; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $tech-accent; /* Gecko Browsers */
+}
+
 header{
   
   margin-top: 30px;
