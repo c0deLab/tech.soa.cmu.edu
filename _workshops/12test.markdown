@@ -1,12 +1,12 @@
 ---
 layout: workshop
-title: Workshop Title
-details: Laser Cutter Training
-start-date: 2017-10-05 10:00:00 -0500
-end-date: 2017-10-05 10:10:00 -0500
+title: dFAB Lab Policies and Laser Cutting (Group A)
+details: Required for all other fabrication workshops.
+start-date: 2017-08-15 9:00:00 -0500
+end-date: 2017-08-15 12:00:00 -0500
 registration: llink
-location: CFA Windows Cluster
-instructor: Edward Snowden
+location: Digital Fabrication Lab, MMCH C4
+instructor: José Pertierra-Arrojo
 tags: linkkkk
 ---
 
