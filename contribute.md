@@ -48,7 +48,7 @@ A open set of web development resources to help you develop better and quicker w
 
 #### Tutorial
 
-Again create a `.markdown` file, but this time in the `_tutorials` folder. The file name should be unique and be the tutorial name, words seperated by a `-` ie. `cnc-setup.markdown`. If any media files such as images need to accompany this tutorial, they should be held in a folder, with the same name as the tutorial located in the img folder. ie. `img/cnc-setup/`. All tutorials require a thumbnail of size `500px` by `375px`, which should be placed in `img/thumbnails/` folder. Again the file name for the thumbnail should be the same as the tutorial ie. `cnc-setup.png`.
+Again create a `.markdown` file, but this time in the `_tutorials` folder. The file name should be unique and be the tutorial name, words seperated by a `-` ie. `cnc-setup.markdown`. If any media files such as images need to accompany this tutorial, they should be held in a folder, with the same name as the tutorial located in the tutorial folder in the img folder. ie. `img/tutorials/cnc-setup/`. All tutorials require a thumbnail of size `500px` by `375px`, which should be placed in `img/thumbnails/` folder. Again the file name for the thumbnail should be the same as the tutorial ie. `cnc-setup.png`.
 
 All file names need be lowercase and all files should be `1MB` or smaller where the image length should be no longer then `1400px` on the longer side. `png` files are recommended over `jpg`. You can optimize the images using [imageOptim](https://imageoptim.com/mac) for Mac and [XnView](http://www.xnview.com/en/xnview/) for Windows.
 
