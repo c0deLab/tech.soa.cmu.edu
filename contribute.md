@@ -25,13 +25,12 @@ When you are ready to submit your changes to us, first make sure you have commit
 * rhino
 * rendering
 * webdev
-* ui-ux
+* ui ux
 * printing
 
 #### Reference
 
-Create a `.markdown` file in the `_references` folder, where the file name should be unique, following a convention of `organization-product.markdown` ie. `google-fonts.markdown` where a `-` is placed between each word. Below is a sample file for a reference. `title` should be a product name. `link` is the web url for the reference, make sure to include the full url with `http://`. `date` is the date you are publishing this page. `tags` is a list of space seperated tags pull from the tag master list above.
-Finally the main section should be a description of the reference.
+Create a `.markdown` file in the `_references` folder, where the file name should be unique, following a convention of `organization-product.markdown` ie. `google-fonts.markdown` where a `-` is placed between each word. Below is a sample file for a reference. `title` should be a product name. `link` is the web url for the reference, make sure to include the full url with `http://`. `date` is the date you are publishing this page. `tags` is a list of comma seperated tags pulled from the tag master list above. Finally the main section should be a description of the reference.
 
 {% highlight markdown linenos %}
 
@@ -49,7 +48,7 @@ A open set of web development resources to help you develop better and quicker w
 
 #### Tutorial
 
-Again create a `.markdown` file, but this time in the `_tutorials` folder. The file name should be unique and be the tutorial name, words seperated by a `-` ie. `cnc-setup.markdown`. If any media files such as images need to accompany this tutorial, they should be held in a folder, with the same name as the tutorial located in the img folder. ie. `img/cnc-setup/`. All tutorials require a thumbnail of size `500px` by `375px`, which should be placed in `img/thumbnails/` folder. Again the file name for the thumbnail should be the same as the tutorial ie. `cnc-setup.png`.
+Again create a `.markdown` file, but this time in the `_tutorials` folder. The file name should be unique and be the tutorial name, words seperated by a `-` ie. `cnc-setup.markdown`. If any media files such as images need to accompany this tutorial, they should be held in a folder, with the same name as the tutorial located in the tutorial folder in the img folder. ie. `img/tutorials/cnc-setup/`. All tutorials require a thumbnail of size `500px` by `375px`, which should be placed in `img/thumbnails/` folder. Again the file name for the thumbnail should be the same as the tutorial ie. `cnc-setup.png`.
 
 All file names need be lowercase and all files should be `1MB` or smaller where the image length should be no longer then `1400px` on the longer side. `png` files are recommended over `jpg`. You can optimize the images using [imageOptim](https://imageoptim.com/mac) for Mac and [XnView](http://www.xnview.com/en/xnview/) for Windows.
 
@@ -98,16 +97,16 @@ Again create a `.markdown` file, this time in the `_workshops` folder. The file 
 
 ---
 layout: workshop
-title: Intro to Design Thinking
-details: Prerequisite for UX Series
-start-date: 2017-10-05 10:00:00 -0500
-end-date: 2017-10-05 10:10:00 -0500
-registration: http://registrationlink.com
-location: CFA Mac Cluster
-instructor: Jony Ive
-tags: ui-ux webdev
+title: Rhino Basics
+details: Get familiar with the interface; Practice simple modeling tasks.
+start-date: 2017-08-14 09:00:00 -0400
+end-date: 2017-08-14 13:00:00 -0400
+registration: llink
+location: CFA 214
+instructor: Eddy Man Kim
+tags: [Digital Representation, Rhino]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo mi dolor, sed lacinia urna lobortis lobortis. Praesent odio dolor, laoreet sed ultricies sed, rutrum eget dolor. Integer congue nisl nec odio accumsan, non interdum justo eleifend. Ut tincidunt lectus ut leo cursus euismod. Nam eu enim et felis ornare suscipit. Nulla at elit ut ipsum porttitor faucibus. Nam non pellentesque quam, quis tempus sem. Nam rutrum vehicula mi. Aliquam odio nunc, facilisis vel lectus bibendum, feugiat pellentesque metus. Etiam sit amet libero et nisi luctus molestie eget sit amet metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla sed massa et leo accumsan tincidunt. Nam suscipit nisl quam, sed tempus nulla rutrum sit amet. In nec lobortis purus. Duis placerat dignissim lectus. Fusce tristique, leo in hendrerit pellentesque, nisi ante pulvinar nisl, at rutrum libero magna a velit.
+More workshop content will be posted here.
 
 {% endhighlight %}
