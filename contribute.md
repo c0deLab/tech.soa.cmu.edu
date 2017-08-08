@@ -13,7 +13,10 @@ If you think you've found a bug open a issue [here.](https://github.com/c0deLab/
 ### Share Some Awesome Content with the Rest of Us
 
 Add a new reference, tutorial or a workshop. First thing you need to do is create a [GitHub](https://github.com) account if you don't already have one. and fork the `tech.soa.cmu.edu` repository. A fork is a copy of a repository or repo. Forking a repository allows you to freely experiment with changes without affecting the original project.
+
 In the top right corner of the [repository](https://github.com/c0deLab/tech.soa.cmu.edu) page you will see the fork button. From here you can make changes to your copy of the repo. The easiest way to use GitHub on your machine is with the [desktop apps](https://desktop.github.com). The other thing you will need is a text editor, I recommend [Brackets](http://brackets.io) or [Atom](https://atom.io).
+
+Now you want to learn how to write a markdown file. The good think is the syntax is pretty simple. If you want simple text, just write it. Bullets add a `*` to the start of the line. Need to add an image use `![Image Phrase Description](/img/name.png)`. Markdown can also handle many of types of styling. Take a look at [this](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) awesome resource to see how.
 
 When you are ready to submit your changes to us, first make sure you have committed them to your fork of the repo. Then submit a pull request to the `dev` branch of the main `tech.soa.cmu.edu` repo. Here are further details on how to create a [pull request.](https://help.github.com/articles/creating-a-pull-request/)
 
