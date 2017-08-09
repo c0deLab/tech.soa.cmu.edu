@@ -1,11 +1,12 @@
 ---
 layout: page
-title: "dFab"
-tile-name: dFab
+title: "dFAB"
+tile-name: dFAB
 thumbnail: dfab.png
 ---
 
 **GENERAL LAB POLICY**
+
 The following applies to ALL approved dFAB Users using dFAB facilities; Offices, Computer Room, Material Store Room, Vacuum Press/Panelsaw Room, Laser Room, CNC Room, Vacuum Former Room, 3D Printer Rooms, and corridors. All users are trained on correct Operating Procedure and Policies at the time of instruction. Digital equipment and work-flows can be efficient and beneficial toward ALL user end-goals, so long as all users abide by the following policies. Users are expected to operate and stay up-to-date with all dFAB policy & procedural requirements. Any indication of neglect and/or misunderstanding of dFAB Policy & Procedure will result in: Infractions, Suspensions, Fines, or Fees.
 
 a. INVENTORY: Material is available for purchase during normal operating hours, from dFAB Personnel. All purchased materials are billed to student accounts or string accounts. Price lists are available, but change often. For an Account Total/Status, please contact dFAB Administration via e-mail. Specific material orders can be accommodated, so long as they are discussed with dFAB Administration well in advance of the needed start date. The Material Store Room is off-limits during non-operational hours.
@@ -75,6 +76,7 @@ h. INFRACTION TOTAL: All Equipment enforces a Three (3) Infraction Limit. Each I
  
 
 **FULL-TIME FACULTY RESEARCH IN DFAB**
+
 Note: Student and course work take priority during the Fall and Spring semesters.
 
 To request dFAB access for full-time faculty research, please provide a brief description of your research project including a schedule, string billing code(s), the equipment likely needed, and a list of the individuals that you plan to have working in dFAB on the project. Your proposal will be reviewed by the dFAB Administration in consultation with the SoA Department Head, as necessary.
