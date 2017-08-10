@@ -2,7 +2,7 @@
 layout: workshop
 title: Vacuum Forming (Group B)
 details: Intro to vacuum forming!
-start-date: 2017-08-24 15:00:00 -0400
+start-date: 2017-08-24 14:00:00 -0400
 end-date: 2017-08-24 17:00:00 -0400
 registration: https://www.eventbrite.com/e/vacuum-forming-group-b-tickets-36915043890
 location: MMCH C4
