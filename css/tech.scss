@@ -319,7 +319,8 @@ iframe{
 }
 
 .highlight-link:hover{
-  color:#ffffff;
+  background-color: lighten($tech-accent, 10%);  
+  color: $tech-black;
 }
 
 .menu-icon{
