@@ -3,7 +3,7 @@ layout: workshop
 title: dFAB Lab Policies & Laser Cutting (Group B)
 details: Required for all Fabrication workshops.
 start-date: 2017-08-22 14:00:00 -0400
-end-date: 2017-08-22 18:00:00 -0400
+end-date: 2017-08-22 17:00:00 -0400
 registration: https://www.eventbrite.com/e/dfab-lab-policies-laser-cutting-group-b-tickets-36914788125
 location: MMCH C4
 instructor: José Pertierra-Arrojo

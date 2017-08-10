@@ -2,7 +2,7 @@
 layout: workshop
 title: dFAB Lab Policies & Laser Cutting (Group A)
 details: Required for all Fabrication workshops.
-start-date: 2017-08-15 09:00:00 -0400
+start-date: 2017-08-15 10:00:00 -0400
 end-date: 2017-08-15 13:00:00 -0400
 registration: https://www.eventbrite.com/e/dfab-lab-policies-laser-cutting-group-a-tickets-36914205382
 location: MMCH C4
