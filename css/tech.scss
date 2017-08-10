@@ -144,6 +144,9 @@ header{
   .description{
     
   }
+  li{
+    margin-bottom: 10px;
+  }
 }
 
 .registration-container{
@@ -309,6 +312,14 @@ iframe{
 //      vertical-align: top;
 //    }
   }
+}
+
+.highlight-link{
+  background-color: $tech-accent;
+}
+
+.highlight-link:hover{
+  color:#ffffff;
 }
 
 .menu-icon{
