@@ -3,7 +3,7 @@ layout: workshop
 title: CNC Routing (Group B)
 details: The Basics of CNC Routing.
 start-date: 2017-08-23 14:00:00 -0400
-end-date: 2017-08-23 18:00:00 -0400
+end-date: 2017-08-23 17:00:00 -0400
 registration: https://www.eventbrite.com/e/cnc-routing-group-b-tickets-36914900461
 location: MMCH C4
 instructor: José Pertierra-Arrojo
