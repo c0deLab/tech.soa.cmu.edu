@@ -144,6 +144,9 @@ header{
   .description{
     
   }
+  li{
+    margin-bottom: 10px;
+  }
 }
 
 .registration-container{
@@ -163,6 +166,10 @@ header{
       color: white;
     }
   }
+}
+
+.post-header{
+  margin-left: 0;
 }
 
 .post-title{
@@ -307,6 +314,15 @@ iframe{
   }
 }
 
+.highlight-link{
+  background-color: $tech-accent;
+}
+
+.highlight-link:hover{
+  background-color: lighten($tech-accent, 10%);  
+  color: $tech-black;
+}
+
 .menu-icon{
   margin-bottom: 8px;
 }
@@ -403,7 +419,7 @@ footer{
 
   header{
     margin-bottom: 10px;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-right: 20px;
     .site-nav{
       background-color: $slightly-grey;
