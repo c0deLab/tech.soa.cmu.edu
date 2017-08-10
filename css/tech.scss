@@ -165,6 +165,10 @@ header{
   }
 }
 
+.post-header{
+  margin-left: 0;
+}
+
 .post-title{
   font-size: 38px;
   font-weight: $bold;
@@ -403,7 +407,7 @@ footer{
 
   header{
     margin-bottom: 10px;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-right: 20px;
     .site-nav{
       background-color: $slightly-grey;
