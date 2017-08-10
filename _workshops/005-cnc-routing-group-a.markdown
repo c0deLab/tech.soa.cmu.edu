@@ -4,7 +4,7 @@ title: CNC Routing (Group A)
 details: Learn how to use the CNC router.
 start-date: 2017-08-16 09:00:00 -0400
 end-date: 2017-08-16 13:00:00 -0400
-registration: llink
+registration: https://www.eventbrite.com/e/cnc-routing-group-a-tickets-36914331760
 location: MMCH C4
 instructor: José Pertierra-Arrojo
 tags: [Digital Fabrication, CNC Routing]
