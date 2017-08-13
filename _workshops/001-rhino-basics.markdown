@@ -9,5 +9,17 @@ location: CFA 214
 instructor: Eddy Man Kim
 tags: [Digital Representation, Rhino]
 ---
+### Workshop Outline
 
-More workshop content will be posted here.
+- Rhino Introduction
+- Interface Overview
+- Rhino Objects
+- 2D Creating & Editing
+- 3D Creating & Editing
+- Transformations
+- Layers, Groups, and Blocks
+- Work Session & Annotations
+
+[Slides on 3D Graphics](https://slides.com/eddymankim/3d-graphics/)
+
+[Download workshop files](/img/workshops/rhino-basics/Rhino-Basics.zip)
