@@ -10,4 +10,12 @@ instructor: Eddy Man Kim
 tags: [Digital Representation, Rhino]
 ---
 
-More workshop content will be posted here.
+### Workshop Outline
+
+- Picture Frames
+- Floor-by-floor 2D Drawing
+- Floor-by-floor 3D Drawing
+- Drawing Windows and Doors
+- Drawing Stairs, Ramps, and Handrails
+
+[Download workshop files](/img/workshops/rhino-intermediate/Rhino-Intermediate.zip)
