@@ -10,4 +10,10 @@ instructor: Eddy Man Kim
 tags: [Digital Representation, Rhino]
 ---
 
-More workshop content will be posted here.
+### Workshop Outline
+
+- Watertight Surface Model
+- Model Inspection and Optimization
+- Freeform Terrain and Pavilion
+
+[Download workshop files](/img/workshops/rhino-advanced-part-1/Rhino-Advanced-Part-1.zip)
