@@ -10,4 +10,11 @@ instructor: Eddy Man Kim
 tags: [Digital Representation, Rhino]
 ---
 
-More workshop content will be posted here.
+### Workshop Outline
+
+- Implicit/Procedural Modeling
+- Paneling Tools
+- T-Splines
+- Weaverbird
+
+[Download workshop files](/img/workshops/rhino-advanced-part-2/Rhino-Advanced-Part-2.zip)
