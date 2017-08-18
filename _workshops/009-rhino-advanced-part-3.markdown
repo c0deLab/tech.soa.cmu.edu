@@ -22,4 +22,4 @@ tags: [Digital Representation, Rhino]
 
 [Reference: Urban Terrains Digital Lab](https://utdl.org/)
 
-[Download workshop files](/img/workshops/rhino-advanced-part-3/Rhino-Advanced-Part-3.zip)
+[Download workshop files](https://drive.google.com/open?id=0B0111Njq_CrQSzc0TUVvc0hRWlk)
