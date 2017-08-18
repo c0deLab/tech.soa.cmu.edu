@@ -9,5 +9,24 @@ location: CFA 214
 instructor: Eddy Man Kim
 tags: [Digital Representation, Rhino, Vray]
 ---
+### Workshop Outline
 
-More workshop content will be posted here.
+- Installation
+- Interface Overview
+- Material Settings and Management
+- Texture Mapping
+- Camera Positioning
+- Saving Views
+- Render Settings
+- Environment and Sun
+- Render Output
+
+[CMU VPN for using Vray off-campus](http://www.cmu.edu/computing/services/endpoint/network-access/vpn/)
+
+[Rendering resource: Flying Architecture](https://flyingarchitecture.com/)
+
+[Texture library: textures.com](https://www.textures.com/)
+
+[Texture library: vismats.com](http://vismats.com/)
+
+[Download workshop files](/img/workshops/vray-basics/Vray-Basics.zip)
