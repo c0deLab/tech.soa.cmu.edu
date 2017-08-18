@@ -21,6 +21,8 @@ tags: [Digital Representation, Rhino, Vray]
 - Environment and Sun
 - Render Output
 
+[Download Vray](https://drive.google.com/open?id=0B0111Njq_CrQUTVqczVic1BrY3c)
+
 [CMU VPN for using Vray off-campus](http://www.cmu.edu/computing/services/endpoint/network-access/vpn/)
 
 [Rendering resource: Flying Architecture](https://flyingarchitecture.com/)
@@ -29,4 +31,4 @@ tags: [Digital Representation, Rhino, Vray]
 
 [Texture library: vismats.com](http://vismats.com/)
 
-[Download workshop files](/img/workshops/vray-basics/Vray-Basics.zip)
+[Download workshop files](https://drive.google.com/open?id=0B0111Njq_CrQUFBZRFNjUm5iUzQ)
