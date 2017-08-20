@@ -23,9 +23,9 @@ tags: [Digital Representation, Rhino, Vray]
 
 [Download Vray](https://drive.google.com/open?id=0B0111Njq_CrQUTVqczVic1BrY3c)
 
-[Vray for Rhino official documentation](https://docs.chaosgroup.com/display/VR2R)
-
 [CMU VPN for using Vray off-campus](http://www.cmu.edu/computing/services/endpoint/network-access/vpn/)
+
+[Vray for Rhino official documentation](https://docs.chaosgroup.com/display/VR2R)
 
 [Rendering resource: Flying Architecture](https://flyingarchitecture.com/)
 
