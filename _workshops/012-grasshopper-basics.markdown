@@ -9,5 +9,8 @@ location: CFA 214
 instructor: Eddy Man Kim
 tags: [Computation, Rhino, Grasshopper]
 ---
+### Workshop Outline
 
-More workshop content will be posted here.
+[Grasshopper Primer](http://grasshopperprimer.com/)
+
+[Essential Mathematics for Computational Design](http://www.rhino3d.com/download/rhino/5.0/essentialmathematicsthirdedition/)
