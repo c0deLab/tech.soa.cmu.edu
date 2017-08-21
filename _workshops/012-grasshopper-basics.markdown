@@ -10,7 +10,13 @@ instructor: Eddy Man Kim
 tags: [Computation, Rhino, Grasshopper]
 ---
 ### Workshop Outline
+- Computer Science Basic Definitions
+- Overview of Grasshopper Interface and Components
+- Container and Input Types
+- Lists and Data Matching
+- Point and Curve Attractor
+- Color Mapping
+- Image Mapping
+- Introduction to Data Trees
 
-[Grasshopper Primer](http://grasshopperprimer.com/)
-
-[Essential Mathematics for Computational Design](http://www.rhino3d.com/download/rhino/5.0/essentialmathematicsthirdedition/)
+[Download Workshop Files](https://drive.google.com/open?id=0B0111Njq_CrQcUY1Q0xFckQ3Y2s)
