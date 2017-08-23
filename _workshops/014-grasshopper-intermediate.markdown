@@ -9,5 +9,10 @@ location: CFA 214
 instructor: Eddy Man Kim
 tags: [Computation, Rhino, Grasshopper]
 ---
+### Workshop Outline
+- Evaluation / Parameters
+- Data Tree Redux
+- Iterator Redux
+- Building Responsive Components
 
-More workshop content will be posted here.
+[Download Workshop Files](https://drive.google.com/open?id=0B0111Njq_CrQUU9MR2l6cmpDNXM)
