@@ -9,5 +9,9 @@ location: CFA 214
 instructor: Eddy Man Kim
 tags: [Computation, Rhino, Grasshopper]
 ---
+### Workshop Outline
+- Grasshopper Plugins
 
-More workshop content will be posted here.
+[Download Workshop Files](https://drive.google.com/a/andrew.cmu.edu/file/d/0B0111Njq_CrQVTlZN3JjNXNWcVU/view?usp=sharing)
+
+[Download Simple Waffle GH Files](/img/workshops/grasshopper-advanced/wafflesimple.gh)

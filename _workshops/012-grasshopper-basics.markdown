@@ -9,5 +9,14 @@ location: CFA 214
 instructor: Eddy Man Kim
 tags: [Computation, Rhino, Grasshopper]
 ---
+### Workshop Outline
+- Computer Science Basic Definitions
+- Overview of Grasshopper Interface and Components
+- Container and Input Types
+- Lists and Data Matching
+- Point and Curve Attractor
+- Color Mapping
+- Image Mapping
+- Introduction to Data Trees
 
-More workshop content will be posted here.
+[Download Workshop Files](https://drive.google.com/open?id=0B0111Njq_CrQcUY1Q0xFckQ3Y2s)
