@@ -30,6 +30,7 @@ When you are ready to submit your changes to us, first make sure you have commit
 * webdev
 * ui ux
 * printing
+* XX-XXX [Course Number]
 
 #### Reference
 
