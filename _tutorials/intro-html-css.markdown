@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Intro to HTML & CSS
-thumbnail: tid.png
+thumbnail: intro-html-css.png
 tile-name: Intro to HTML & CSS
 date: 2017-09-12
 
