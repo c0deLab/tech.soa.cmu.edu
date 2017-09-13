@@ -203,7 +203,7 @@ The critical thing with file structure is to stay organzied and be consistent
 * GIFs for animations
 * All of the file types above supports transparency!
 * Optimize your images: [imageoptim (mac)](https://imageoptim.com/mac) [xnview (win)](http://www.xnview.com/en/)
-* Recommend using `word-space` for file names
+* Recommend using `word-space.png` for file names
 
 
 Also check out [HTTParty](https://dzgn.io/works/httparty.html) for a little extra, much of this content was pulled from there.
