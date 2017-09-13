@@ -69,8 +69,9 @@ layout: default
   
   
   <h1 class="section-heading"><a href="/tutorials">Tutorials</a></h1>
-
-    {% for tutorial in site.tutorials limit: 12 %}
+    
+    {% assign tutorial_order = site.tutorials | sort:date | reverse %}
+    {% for tutorial in tutorial_order limit: 12 %}
     <div class="small-12 medium-6 large-4 columns thumbnail-tile">
         <a class="" href="{{ tutorial.url | prepend: site.baseurl }}">
             <div class="thumbnail-container">

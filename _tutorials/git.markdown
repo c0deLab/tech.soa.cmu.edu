@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using Git and GitHub
-thumbnail: github.png
+thumbnail: git.png
 tile-name: Using Git and GitHub
 date: 2017-09-05
 
