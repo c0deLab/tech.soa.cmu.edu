@@ -91,7 +91,8 @@ layout: default
 <div class="small-12 medium-4 columns">
   <h1 class="section-heading"><a href="/references">References</a></h1>
   
-  {% for reference in site.references limit: 5 %}
+  {% assign reference_order = site.references | sort:date | reverse %}
+  {% for reference in reference_order limit: 4 %}
   <div class="reference-container">
     <p class="metadata"><a target="_blank" href="{{ reference.link }}">{{ reference.link | truncate: 30 }}</a></p>
     <p class="reference-title"><a href="{{ reference.url }}">{{ reference.title }}</a></p>
