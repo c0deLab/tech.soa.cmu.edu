@@ -235,7 +235,7 @@ The short answer is margin is on the exterior of a container and padding on the 
 ![Padding or Margin?](/img/html-css-little-deeper/padding-margin.png)
 
 
-Now lets style some pages! Play with nesting of elements, importing a font or 2, adjust colors and add a hover effect or 2. And if you are feeling adventurous check out what a `@media` query does, this [link](https://www.w3schools.com/css/css_rwd_mediaqueries.asp) might help. Use it to create a breakpoint and start thinking responsively. Happy deving! 
+Now lets style some pages! Play with nesting of elements, importing a font or 2, adjust colors and add a hover effect or 2. And if you are feeling adventurous check out what a `@media` query does, this [link](https://www.w3schools.com/css/css_rwd_mediaqueries.asp) might help. Use it to create a breakpoint and start thinking responsively. Happy deving! Also check out [can i use](http://caniuse.com) to see if a css property is supported by a certain browser.
 ## Bonus (Part 1): Puns
 
 ![titanic css pun](/img/html-css-little-deeper/titanic-css-pun.png)
