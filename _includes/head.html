@@ -13,8 +13,6 @@
   <link rel="apple-touch-icon" type="image/png" href="../img/favicon.png" sizes="76x76"/>
   <link rel="apple-touch-icon" type="image/png" href="../img/favicon.png" sizes="120x120"/>
   <link rel="apple-touch-icon" type="image/png" href="../img/favicon.png" sizes="152x152"/>
-  <meta property="og:title" content="tech.soa" />
-  <meta property="og:image" content="../img/favicon.png" />
   
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/foundation.css" | prepend: site.baseurl }}">
@@ -24,7 +22,7 @@
   <meta property="og:image" content="{% if page.thumbnail %}{{ page.thumbnail | prepend: '/img/thumbnails/' | prepend: site.baseurl | prepend: site.url }}{% else %} /img/favicon.png {% endif %}" />
   
   <link rel="stylesheet" href="{{ "/css/tech.css" | prepend: site.baseurl }}">
-   <link rel="stylesheet" href="{{ "/css/monokai.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/monokai.css" | prepend: site.baseurl }}">
   
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
