@@ -9,6 +9,7 @@ location: CFA 214
 instructor: Eddy Man Kim
 tags: [Computation, Rhino, Grasshopper]
 ---
+
 ### Workshop Outline
 - Grasshopper Plugins
 
