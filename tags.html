@@ -14,9 +14,11 @@ permalink: /tags/
 {% for tag in tags_tut %}
   {% assign tags = tags | push: tag %}
 {% endfor %}
+
 {% for tag in tags_ref %}
   {% assign tags = tags | push: tag %}
 {% endfor %}
+
 {% for tag in tags_wor %}
   {% assign tags = tags | push: tag %}
 {% endfor %}
@@ -66,7 +68,6 @@ permalink: /tags/
   {% for workshop in site.workshops %}
   {% if workshop.tags contains tag %}
   <div class="reference-container small-12 medium-3 columns">
-    <p class="metadata">{{ workshop.details | truncate: 30 }}</p>
     <p class="reference-title">
       <a href="{{ workshop.url }}">{{ workshop.title }}</a>
       <a target="_blank" href="{{ workshop.registration }}">
@@ -78,8 +79,11 @@ permalink: /tags/
       </a>
     </p>
     
-    <p class="datetime"><time datetime="{{ workshop.start-date | date_to_xmlschema }}" itemprop="dateTimeStart">{{ workshop.start-date | date: "%b %-d, %Y %I:%M%P" }}</time> - <time datetime="{{ workshop.end-date | date_to_xmlschema }}" itemprop="dateTimeEnd">{{ workshop.end-date | date: "%b %-d, %Y %I:%M%P" }}</time></p>
-    <p class="description">{{ workshop.content | truncate: 150 }}</p>
+    <p class="datetime">
+      <time datetime="{{ workshop.start-date | date_to_xmlschema }}" itemprop="dateTimeStart">{{ workshop.start-date | date: "%b %-d, %Y %I:%M%P" }}</time> - 
+      <time datetime="{{ workshop.end-date | date_to_xmlschema }}" itemprop="dateTimeEnd">{{ workshop.end-date | date: "%b %-d, %Y %I:%M%P" }}</time>
+    </p>
+    <p class="description">{{ workshop.content | truncate: 150 | strip_html }}</p>
     
       <div class="tag-section">
         {% for tag in workshop.tags %}
