@@ -20,6 +20,9 @@
   <link rel="stylesheet" href="{{ "/css/foundation.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+  <meta property="og:title" content="{% if page.title %}{{ site.title | escape }} | {{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
+  <meta property="og:image" content="{% if page.thumbnail %}{{ page.thumbnail | prepend: '/img/thumbnails/' | prepend: site.baseurl | prepend: site.url }}{% else %} /img/favicon.png {% endif %}" />
+  
   <link rel="stylesheet" href="{{ "/css/tech.css" | prepend: site.baseurl }}">
    <link rel="stylesheet" href="{{ "/css/monokai.css" | prepend: site.baseurl }}">
   
