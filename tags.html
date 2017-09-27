@@ -25,15 +25,15 @@ permalink: /tags/
 
 {% assign tags = tags | sort | uniq %}
 
-  <div class="tag-section">
-{% for tag in tags %}
-          <a href="#{{ tag }}">
-            <div class="tag-container {{ tag }}">
-              <p class="tag-text">{{ tag }}</p>
-            </div>
-          </a>
-{% endfor %}
-    </div>
+<div class="tag-section">
+  {% for tag in tags %}
+    <a href="#{{ tag }}">
+      <div class="tag-container {{ tag }}">
+        <p class="tag-text">{{ tag }}</p>
+      </div>
+    </a>
+  {% endfor %}
+</div>
 
 
 {% for tag in tags %}
