@@ -65,6 +65,7 @@ permalink: /tags/
   {% endif %}
   {% endfor %}
   
+  <!-- =========================== WORKSHOP STARTS =========================== -->
   {% for workshop in site.workshops %}
   {% if workshop.tags contains tag %}
   <div class="reference-container small-12 medium-3 columns">
@@ -80,9 +81,15 @@ permalink: /tags/
     </p>
     
     <p class="datetime">
-      <time datetime="{{ workshop.start-date | date_to_xmlschema }}" itemprop="dateTimeStart">{{ workshop.start-date | date: "%b %-d, %Y %I:%M%P" }}</time> - 
-      <time datetime="{{ workshop.end-date | date_to_xmlschema }}" itemprop="dateTimeEnd">{{ workshop.end-date | date: "%b %-d, %Y %I:%M%P" }}</time>
+      <time datetime="{{ workshop.start-date | date_to_xmlschema }}" itemprop="dateTimeStart">
+        {{ workshop.start-date | date: "%b %-d, %Y %I:%M%P" }}
+      </time> 
+      - 
+      <time datetime="{{ workshop.end-date | date_to_xmlschema }}" itemprop="dateTimeEnd">
+        {{ workshop.end-date | date: "%b %-d, %Y %I:%M%P" }}
+      </time>
     </p>
+    
     <p class="description">{{ workshop.content | truncate: 150 | strip_html }}</p>
     
       <div class="tag-section">
@@ -97,6 +104,7 @@ permalink: /tags/
   </div>
   {% endif %}
   {% endfor %}
+  <!-- =========================== WORKSHOP ENDS =========================== -->
   
 </div>
 {% endfor %}
