@@ -23,6 +23,7 @@ permalink: /tags/
   {% assign tags = tags | push: tag %}
 {% endfor %}
 
+<!-- Creates a single list of all tags to comapre againsts -->
 {% assign tags = tags | sort | uniq %}
 
 <div class="tag-section">
@@ -40,6 +41,7 @@ permalink: /tags/
 <div class="row">
   
   <a name="{{ tag }}"><h3 class="tag-title section-heading">{{ tag }}</h3></a>
+  
   {% for tutorials in site.tutorials %}
     {% if tutorials.tags contains tag %}
       <div class="small-12 medium-3 columns thumbnail-tile">
@@ -68,30 +70,31 @@ permalink: /tags/
   <!-- =========================== WORKSHOP STARTS =========================== -->
   {% for workshop in site.workshops %}
   {% if workshop.tags contains tag %}
-  <div class="reference-container small-12 medium-3 columns">
-    <p class="reference-title">
-      <a href="{{ workshop.url }}">{{ workshop.title }}</a>
-      <a target="_blank" href="{{ workshop.registration }}">
-        {% if workshop.registration %}
-        <span class="registration-container">
-          <span class="registration-text">Register</span>
-        </span>
-        {% endif %}
-      </a>
-    </p>
-    
-    <p class="datetime">
-      <time datetime="{{ workshop.start-date | date_to_xmlschema }}" itemprop="dateTimeStart">
-        {{ workshop.start-date | date: "%b %-d, %Y %I:%M%P" }}
-      </time> 
-      - 
-      <time datetime="{{ workshop.end-date | date_to_xmlschema }}" itemprop="dateTimeEnd">
-        {{ workshop.end-date | date: "%b %-d, %Y %I:%M%P" }}
-      </time>
-    </p>
-    
-    <p class="description">{{ workshop.content | truncate: 150 | strip_html }}</p>
-    
+  <div class="small-12 medium-3 columns">
+    <div class="reference-container">
+      <p class="reference-title">
+        <a href="{{ workshop.url }}">{{ workshop.title }}</a>
+        <a target="_blank" href="{{ workshop.registration }}">
+          {% if workshop.registration %}
+          <span class="registration-container">
+            <span class="registration-text">Register</span>
+          </span>
+          {% endif %}
+        </a>
+      </p>
+
+      <p class="datetime">
+        <time datetime="{{ workshop.start-date | date_to_xmlschema }}" itemprop="dateTimeStart">
+          {{ workshop.start-date | date: "%b %-d, %Y %I:%M%P" }}
+        </time> 
+        - 
+        <time datetime="{{ workshop.end-date | date_to_xmlschema }}" itemprop="dateTimeEnd">
+          {{ workshop.end-date | date: "%b %-d, %Y %I:%M%P" }}
+        </time>
+      </p>
+
+      <p class="description">{{ workshop.content | truncate: 150 | strip_html }}</p>
+
       <div class="tag-section">
         {% for tag in workshop.tags %}
           <a href="/tags/#{{ tag  | prepend: site.baseurl }}">
@@ -101,6 +104,7 @@ permalink: /tags/
           </a>
         {% endfor %}
       </div>
+    </div>
   </div>
   {% endif %}
   {% endfor %}
