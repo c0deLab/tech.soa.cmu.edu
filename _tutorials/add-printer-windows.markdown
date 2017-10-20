@@ -5,7 +5,7 @@ thumbnail: add-printer-windows.png
 tile-name: "Add Network Printer in Windows"
 date: 2017-10-19
 
-author: Media Center
+author: Computing
 tags: [media center]
 ---
 
@@ -48,16 +48,16 @@ From this box you need to install a printer driver. Windows has many drivers bui
 <br>
 Type in a name for the printer, this step is just for you and has no bearing on the printer. 
 
-Select “Do Not Share This Printer”
+Select `Do Not Share This Printer`
 
-Select Finish.
+Select `Finish`
 
-You have now installed a network Printer in Windows.
+You have now installed a network Printer in Windows!
 
 ## SoA Printer IP Addresses
 
 | Location                    | Model                     | IP Address      |
 | -------------------         | -------------             | --------------- |
-| CFA 213 Hallway &nbsp;&nbsp;| Ricoh 6430N &nbsp;&nbsp;  | `128.2.103.15`  |
+| CFA 213 Hallway &nbsp;      | Ricoh 6430N &nbsp;&nbsp;  | `128.2.103.15`  |
 | CFA 213 Hallway             | Dell 5330dn               | `128.2.103.126` |
 | MMCH 309                    | Ricoh 6430N               | `128.2.108.209` |
