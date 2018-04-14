@@ -5,7 +5,7 @@ thumbnail: git.png
 tile-name: Using Git and GitHub
 date: 2017-09-05
 
-author: OctoCat
+author: Daragh Bryne
 tags: [gitHub]
 ---
 
