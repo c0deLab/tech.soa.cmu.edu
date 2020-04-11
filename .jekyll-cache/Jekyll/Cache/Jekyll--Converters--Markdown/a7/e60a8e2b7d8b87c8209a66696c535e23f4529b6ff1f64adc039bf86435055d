@@ -1,0 +1,451 @@
+I"ZV<h2 id="html">HTML</h2>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="nt">&lt;tagname</span> <span class="na">attribute=</span><span class="s">"value"</span><span class="nt">&gt;</span>
+  content
+<span class="nt">&lt;/tagname&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://tech.soa.cmu.edu"</span><span class="nt">&gt;</span>
+  Here be a link
+<span class="nt">&lt;/a&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>A good starting place for your <code class="highlighter-rouge">html</code> files.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre><span class="cp">&lt;!doctype html&gt;</span> <span class="c">&lt;!-- instruction to the browser about what version of HTML the page is written in.--&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span> <span class="c">&lt;!-- title,scripts, styles, meta information, and more. --&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Sample<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+
+  <span class="nt">&lt;body&gt;</span>
+  <span class="c">&lt;!-- Content of the Body --&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>The <code class="highlighter-rouge">&lt;head&gt;</code> contains <code class="highlighter-rouge">meta</code> information about the page, information the browser needs before rendering it. While the <code class="highlighter-rouge">&lt;body&gt;</code> contains the actual viewable contents of the page.</p>
+
+<p>Here are some common html tags:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+</pre></td><td class="code"><pre><span class="c">&lt;!-- Headlines --&gt;</span>
+<span class="nt">&lt;h1&gt;</span>Header 1<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>Header 2<span class="nt">&lt;/h2&gt;</span>
+
+<span class="c">&lt;!-- Paragraph --&gt;</span>
+<span class="nt">&lt;p&gt;</span>paragraph<span class="nt">&lt;/p&gt;</span>
+
+<span class="c">&lt;!-- Lists --&gt;</span>
+<span class="nt">&lt;ul&gt;</span> <span class="c">&lt;!-- Unordered Lists --&gt;</span>
+  <span class="nt">&lt;li&gt;</span>List Item 1<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>List Item 2<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+
+<span class="nt">&lt;ol&gt;</span> <span class="c">&lt;!-- Ordered Lists --&gt;</span>
+  <span class="nt">&lt;li&gt;</span>List Item 1<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>List Item 2<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+
+<span class="c">&lt;!-- Images --&gt;</span>
+<span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">"Tech SoA Logo"</span> <span class="na">src=</span><span class="s">"http://tech.soa.cmu.edu/img/favicon.png"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Links --&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://tech.soa.cmu.edu"</span><span class="nt">&gt;</span> Here be a link <span class="nt">&lt;/a&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Mozilla has great <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">documentation</a> that outlines many of the HTML elements, play and browse!</p>
+
+<p>Now that we know some of the basics lets create a simple page. Create a page with <code class="highlighter-rouge">meta</code> description, nav bar, some body content with a couple elements from above or from the Mozilla docs and a footer. Rock and roll!</p>
+
+<h2 id="css">CSS</h2>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="code"><pre><span class="nt">selector</span><span class="p">{</span>
+  <span class="py">property</span><span class="p">:</span> <span class="n">value</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.class</span><span class="p">{</span>
+  <span class="py">property</span><span class="p">:</span> <span class="n">value</span><span class="p">;</span>
+  <span class="py">property</span><span class="p">:</span> <span class="n">value</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.class</span><span class="nd">:pseudo-class</span><span class="p">{</span>
+  <span class="py">property</span><span class="p">:</span> <span class="n">value</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#id</span><span class="p">{</span>
+  <span class="py">property</span><span class="p">:</span> <span class="n">value</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre><span class="nc">.nav</span><span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.nav</span><span class="nd">:hover</span><span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#logo</span><span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Here are some common css property value pairs:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+</pre></td><td class="code"><pre><span class="nc">.class</span><span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="m">#1d5f77</span><span class="p">;</span>
+
+  <span class="c">/* Text color */</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+
+  <span class="c">/* A font family name and a generic family name */</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">Gill</span> <span class="n">Sans</span> <span class="n">Extrabold</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+
+  <span class="nl">text-align</span><span class="p">:</span><span class="nb">center</span><span class="p">;</span>
+
+  <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">30%</span><span class="p">;</span>
+
+  <span class="c">/* Apply to all four sides */</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>
+  <span class="c">/* top | right | bottom | left */</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">5px</span> <span class="m">10px</span> <span class="m">5px</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Selects every other div inside a parent element */</span>
+<span class="c">/* even can be replaced with 2n */</span>
+<span class="nt">div</span><span class="nd">:nth-of-type</span><span class="o">(</span><span class="nt">even</span><span class="o">)</span><span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">lime</span><span class="p">;</span>
+<span class="p">}</span> 
+
+<span class="nt">a</span><span class="nd">:hover</span><span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">orange</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p><code class="highlighter-rouge">classes</code> and <code class="highlighter-rouge">ids</code> can be called whatever you would like, as long as the first character is not a number. That being said it is good practice to use letters only and use dashes between words for example <code class="highlighter-rouge">nav-item</code>. Many properties allow for multiple values, some being optional. Mozilla also has great <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">documentation</a> on css. Check it out!</p>
+
+<p>What if you want to style a list item, <code class="highlighter-rouge">li</code>, but not all of them, just ones in the <code class="highlighter-rouge">div</code> with a class of special? Well you can! All you have to do is add a space. Adding a space between selectors gives more specificity when styling. Remember to keep good code style 👍 !</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"special"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Special List Item<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>List Item<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="nc">.special</span> <span class="nt">ul</span> <span class="nt">li</span><span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">aqua</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<h3 id="colors">Colors</h3>
+
+<p>You are probably thinking there are real color names in css? How is that possible? Well many have been included with the language, that being said you can also use <code class="highlighter-rouge">hex</code>, <code class="highlighter-rouge">rgba</code> and a couple other formats. For a full list of supported colors check this <a href="https://www.w3schools.com/colors/colors_names.asp">out</a>. And if you are looking for some other awesome colors check out <a href="http://qulr.life">Qulr.life</a>.</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre></td><td class="code"><pre><span class="nc">.class</span><span class="p">{</span>
+  <span class="c">/* Keyword values */</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">aqua</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+
+  <span class="c">/* Hexadecimal value */</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="m">#f3c311</span><span class="p">;</span>
+
+  <span class="c">/* Hexadecimal value with alpha channel */</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="m">#11ffee00</span><span class="p">;</span> <span class="c">/* 00 - fully transparent */</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="m">#11ffee</span><span class="n">ff</span><span class="p">;</span> <span class="c">/* ff - fully opaque */</span>
+
+  <span class="c">/* RGBA value or RGB with alpha channel */</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">117</span><span class="p">,</span> <span class="m">190</span><span class="p">,</span> <span class="m">218</span><span class="p">,</span> <span class="m">0.0</span><span class="p">);</span> <span class="c">/* 0.0 - fully transparent */</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">117</span><span class="p">,</span> <span class="m">190</span><span class="p">,</span> <span class="m">218</span><span class="p">,</span> <span class="m">0.5</span><span class="p">);</span> <span class="c">/* 0.5 - semi-transparent */</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">117</span><span class="p">,</span> <span class="m">190</span><span class="p">,</span> <span class="m">218</span><span class="p">,</span> <span class="m">1.0</span><span class="p">);</span> <span class="c">/* 1.0 - fully opaque */</span>
+
+  <span class="c">/* HSLA value */</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="n">hsla</span><span class="p">(</span><span class="m">50</span><span class="p">,</span> <span class="m">33%</span><span class="p">,</span> <span class="m">25%</span><span class="p">,</span> <span class="m">0.75</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<h3 id="fonts">Fonts</h3>
+
+<p>Fonts can be a lot of fun and there are many properties for them. Find some nice web fonts at <a href="https://fonts.google.com">Google Fonts</a>. When using the <code class="highlighter-rouge">font-family</code> property you can specify a specific font name or a generic family name such as serif, sans-serif, monospace or cursive. When using a generic family name it will use the browser defaults for each.</p>
+
+<p><code class="highlighter-rouge">font-weight</code> is another popular font property. There are several build in weights such as <code class="highlighter-rouge">bold</code> but it is best to use the ones included with the font like <code class="highlighter-rouge">400</code> &amp; <code class="highlighter-rouge">700</code> as seen on line 1 below.</p>
+
+<p>When talking about <code class="highlighter-rouge">font-size</code> there are several differant units to consider <code class="highlighter-rouge">em</code>, <code class="highlighter-rouge">px</code>, <code class="highlighter-rouge">pt</code> &amp; <code class="highlighter-rouge">%</code></p>
+
+<ul>
+  <li>
+    <p>“Ems” <code class="highlighter-rouge">em</code> are scalable units. An <code class="highlighter-rouge">em</code> is equal to the current <code class="highlighter-rouge">font-size</code>, for instance, if the <code class="highlighter-rouge">font-size</code> of the document is <code class="highlighter-rouge">12px</code> then <code class="highlighter-rouge">1em</code> is <code class="highlighter-rouge">12px</code>, so <code class="highlighter-rouge">2em</code> is <code class="highlighter-rouge">24px</code>.</p>
+  </li>
+  <li>
+    <p>Pixels <code class="highlighter-rouge">px</code> are fixed-size units. One problem with pixels are that they do not scale when users override browser font size setting for accessibility.</p>
+  </li>
+  <li>
+    <p>Points <code class="highlighter-rouge">pt</code> are traditionally used in print media. Points are also fixed-size unit. And are not recommended for the web.</p>
+  </li>
+  <li>
+    <p>Percentages <code class="highlighter-rouge">%</code> are scalar or relative by nature. First and foremost, the current font-size is equal to 100% (i.e. 12pt = 100%).</p>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="code"><pre><span class="k">@import</span> <span class="sx">url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700')</span><span class="p">;</span>
+
+<span class="nt">font-family</span><span class="o">:</span> <span class="s2">'Roboto Slab'</span><span class="o">,</span> <span class="nt">serif</span><span class="o">;</span>
+<span class="nt">font-family</span><span class="o">:</span> <span class="nt">sans-serif</span><span class="o">;</span> <span class="c">/* Generic family name */</span>
+
+<span class="nt">font-weight</span><span class="o">:</span> <span class="nt">700</span><span class="o">;</span>
+
+<span class="nt">text-align</span><span class="o">:</span> <span class="nt">left</span><span class="o">;</span>
+<span class="nt">text-align</span><span class="o">:</span> <span class="nt">center</span><span class="o">;</span>
+<span class="nt">text-align</span><span class="o">:</span> <span class="nt">right</span><span class="o">;</span>
+<span class="nt">text-align</span><span class="o">:</span> <span class="nt">justify</span><span class="o">;</span>
+
+<span class="nt">text-decoration</span><span class="o">:</span> <span class="nt">underline</span><span class="o">;</span>
+<span class="nt">text-decoration</span><span class="o">:</span> <span class="nt">line-through</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<h3 id="padding--margin">Padding &amp; Margin</h3>
+
+<p>The short answer is margin is on the exterior of a container and padding on the interior. Creating a exterior buffer and interior duffer respectively. Hoepfully the image of Paddington Bear helps, get it get it 😜 ? Padding-ton</p>
+
+<p><img src="/img/html-css-little-deeper/padding-margin.png" alt="Padding or Margin?" /></p>
+
+<p>Now lets style some pages! Play with nesting of elements, importing a font or 2, adjust colors and add a hover effect or 2. And if you are feeling adventurous check out what a <code class="highlighter-rouge">@media</code> query does, this <a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp">link</a> might help. Use it to create a breakpoint and start thinking responsively. Happy deving! Also check out <a href="http://caniuse.com">can i use</a> to see if a css property is supported by a certain browser.</p>
+<h2 id="bonus-part-1-puns">Bonus (Part 1): Puns</h2>
+
+<p><img src="/img/html-css-little-deeper/titanic-css-pun.png" alt="titanic css pun" />
+<img src="/img/html-css-little-deeper/ninja-css-pun.png" alt="ninja css pun" />
+<img src="/img/html-css-little-deeper/harry-potter-css-pun.png" alt="harry potter css pun" />
+<img src="/img/html-css-little-deeper/hulk-css-pun.png" alt="hulk css pun" /></p>
+
+<p>Source: <a href="https://saijogeorge.com/css-puns/">saijogeorge.com</a></p>
+
+<h2 id="bonus-part-2-markdown">Bonus (Part 2): Markdown</h2>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+</pre></td><td class="code"><pre><span class="gh"># H1</span>
+<span class="gu">## H2</span>
+<span class="gu">### H3</span>
+<span class="gu">#### H4</span>
+<span class="gu">##### H5</span>
+<span class="gu">###### H6</span>
+
+Emphasis, aka italics, with <span class="ge">*asterisks*</span> or _underscores_.
+
+Strong emphasis, aka bold, with <span class="gs">**asterisks**</span> or __underscores__.
+
+Combined emphasis with <span class="gs">**asterisks and _underscores_**</span>.
+
+Strikethrough uses two tildes. ~~Scratch this.~~<span class="sb">
+
+
+</span><span class="p">[</span><span class="nv">I'm an inline-style link</span><span class="p">](</span><span class="sx">https://www.google.com</span><span class="p">)</span>
+<span class="p">![</span><span class="nv">alt text</span><span class="p">](</span><span class="sx">http://tech.soa.cmu.edu/img/favicon.png</span><span class="p">)</span><span class="sb">
+
+
+</span>Colons can be used to align columns.
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+There must be at least 3 dashes separating each header cell.
+The outer pipes (|) are optional, and you don't need to make the 
+raw Markdown line up prettily. You can also use inline Markdown.
+
+Markdown | Less | Pretty
+--- | --- | ---
+<span class="ge">*Still*</span> | <span class="sb">`renders`</span> | <span class="gs">**nicely**</span>
+1 | 2 | 3
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Here are some of the highlights of markdown syntax for more view <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">this</a> resource.</p>
+:ET

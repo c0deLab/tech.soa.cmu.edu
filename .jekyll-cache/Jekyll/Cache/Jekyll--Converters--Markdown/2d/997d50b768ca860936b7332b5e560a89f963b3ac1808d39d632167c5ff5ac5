@@ -1,0 +1,226 @@
+I"�&<h2 id="background--potentially-fun-facts">Background / Potentially Fun Facts</h2>
+
+<h4 id="the-world-is-run-on-the-web">The world is run on the web</h4>
+<h4 id="25-exabytes-of-data-are-created-each-day-much-of-it-is-rich-multimedia">2.5 <a href="https://en.wikipedia.org/wiki/Exabyte">Exabytes</a> of data are created each day, much of it is rich multimedia</h4>
+<ul>
+  <li>Knowing how to create data is one thing</li>
+  <li>Knowing how to effectively share it in a manner that others can understand sets you apart</li>
+</ul>
+
+<p><img src="/img/intro-html-css/arpanet.png" alt="ARPANET September 1971" />
+Source: <a href="http://som.csudh.edu/fac/lpress/history/arpamaps/f8sep1971.jpg">California State University</a></p>
+
+<h3 id="web-10">Web 1.0</h3>
+
+<ul>
+  <li>Focused on efficient delivery of static content (sharing information rather than rich multimedia)</li>
+  <li>User experience was not a focus (web use required more technical skills)</li>
+  <li>Pages were written in basic HTML with little to no styling</li>
+  <li>Companies were the sole content creators</li>
+</ul>
+
+<p><img src="/img/intro-html-css/apple.jpg" alt="Apple.com 1996" style="width=100%;" /></p>
+
+<p>Source: <a href="http://www.telegraph.co.uk/technology/6125914/How-20-popular-websites-looked-when-they-launched.html">Telegraph</a></p>
+
+<h3 id="web-20">Web 2.0</h3>
+
+<ul>
+  <li><strong>More Interactive</strong>: Highlight, hover, other visual effects</li>
+  <li><strong>Focus on User Experience</strong>: Animations and transitions</li>
+  <li><strong>Multimedia Focus</strong>: Facebook, Twitter YouTube</li>
+  <li><strong>Far greater number of content creators</strong>: anyone with a computer</li>
+</ul>
+
+<p><img src="/img/intro-html-css/apple-today.png" alt="Apple.com 2017" /></p>
+
+<h3 id="a-couple-other-things">A Couple Other Things</h3>
+<p><a href="https://webdesign.tutsplus.com/articles/a-brief-history-of-the-world-wide-web--webdesign-8710">Brief History of the Web</a></p>
+
+<p><a href="http://www.evolutionoftheweb.com">Evolution of the Web</a></p>
+
+<h2 id="hacking-webpages">Hacking Webpages</h2>
+
+<p>Use the web inspector in your browsers (Chrome, Safari) to manipulate the HTML and CSS of current web pages to see live the effect of the changes that you make
+(right click → inspect element)</p>
+
+<p>try hacking these sites:</p>
+<ul>
+  <li><a href="https://processly.io">Processly</a></li>
+  <li><a href="http://penguin.rehanbutt.com">Penguin.rehanbutt.com</a></li>
+  <li><a href="https://www.wayfair.com">Wayfair</a></li>
+</ul>
+
+<h2 id="page-makeup">Page Makeup</h2>
+
+<div class="row">
+  <div class="small-12 medium-4 column" style="background-color: #9EC6E6; padding: 20px; text-align: center;">
+    <strong>HTML</strong> <br />
+    HyperText Markup Language
+    <br /><br />
+    <img src="../img/intro-html-css/structure.png" />
+    <br /><br />
+    <strong>Structure</strong>
+  </div>
+  <div class="small-12 medium-4 column" style="background-color: #B5D7AB; padding: 20px; text-align: center;">
+    <strong>CSS</strong> <br />
+    Cascading Style Sheet
+    <br /><br />
+    <img src="../img/intro-html-css/style.png" />
+    <br /><br />
+    <strong>Styling</strong>
+  </div>
+  <div class="small-12 medium-4 column" style="background-color: #EB969A; padding: 20px; text-align: center;">
+    <strong>JS</strong> <br />
+    JavaScript
+    <br /><br />
+    <img src="../img/intro-html-css/interaction.gif" />
+    <br /><br />
+    <strong>Interaction</strong>
+  </div>
+</div>
+
+<h3 id="html">HTML</h3>
+<p>HTML (HyperText Markup Language) is the most basic building block of the Web. 
+It describes and defines the content of a webpage. HTML elements are represented by tags.</p>
+
+<p>Written using tags enclosed in angle brackets</p>
+
+<p><code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code> called opening tag</p>
+
+<p><code class="highlighter-rouge">&lt;/html&gt;</code> called closing tag</p>
+
+<p><code class="highlighter-rouge">&lt;!-- comment --&gt;</code></p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre><span class="cp">&lt;!doctype html&gt;</span> <span class="c">&lt;!-- instruction to the browser about what version of HTML the page is written in.--&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span> <span class="c">&lt;!-- title,scripts, styles, meta information, and more. --&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Sample<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+
+  <span class="nt">&lt;body&gt;</span>
+  <span class="c">&lt;!-- Content of the Body --&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<h3 id="css">CSS</h3>
+
+<p>Cascading Style Sheets (CSS) are a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects like SVG or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
+
+<p>Defined using Classes <code class="highlighter-rouge">.name</code> and IDs <code class="highlighter-rouge">#name</code></p>
+
+<p>Classes: more general, used for a group of elements</p>
+
+<p>IDs: more specific, used for single elements</p>
+
+<p><code class="highlighter-rouge">/*comment*/</code></p>
+
+<p><code class="highlighter-rouge">//comment</code></p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre>  <span class="nt">html</span><span class="o">,</span> <span class="nt">body</span><span class="o">,</span> <span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span><span class="p">{</span>
+    <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Lato'</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="no">black</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="nc">.post-content</span> <span class="nt">h4</span><span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">22px</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="nc">.page-content</span><span class="p">{</span>
+    <span class="nl">margin-left</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="nl">margin-right</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<h3 id="content-v-styling">Content v Styling</h3>
+<p>Content and style can and should be handled seperately.</p>
+
+<p>Content lives in <code class="highlighter-rouge">.html</code> files and styling in <code class="highlighter-rouge">.css</code></p>
+
+<p>If you think about it in relation to a newspaper <code class="highlighter-rouge">html</code> is the raw article text and the <code class="highlighter-rouge">css</code> transforms it into what you get at a newsstand</p>
+
+<h3 id="server-v-client">Server v Client</h3>
+
+<p>Servers give out information (.com’s)</p>
+
+<p>Clients read in the information (web browser)</p>
+
+<p>These can be compartmentalized, services can be both servers and clients</p>
+
+<ul>
+  <li>log into facebook, [facebook = server]</li>
+  <li>facebook asks spotify for info [facebook = client]</li>
+</ul>
+
+<h3 id="debugging">Debugging</h3>
+
+<p>A lot of bugs come from missing notation, HTML is a very relaxed language, it is not great at telling you where errors are or if there are bugs, it just assumes what should have been.</p>
+
+<p>The web inspector can help understand the hierarchy that makes up HTML files helping you debug.</p>
+
+<h2 id="structure--organization">Structure &amp; Organization</h2>
+
+<h3 id="version-control">Version Control</h3>
+
+<p><img src="/img/intro-html-css/git.svg" alt="git structure diagram" /></p>
+
+<p>Basically version control is the bomb! Check this out for a bit more: <a href="git">Using git #versionControl</a></p>
+
+<h3 id="file-structure">File Structure</h3>
+
+<p><img src="/img/intro-html-css/file-structure.svg" alt="File Structure" /></p>
+
+<p>The critical thing with file structure is to stay organzied and be consistent</p>
+
+<h3 id="optimize-your-code">Optimize your Code</h3>
+
+<ul>
+  <li>Clean and clarify code</li>
+  <li>Delete unwanted resources and code</li>
+  <li>Have as few files as possible</li>
+  <li>Comment to clarify your code</li>
+  <li>Browsers load files linearly</li>
+  <li>Be consistent</li>
+</ul>
+
+<h3 id="image-preparation">Image Preparation</h3>
+
+<ul>
+  <li>150 dpi is plenty for the web</li>
+  <li>Make images the size you want to display them</li>
+  <li>PNGs are good for images</li>
+  <li>SVGs for things like logos</li>
+  <li>GIFs for animations</li>
+  <li>All of the file types above supports transparency!</li>
+  <li>Optimize your images: <a href="https://imageoptim.com/mac">imageoptim (mac)</a> <a href="http://www.xnview.com/en/">xnview (win)</a></li>
+  <li>Recommend using <code class="highlighter-rouge">word-space.png</code> for file names</li>
+</ul>
+
+<p>Also check out <a href="https://dzgn.io/works/httparty.html">HTTParty</a> for a little extra, much of this content was pulled from there.</p>
+:ET
