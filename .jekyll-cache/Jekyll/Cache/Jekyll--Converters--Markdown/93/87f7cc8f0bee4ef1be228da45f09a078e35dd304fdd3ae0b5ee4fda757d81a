@@ -1,6 +1,0 @@
-I"h<p>This workshop will begin with an introduction to the <strong>CNC Router</strong>, including a tour of the machine room where we’ll discuss <strong>dFAB</strong> equipment-specific policies and procedures, material guidelines, and safety protocol. We will then move on to <strong>RhinoCAM</strong> software to cover machine-specific requirements, tool definitions, machine operations, feeds and speeds, simulations, and posting code!</p>
-
-<p>Participants will be able to run simulations of a sample file to expose some of the more common RhinoCAM mistakes as well as learn tool path strategies that will maximize runtime efficiency. If you have any questions prior to your enrollment, feel free to contact José Pertierra-Arrojo at <a href="mailto:jpertier@andrew.cmu.edu">jpertier@andrew.cmu.edu</a>.</p>
-
-<p><img src="/img/workshops/cnc.jpg" alt="CNC Router" /></p>
-:ET

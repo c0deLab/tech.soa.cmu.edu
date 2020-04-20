@@ -8,8 +8,9 @@ permalink: /tutorials/
 <div class="small-12 medium-3 columns thumbnail-tile">
     <a class="post-link" href="{{ tutorial.url | prepend: site.baseurl }}">
         <div class="thumbnail-container">
+				<span class="thumbnail-text">{{ tutorial.tile-name }}</span>
         <img class="thumbnail-image" src="../img/thumbnails/{{ tutorial.thumbnail}}">
-        <span class="thumbnail-text">{{ tutorial.tile-name }}</span>
+        
         <!--{% if post.banner %}
         <span class="banner">{{ post.banner }}</span>
         {% endif %}-->
