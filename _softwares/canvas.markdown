@@ -10,15 +10,15 @@ author: CMU SoA Computing
 tags: [software]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Canvas is a cloud-based platform that streamlines all of the digital tools and content required for a more connected learning experience.
+
+- More of its features (e.g. [Peer Review](https://community.canvaslms.com/docs/DOC-10256-4152719640), [Group Discussions](https://community.canvaslms.com/docs/DOC-13039-415264224), [Group Assignments](https://community.canvaslms.com/docs/DOC-10107-415254248) may be used during the transition.
+
+- Instructors may utilize the PDF markup features of Canvas to provide feedback. Make sure to take the time to review the feedback.
+
+- Submission comments may be a good way to communicate with your instructor.
+
+- Make sure to submit your work as optimized files and/or as required by your instructor.
+
  
 ---
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-<br>
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-
-- First item
-- Second item
-- Third item
-

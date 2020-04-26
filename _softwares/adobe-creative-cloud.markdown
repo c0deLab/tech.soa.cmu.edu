@@ -10,15 +10,13 @@ author: CMU SoA Computing
 tags: [software]
 ---
 
-hello m dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
- 
+Adobe Creative Cloud encompasses a number of multimedia editing apps.
+
+- The University is working with Adobe to make apps temporarily free to CMU students until May 31st. Check for updates and instructions [here](https://www.cmu.edu/computing/software/all/adobecloud/index.html).
+
+- Subscribe [here](https://www.adobe.com/creativecloud/buy/students.html) for a new paid license with student discount.
+
+- Your license should be portable if it is misplaced. Work with Adobe support directly regarding subscription issues: +1-800-443-8158 Monday–Friday 5am–7pm PT.
+
+
 ---
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-<br>
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-
-- First item
-- Second item
-- Third item
-

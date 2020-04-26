@@ -84,11 +84,11 @@ layout: default
     <div class="small-12 medium-2 columns thumbnail-tile">
         <a class="post-link" href="{{ software.url | prepend: site.baseurl }}">
             <div class="thumbnail-container">
+            <p class="thumbnail-text">{{ software.tile-name }}</p>
             <img class="thumbnail-image" alt="{{software.title}} logo link to page" src="../img/thumbnails/{{ software.thumbnail}}">
             </div>
 
         </a>
-        <p>{{ software.tile-name }}</p>
     </div>
     {% endfor %}
     

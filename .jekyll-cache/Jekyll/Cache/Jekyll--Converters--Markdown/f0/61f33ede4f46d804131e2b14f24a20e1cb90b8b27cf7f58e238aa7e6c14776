@@ -1,0 +1,62 @@
+I"<p>Rhino 6 is the School of Architecture’s primary 3D modeling software. At present, there are 90 network licenses owned by the school/university that are available.</p>
+
+<p><strong>How to use the Rhino 6 school license</strong></p>
+
+<ul>
+  <li>
+    <p>Download <a href="https://www.rhino3d.com/download/rhino-for-windows/6/latest">Rhino 6</a>.</p>
+  </li>
+  <li>
+    <p>Connect to <a href="https://www.cmu.edu/computing/services/endpoint/network-access/vpn/how-to/">CMU VPN</a>.</p>
+  </li>
+  <li>
+    <p>Install and choose to license with The Zoo (NOT cloud zoo, the regular zoo).</p>
+  </li>
+  <li>
+    <p>Use this server information: rhino.andrew.cmu.edu.</p>
+  </li>
+  <li>
+    <p>The only limitation is that 90 people can use the licenses at the same time.</p>
+  </li>
+</ul>
+
+<p><em>Note: This instruction also works for <a href="https://www.rhino3d.com/download/rhino/wip">Rhino 7 WIP</a>!</em></p>
+
+<hr />
+<p><strong>Alternate Solutions</strong></p>
+
+<ul>
+  <li>
+    <p>Alternatively, you can purchase <a href="https://novedge.com/products/2572">here</a> for a new student license ($139).</p>
+  </li>
+  <li>
+    <p><a href="https://www.rhino3d.com/download/rhino-for-windows/6/evaluation">The 90 day trial</a> could be a temporary solution for a misplaced license.</p>
+
+    <ul>
+      <li>
+        <p>Use a new email to start a new trial.</p>
+      </li>
+      <li>
+        <p>The trial has no feature limitations.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>The Mac version could be suitable for design work</p>
+
+    <ul>
+      <li>
+        <p>You will not be able to use the school’s Vray license.</p>
+      </li>
+      <li>
+        <p>Grasshopper features will be limited.</p>
+      </li>
+      <li>
+        <p>There may be alternate rendering solutions.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+:ET

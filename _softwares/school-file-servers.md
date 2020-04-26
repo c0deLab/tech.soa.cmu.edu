@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "School File Servers"
-thumbnail: favicon.png
+thumbnail: School-File-Servers.jpg
 tile-name: "School File Servers"
 date: 2020-04-16
 
@@ -9,15 +9,17 @@ author: CMU SoA Computing
 tags: [software]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
- 
+- The course folders can be accessed from off campus by logging with your Andrew ID via [VPN](https://www.cmu.edu/computing/services/endpoint/network-access/vpn/how-to/).
+
+- Please contact [soa-ithelp@andrew.cmu.edu](mailto:soa-ithelp@andrew.cmu.edu) for server related issues
+
+- For advanced users, following is the school server information:
+
+*Windows
+\\archpcnas (not as reliable)
+\\128.2.102.51
+Mac
+smb://128.2.102.51*
+
+
 ---
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-<br>
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-
-- First item
-- Second item
-- Third item
-

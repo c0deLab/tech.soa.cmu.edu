@@ -10,15 +10,45 @@ author: CMU SoA Computing
 tags: [software]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+V-Ray for Rhino is a photorealistic rendering software. Students at the School of Architecture are free to use SoA network licenses via the VPN. 
+
+**Installation Instructions**
+
+1. Make sure [Rhino is installed](https://drive.google.com/drive/folders/1wCTRnF4LN5J2-UyHIXnTLYNrmbe7Sohl?usp=sharing) and functional.
+
+2. Close all instances of Rhino.
  
+3. Open the V-ray Installer.
+
+4. The End User License Agreement opens, click *I Agree*
+ 
+5. You will now be taken to the Installation parameters page. Leave The Rhinoceros 6 box checked and un-check *V-ray Swarm*.
+ 
+6. The next step is Licensing Setup. Un-Check *License Server 5.1.1*.
+
+7. Select *Remote V-ray license server on the network*. Once selected, additional options will appear.
+
+8. Under Primary License Server enter in: *128.2.24.236*.
+
+9. For Alternate License Server 1 enter: *flexserv19*.
+
+10. Leave all other settings at default.
+
+11. Select *Install Now*.
+ 
+12. Under the Finished section, Un-Check “Help us improve V-ray for Rhinoceros 6” and select “Finish”.
+
+
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-<br>
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 
-- First item
-- Second item
-- Third item
+**Remember:**
 
+- Licenses are limited to 110 simultaneous instances.
+
+- Close Vray when you don’t need it so that others may use it!
+
+- Alternatively, [$99 (1-year) student license can be purchased](https://store.chaosgroup.com/product/edu-vray-rhino-student).
+
+
+---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Laptop Computer Recommendations"
-thumbnail: laptop.jpg
+thumbnail: Laptop-Computer-Recommendations.jpg
 tile-name: "Laptop Computer Recommendations"
 date: 2020-04-16
 

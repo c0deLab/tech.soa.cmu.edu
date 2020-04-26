@@ -9,15 +9,33 @@ author: CMU SoA Computing
 tags: [software]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
- 
+Miro is an online whiteboard tool that allows for a distributed workforce to visually collaborate during the course of a project. 
+
+**What you can use Miro for**
+
+- Can be used to simulate a design crit experience in real time. 
+
+- Can be used for storyboarding a design-based project/tool.
+
+- Can be used to hold real-time meetings for brain-storming/mindmapping.
+
+- Can be used for the purpose of mapping and diagramming.
+
+
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-<br>
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 
-- First item
-- Second item
-- Third item
+**Standard Tips**
 
+- Works great with mobile devices, especially with tablet and stylus.
+
+- Avoid uploading large files as it will slow down the entire board. A carefully taken screen capture can go a long way.
+
+- Get familiar with the tool on your own via this [link](https://help.miro.com/hc/en-us/categories/360001415214-Getting-Started).
+
+- If you’ve received an invitation, please sign up as soon as you can.
+
+- If you haven't, email a request for license to [eddymankim@cmu.edu](mailto:eddymankim@cmu.edu).
+
+ 
+---

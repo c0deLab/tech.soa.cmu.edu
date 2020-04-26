@@ -9,15 +9,13 @@ author: CMU SoA Computing
 tags: [software]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+- Continues to be a reliable storage and backup solution. CMU students have unlimited storage.
+
+- You may need to use VPN to access Google services depending on where you are located.
+
+- You’ve most likely already used [Google Documents](https://www.google.com/docs/about/) and [Sheets](https://www.google.com/sheets/about/).
+
+- Instructors may expand their use of Google tools and ask you to use other apps like [Google Slides](https://www.google.com/slides/about/), [Drawings](https://docs.google.com/drawings/), [Forms](https://www.google.com/forms/about/).
+
  
 ---
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-<br>
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-
-- First item
-- Second item
-- Third item
-

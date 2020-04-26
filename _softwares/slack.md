@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Slack"
-thumbnail: favicon.png
+thumbnail: Slack.jpg
 tile-name: "Slack"
 date: 2020-04-16
 
@@ -9,15 +9,17 @@ author: CMU SoA Computing
 tags: [software]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
- 
+Slack is a community-oriented massive chat platform that allows for collaboration and communication with unlimited channels.
+
+- Technical support could be crowd-sourced here.
+
+- Works great with mobile devices because you can see the notifications.
+
+- Channels can be requested / created for specific topics, organizations, and activities. 
+
+- Great way to stay connected with the school community for non-course / non-FERPA protected content (see [Privacy Policy](https://slack.com/privacy-policy)).
+
+- [Join the SoA Slack community here!](https://join.slack.com/t/cmusoa/shared_invite/zt-dtplac0h-rQTK6fTxN7aulSxNSFbZwQ) 
+
+
 ---
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-<br>
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-
-- First item
-- Second item
-- Third item
-
