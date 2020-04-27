@@ -3,8 +3,7 @@ layout: default
 ---
 
 <div class="small-12 columns">
-  <p><b>tech.soa</b> is an ecosystem of architectural design technology resources offered to and by <a class="link" href="https://soa.cmu.edu/">CMU SoA (Carnegie Mellon University School of Architecture)</a> students, faculty, and staff.</p>
-  <p>Look forward to more tips and tutorials coming soon!</p>
+  <p><b>tech.soa</b> is an ecosystem of architectural design technology resources offered to and by <a class="link" href="https://soa.cmu.edu/">CMU SoA (Carnegie Mellon University School of Architecture)</a> students, faculty, and staff. Look forward to more tips and tutorials coming soon!</p>
 </div>
 
 <!--<div class="small-12 medium-4 large-4 columns"> 
@@ -37,16 +36,16 @@ layout: default
 
   <div class="small-12 medium-6 columns remoteLearningContainer">
     
-    <p>This section of tech.soa is an information base intended to serve as reference for students regarding the available resources and guidelines that supplement the <a class="link" target="_blank" href="https://www.cmu.edu/computing/support/remote-students.html">University's general guidelines on remote learning.</a> While the challenges and compromises we face as a school community are real, we are also fortunate to be in a time and place where there are many tools at our disposal that can deliver a rich learning experience across great distances. Fully utilizing these resources will help students, faculty and admin make the most of their remote learning experience at SoA.</p>
+    <p>This section of tech.soa is an information base intended to serve as reference for students regarding the available resources and guidelines that supplement the <a class="link" target="_blank" href="https://www.cmu.edu/computing/support/remote-students.html">University's general guidelines on remote learning.</a> While the challenges and limitations of remote learning are real, we are also fortunate to have many tools at our disposal that can deliver rich learning experiences in their own right. Fully utilizing the resources on this website will help students, faculty and staff make the most of their remote learning experience at SoA.</p>
   </div>
 
   <div class="small-12 medium-6 columns remoteLearningContainer">
     <h3 class="section-subheading">Important Links and Contact Information:</h3>
     <ul class="remoteLearningListStyle">
-      <li><a class="link" target="_blank" href="https://soa.cmu.edu/">School of Architecture Website</a></li>
+      <li><a class="link" target="_blank" href="https://soa.cmu.edu/">School of Architecture Website</a>(soa.cmu.edu)</li>
       <li><a class="link" target="_blank" href="mailto:it-help@cmu.edu">CMU Computing Services</a>(it-help@cmu.edu)</li>
       <li><a class="link" target="_blank" href="mailto:soa-ithelp@andrew.cmu.edu">SoA IT</a>(soa-ithelp@andrew.cmu.edu)</li>
-      <li><a class="link" target="_blank" href="https://docs.google.com/document/d/1Qr9fSW_ET8FT-YPfqYedhErNrV31BUAe4p4VzgSAkig/edit">Remote Learning for SoA Students</a></li>
+      <li><a class="link" target="_blank" href="https://docs.google.com/document/d/1Qr9fSW_ET8FT-YPfqYedhErNrV31BUAe4p4VzgSAkig/edit">Guidelines on Remote Learning for SoA Students</a></li>
       <li><a class="link" target="_blank" href="https://drive.google.com/open?id=1XjMaLdWiWDbU5rqd7weeywfyH634xNex">SoA Coronavirus FAQ's & Updates</a></li>
       <li>Counseling and Psychological Services: Call CaPs at <a class="link" href="tel:4122682922">412-268-2922</a> or visit their<a class="link" target="_blank" href="https://www.cmu.edu/counseling/">website</a></li>
     </ul>
@@ -55,7 +54,7 @@ layout: default
     
   <div class="small-12 medium-8 columns remoteLearningContainer">
     <h3 class="section-subheading">Slack</h3>
-    <p>Slack is a community-oriented massive chat platform that works great with both desktop and mobile device notifications. Technical support could be crowd sourced here, as well as questions and events. Channels can be requested / created for specific topics, organizations, and activities. It's a great way to stay connected with the school community for non-course / non-FERPA protected content (see <a class="link" target="_blank" href="https://slack.com/privacy-policy"> Privacy Policy</a>).<a class="link" target="_blank" href="https://join.slack.com/t/cmusoa/shared_invite/zt-cra1s3hj-VJagLvKkT3oc4UOuof4T3g"><br> Join Slack Now!! </a></p>
+    <p>Slack is a community-oriented massive chat platform that works great with both desktop and mobile device notifications. Technical support could be crowd sourced here, as well as questions and events. Channels can be requested / created for specific topics, organizations, and activities. It's a great way to stay connected with the school community for non-course / non-FERPA protected content (see <a class="link" target="_blank" href="https://slack.com/privacy-policy"> Privacy Policy</a>).<a class="link" target="_blank" href="https://join.slack.com/t/cmusoa/shared_invite/zt-dtplac0h-rQTK6fTxN7aulSxNSFbZwQ"><br> Join Slack Now!! </a></p>
   </div>
   <div class="small-12 medium-4 columns">
     <div><a target="_blank" href="https://join.slack.com/t/cmusoa/shared_invite/zt-cra1s3hj-VJagLvKkT3oc4UOuof4T3g"><img src="img/Slack_RGB.png"></a></div>
@@ -77,11 +76,11 @@ layout: default
 
   <div class="small-12 columns remoteLearningContainer">
     <h3 class="section-subheading"><a href="/softwares">Software</a></h3>
-    <p>Following is a number of softwares used for supporting remote and digital at SoA that may contain important information during remote learning. <a class="link" href="/softwares">See all softwares.</a></p>
+    <p>Following are softwares used for supporting remote and digital work at SoA and may contain information critical to the learning process. <a class="link" href="/softwares">See all softwares.</a></p>
 
     {% assign software_order = site.softwares | sort: "sticky" | reverse %}
     {% for software in software_order limit: 5 %}
-    <div class="small-12 medium-2 columns thumbnail-tile">
+    <div class="small-4 medium-3 large-2 columns thumbnail-tile">
         <a class="post-link" href="{{ software.url | prepend: site.baseurl }}">
             <div class="thumbnail-container">
             <p class="thumbnail-text">{{ software.tile-name }}</p>
@@ -196,7 +195,7 @@ layout: default
       
       {% assign tutorial_order = site.tutorials | sort:date | reverse %}
       {% for tutorial in tutorial_order limit: 12 %}
-      <div class="small-12 medium-3 columns thumbnail-tile">
+      <div class="small-6 medium-3 columns thumbnail-tile">
           <a class="" href="{{ tutorial.url | prepend: site.baseurl }}">
               <div class="thumbnail-container">
               <span class="thumbnail-text">{{ tutorial.tile-name }}</span>
