@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Zoom"
-thumbnail: zoom.jpg
+thumbnail: Zoom.jpg
 tile-name: "Zoom"
 date: 2020-04-16
 sticky: yes

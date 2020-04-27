@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Rhino 6 for Windows"
-thumbnail: rhino.jpg
+thumbnail: Rhino.jpg
 tile-name: "Rhino 6 for Windows"
 date: 2020-04-16
 sticky: yes

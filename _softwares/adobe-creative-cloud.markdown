@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Adobe Creative Cloud"
-thumbnail: adobe-creative-cloud.jpg
+thumbnail: Adobe-Creative-Cloud.jpg
 tile-name: "Adobe Creative Cloud"
 date: 2020-04-16
 sticky: yes

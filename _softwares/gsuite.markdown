@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Google Suite"
-thumbnail: gsuite.jpg
+thumbnail: GSuite.jpg
 tile-name: "Google Suite"
 date: 2020-04-16
 

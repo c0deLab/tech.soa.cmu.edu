@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Canvas"
-thumbnail: canvas.jpg
+thumbnail: Canvas.jpg
 tile-name: "Canvas"
 date: 2020-04-16
 importance: 0

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "V-Ray for Rhino"
-thumbnail: vray.jpg
+thumbnail: VRay.jpg
 tile-name: "V-Ray for Rhino"
 date: 2020-04-16
 sticky: yes
