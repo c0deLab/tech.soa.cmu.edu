@@ -26,6 +26,11 @@ collections:
     
   facilities:
     output: true
+
+  softwares:
+    output: true
     
   workshops:
     output: true
+
+

@@ -3,10 +3,16 @@
 ---
 
 $tech-black: #252525;
+$tech-grey: #b2b2b2;
+$tech-white: #ffffff;
 $slightly-grey: #f2f2f2;
 $tech-accent: #00e59f;
+$tech-accent-dark: #00b77f;
+$tech-accent-light: #ccf9eb;
+
 
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+/*@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');*/
 
 $light: 300;
 $regular: 400;
@@ -15,12 +21,43 @@ $black: 900;
 
 html, body, h1, h2, h3, h4, h5, h6{
   font-family: 'Lato', sans-serif;
+  /*font-family: 'Muli', sans-serif;*/
   color: $tech-black;
 }
-
+ 
 h3{
-  margin-top: 40px;
+  /*margin-top: 40px;*/
 }
+
+a {
+  color: $tech-black;
+  &:visited{
+    color: $tech-black;
+  }
+  &:hover{
+    color: $tech-accent-dark;
+    transition: color 0.2s linear;
+    text-decoration: none;
+  }
+}
+
+
+a.link{
+  color: $tech-accent-dark;
+  text-decoration: none;
+  font-weight: $bold;
+  padding: 5px 2px 5px 2px;
+  &:visited{
+     color: $tech-accent-dark;
+  }
+  &:hover{
+    color: $tech-accent-dark;
+    text-decoration: none;
+    background-color: $tech-accent-light;
+    transition: background-color 0.2s linear, color 0.2s linear;
+  }
+}
+
 
 .post-content h4{
   font-size: 22px;
@@ -35,20 +72,46 @@ h3{
   margin-right: 10px;
 }
 
+.section-border {
+  border: 1px solid $tech-accent-dark;
+}
+
 .section-heading{
-  font-size: 32px;
+  font-size: 30px;
   font-weight: $bold;
-  border-bottom: 3px solid $tech-black;
-  margin-bottom: 20px;
-  
+  margin-top: 30px;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+
   a{
     color: $tech-black;
     &:hover{
       text-decoration: none;
-      color: $tech-accent;
+      color: $tech-accent-dark;
+      background-color: transparent;
+      transition: color 0.2s linear;
+    }
+    &:visited{
+      text-decoration: none;
+      color: $black
     }
   }
 }
+
+.section-subheading{
+  font-size: 20px;
+  font-weight: $bold;
+}
+
+.remoteLearningContainer {
+  margin-bottom: 16px;
+}
+
+.remoteLearningListStyle {
+  font-size: 14px;
+}
+
+
 
 ::selection {
   background: $tech-accent; /* WebKit/Blink Browsers */
@@ -61,6 +124,8 @@ header{
   
   margin-top: 30px;
   margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   
   .site-title{
     font-size: 48px;
@@ -101,37 +166,75 @@ header{
 }
 
 .thumbnail-tile {
-    margin-bottom: 30px;
+    margin: 0;
+    padding: 10px;
 }
-
   .thumbnail-container {
     position: relative;
-    display: block;
-    background-color: #000;
-    opacity: 1;
+    height: 100%;
+    border: 1px #E8E8E8 solid;
   }
-  
-  .thumbnail-container:hover .thumbnail-text {
-    opacity: 0;
-  }
-  
-  .thumbnail-container:hover .thumbnail-image {
-    opacity: 1;
-  }
-  
   .thumbnail-image {
     width: 100%;
-    opacity: 0.7;
   }
-  
   .thumbnail-text {
+    margin: 0;
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: #FFF;
+    width: 100%;
+    bottom: 0;
+/*    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+    padding:6px;
+    color: $tech-black;
+    background-color: rgba(255, 255, 255, .8);
     opacity: 1;
+    z-index: 100;
+    overflow: hidden;
+    font-size: 16px !important;
+    text-align: center;
+    line-height: 1.2;
+  }
+  .thumbnail-container:hover .thumbnail-text {
+    opacity: 1;
+    transition: opacity 0.2s linear;
+  }
+  .thumbnail-container:hover{
+    opacity: 1;
+    border: 1px $tech-accent solid;
+    transform: scale(1.04);
+    transition: transform 0.2s linear, border 0.2s linear;
+  }
+  .thumbnail-container:hover .thumbnail-image {
+    transition: opacity 0.1s linear;
+    opacity: .5;
   }
 
+.workshop-container{
+  
+  margin-bottom: 40px;
+  
+  p{
+    padding: 0;
+    margin: 0;
+  }
+  .metadata{
+    font-size: 14px;
+    font-weight: $light;
+    margin-bottom: 5px;
+  }
+  .workshop-title{
+    font-size: 20px;
+    font-weight: $bold;
+    margin-bottom: 5px;
+  }
+  .description{
+    
+  }
+  li{
+    margin-bottom: 10px;
+  }
+}
 
 .reference-container{
   
@@ -142,7 +245,7 @@ header{
     margin: 0;
   }
   .metadata{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: $light;
   }
   .reference-title{
@@ -157,19 +260,48 @@ header{
   }
 }
 
+
+.software-container{
+  
+  margin-bottom: 40px;
+  
+  p{
+    padding: 0;
+    margin: 0;
+  }
+  .metadata{
+    font-size: 14px;
+    font-weight: $light;
+  }
+  .software-title{
+    font-size: 20px;
+    font-weight: $bold;
+  }
+  .description{
+    
+  }
+  li{
+    margin-bottom: 10px;
+  }
+}
+
+
 .registration-container{
   padding: 0px 3px 0px 3px;
   margin-left: 10px;
-  border: 1.5px solid $tech-black;
+  border: 1px solid $tech-black;
   display: inline-flex;
   
   .registration-text{
-    font-size: 14px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 3px;
   }
   
   &:hover{
     background-color: $tech-accent;
-    border: 1.5px solid $tech-accent;
+    border: 1px solid $tech-accent;
     .registration-text{
       color: white;
     }
@@ -189,17 +321,8 @@ header{
   font-size: 16px;
 }
 
-a{
-  color: $tech-black;
-  text-decoration: none;
-  &:visited{
-    color: $tech-black;
-  }
-  &:hover{
-    color: $tech-accent;
-    text-decoration: none;
-  }
-}
+
+
 
 .post-content{
   
@@ -208,12 +331,18 @@ a{
   }
   &[itemprop="articleBody"]{
     a{
-      background-color: $tech-accent;
-      padding-left: 2px;
-      padding-right: 2px;
+      color: $tech-accent-dark;
+      text-decoration: none;
+      font-weight: $bold;
+      padding: 5px 2px 5px 2px;
+      &:visited{
+        color: $tech-accent-dark;
+      }
       &:hover{
-        background-color: lighten($tech-accent, 10%);
-        color: $tech-black;
+        color: $tech-accent-dark;
+        text-decoration: none;
+        background-color: $tech-accent-light;
+        transition: background-color 0.2s linear, color 0.2s linear;
       }
     }
   }
@@ -234,7 +363,7 @@ a{
 .registration-container-meta{
   padding: 3px 5px 5px 5px;
   margin-left: 10px;
-  border: 1.5px solid $tech-black;
+  border: 1px solid $tech-black;
   display: inline-flex;
   
   .registration-text-meta{
@@ -244,7 +373,7 @@ a{
   
   &:hover{
     background-color: $tech-accent;
-    border: 1.5px solid $tech-accent;
+    border: 1px solid $tech-accent;
     .registration-text-meta{
       color: white;
     }
@@ -253,16 +382,16 @@ a{
 
 /*Tag Styling*/
 .tag-section{
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 
 .tag-container{
   padding: 3px 5px 3px 5px;
-  border: 1.5px solid $tech-black;
+  border: 1px solid $tech-black;
   display: inline-block;
   margin-bottom: 5px;
-  
+  font-style: none;
   .tag-text{
     font-size: 14px;
     margin-bottom: 0;
@@ -274,6 +403,7 @@ a{
 
 .tag-container:hover{
   background-color: $tech-black;
+
   
   .tag-text{
     color: white;
@@ -282,12 +412,12 @@ a{
 
 .webdev:hover{
   background-color: blueviolet;
-  border: 1.5px solid blueviolet;
+  border: 1px solid blueviolet;
 }
 
 .rendering:hover{
   background-color: tomato;
-  border: 1.5px solid tomato;
+  border: 1px solid tomato;
 }
 
 /*Tag Styling Ended*/
@@ -421,7 +551,7 @@ footer{
 /*Footer Styling Ended*/
 
 
-/*measurments pulled from foundation css file*/
+/*measurements pulled from foundation css file*/
 /*Mobile Friendly Styling*/
 @media screen and (max-width: 40em) {
 
@@ -469,5 +599,18 @@ footer{
   iframe{
     height: 360px;
   }
+  .thumbnail-image {
+    opacity: 1;
+  }
+  .thumbnail-text {
+    font-size:14px !important; 
+    opacity: 1;
+    z-index: 100;
+    line-height: 1.3;
+  }
+  .thumbnail-container:hover .thumbnail-image {
+    opacity: 0.25;
+  }
+
 }
 /*Tablet Friendly Styling Ended*/

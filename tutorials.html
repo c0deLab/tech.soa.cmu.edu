@@ -5,15 +5,13 @@ permalink: /tutorials/
 ---
 
 {% for tutorial in site.tutorials %}
-<div class="small-12 medium-3 columns thumbnail-tile">
+<div class="small-12 medium-4 columns thumbnail-tile">
     <a class="post-link" href="{{ tutorial.url | prepend: site.baseurl }}">
         <div class="thumbnail-container">
-        <img class="thumbnail-image" src="../img/thumbnails/{{ tutorial.thumbnail}}">
-        <span class="thumbnail-text">{{ tutorial.tile-name }}</span>
-        <!--{% if post.banner %}
-        <span class="banner">{{ post.banner }}</span>
-        {% endif %}-->
+				<p class="thumbnail-text">{{ tutorial.tile-name }}</p>
+        <img class="thumbnail-image" alt="{{tutorial.title}} logo link to page" src="../img/thumbnails/{{ tutorial.thumbnail}}">
         </div>
     </a>
+   
 </div>
 {% endfor %}

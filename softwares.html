@@ -1,0 +1,25 @@
+---
+layout: page
+title: Softwares
+permalink: /softwares/
+---
+
+
+<div class="small-12 columns">
+  <p>Following is a number of softwares used for supporting remote and digital at SoA. To learn more about other software packages offered by the university, refer to Carnegie Mellon's complete <a class="link" target="_blank" href="https://www.cmu.edu/computing/software/">software catalogue.</a></p>
+
+  <p>If you have additional questions about laptops, software, or anything IT related for the School of Architecture, please contact <a class="link" target="_blank" href="mailto:soa-ithelp@andrew.cmu.edu​">soa-ithelp@andrew.cmu.edu​</a>
+</div>
+
+
+{% for software in site.softwares %}
+<div class="small-12 medium-4 large-2 columns thumbnail-tile">
+    <a class="post-link" href="{{ software.url | prepend: site.baseurl }}">
+        <div class="thumbnail-container">
+        <p class="thumbnail-text">{{ software.tile-name }}</p>
+        <img class="thumbnail-image" alt="{{software.title}} logo link to page" src="../img/thumbnails/{{software.thumbnail}}">
+        
+        </div>
+    </a>
+</div>
+{% endfor %}
