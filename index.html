@@ -57,7 +57,7 @@ layout: default
     <p>Slack is a community-oriented massive chat platform that works great with both desktop and mobile device notifications. Technical support is crowd sourced here, as well as questions and events. Channels can be requested / created for specific topics, organizations, and activities. It's a great way to stay connected with the school community for non-course / non-FERPA protected content (see <a class="link" target="_blank" href="https://slack.com/privacy-policy"> Privacy Policy</a>).<a class="link" target="_blank" href="https://join.slack.com/t/cmusoa/shared_invite/zt-dtplac0h-rQTK6fTxN7aulSxNSFbZwQ"><br> Join Slack Now!! </a></p>
   </div>
   <div class="small-12 medium-4 columns">
-    <div><a target="_blank" href="https://join.slack.com/t/cmusoa/shared_invite/zt-cra1s3hj-VJagLvKkT3oc4UOuof4T3g"><img src="img/soa-slack.jpg"></a></div>
+    <div><a target="_blank" href="https://join.slack.com/t/cmusoa/shared_invite/zt-dtplac0h-rQTK6fTxN7aulSxNSFbZwQ"><img src="img/soa-slack.jpg"></a></div>
   </div>
 
 
@@ -66,10 +66,10 @@ layout: default
     <p>Course folders can be accessed from off campus by logging with your Andrew ID via <a class="link" target="_blank" href="https://www.cmu.edu/computing/services/endpoint/network-access/vpn/how-to/">Carnegie Mellon's VPN.</a></p>
     <p>Please contact <a class="link" href="mailto:soa-ithelp@andrew.cmu.edu">soa-ithelp@andrew.cmu.edu</a> for architecture-server related issues. For advanced users, the school server information is listed below:</p>
     <div class="small-12 medium-6 columns">
-      <p><strong>Windows</strong> <br>\\archpcnas (not as reliable)<br>\\128.2.102.51</p>
+      <p><strong>Windows</strong> <br><code>\\archpcnas</code> (not as reliable)<br><code>\\128.2.102.51</code></p>
     </div>
     <div class="small-12 medium-6 columns">
-      <p><strong>Mac</strong> <br>smb://128.2.102.51</p>
+      <p><strong>Mac</strong> <br><code>smb://128.2.102.51</code></p>
     </div>
   </div>
 
@@ -102,7 +102,7 @@ layout: default
 
   <div class="small-12 medium-6 columns remoteLearningContainer">
     <h3 class="section-subheading">Internet Challenges</h3>
-    <p>If you are in a location outside of the US, you may have to use the <a class="link" target="blank" href="https://www.cmu.edu/computing/services/endpoint/network-access/vpn/how-to/">university’s VPN (Virtual Private Network)</a> to access your Andrew email, Google Apps, SIO, Zoom, and other university resources critical to your remote learning experience with SoA. There may be other 3rd party VPN solutions that may address your issue, but please keep in mind that the school or the university will not be able to support them. For further support on internet connectivity as a CMU student, contact Computing Services <a class="link" target="blank" href="mailto:it-help@cmu.edu"> it-help@cmu.edu </a>. In addition, <a class="link" target="blank" href="https://www.internetessentials.com/">Comcast is temporarily offering free/affordable internet service.</a></p>
+    <p>If you are in a location outside of the US, you may have to use the <a class="link" target="blank" href="https://www.cmu.edu/computing/services/endpoint/network-access/vpn/how-to/">university’s VPN (Virtual Private Network)</a> to access your Andrew email, Google Apps, SIO, Zoom, and other university resources critical to your remote learning experience with SoA. There may be other 3rd party VPN solutions that may address your issue, but please keep in mind that the school or the university will not be able to support them. For further support on internet connectivity as a CMU student, contact Computing Services <a class="link" target="blank" href="mailto:it-help@cmu.edu"> it-help@cmu.edu.</a> In addition, <a class="link" target="blank" href="https://www.internetessentials.com/">Comcast is temporarily offering free/affordable internet service.</a></p>
   </div>
 
 
@@ -131,12 +131,38 @@ layout: default
 
 
 
-<div>
+
+<!-- left column -->
+<div class="small-12 medium-8 columns">
+  <div>
+    <h1 class="section-heading"><a href="/workshops">SoA Lecture Series</a></h1>
+    <p>The Carnegie Mellon School of Architecture Lecture Series is world-renowned. This series of lectures is strategically unstrategic and intentionally eclectic, reflecting the expansive diversity of the field. Watch the lectures on <a class="link" href="https://vimeo.com/showcase/6694487">Vimeo.</a></p>
+    <a target="_blank" href="https://vimeo.com/showcase/6694487"><img src="img/soa-lecture-series.png"></a>
+  </div>
+
+  <div>
+    <h1 class="section-heading"><a href="/tutorials">Tutorials</a></h1>
+      
+      {% assign tutorial_order = site.tutorials | sort:date | reverse %}
+      {% for tutorial in tutorial_order limit: 12 %}
+      <div class="small-12 medium-6 columns thumbnail-tile">
+          <a class="" href="{{ tutorial.url | prepend: site.baseurl }}">
+              <div class="thumbnail-container">
+              <span class="thumbnail-text">{{ tutorial.tile-name }}</span>
+              <img class="thumbnail-image" src="img/thumbnails/{{ tutorial.thumbnail }}">
+              </div>
+          </a>
+      </div>
+      {% endfor %}
+      <a href="/tutorials">Show More Tutorials  &rarr;</a>
+  </div>
+</div>
 
 
 
-
-  <div class="small-12 medium-6 columns">
+<!-- right column -->
+<div class="small-12 medium-4 columns">
+  <div>
     <h1 class="section-heading"><a href="/workshops">Workshops</a></h1>
     
     {% assign reference_order = site.workshops | sort:date | reverse %}
@@ -163,8 +189,8 @@ layout: default
     {% endfor %}
     <a href="/workshops">Show More Workshops &rarr;</a>
   </div>
-
-  <div class="small-12 medium-6 columns">
+<!--   
+  <div>
     <h1 class="section-heading"><a href="/references">References</a></h1>
     
     {% assign reference_order = site.references | sort:date | reverse %}
@@ -185,27 +211,10 @@ layout: default
     </div>
     {% endfor %}
     <a href="/references">Show More References &rarr;</a>
-  </div>
-
-
-
-
-  <div class="small-12 columns">
-    <h1 class="section-heading"><a href="/tutorials">Tutorials</a></h1>
-      
-      {% assign tutorial_order = site.tutorials | sort:date | reverse %}
-      {% for tutorial in tutorial_order limit: 12 %}
-      <div class="small-6 medium-3 columns thumbnail-tile">
-          <a class="" href="{{ tutorial.url | prepend: site.baseurl }}">
-              <div class="thumbnail-container">
-              <span class="thumbnail-text">{{ tutorial.tile-name }}</span>
-              <img class="thumbnail-image" src="img/thumbnails/{{ tutorial.thumbnail }}">
-              </div>
-          </a>
-      </div>
-      {% endfor %}
-      <a href="/tutorials">Show More Tutorials  &rarr;</a>
-  </div>
-
+  </div> -->
 
 </div>
+
+
+
+
