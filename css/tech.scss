@@ -44,9 +44,11 @@ a {
 
 a.link{
   color: $tech-accent-dark;
+  background-color: transparent;
   text-decoration: none;
   font-weight: $bold;
   padding: 5px 2px 5px 2px;
+  transition: background-color 0.2s linear, color 0.2s linear;
   &:visited{
      color: $tech-accent-dark;
   }
@@ -151,16 +153,22 @@ header{
     padding-right: 10px;
     padding: 10px;
     border-radius: 5px;
+    border: 1px solid white;
+    background-color: white;
+    transition: border 0.2s linear; 
   }
   
-  .nav-item:hover{
-    background-color: $slightly-grey;  
+  .nav-item:hover{ 
+    background-color: white;
+    border: 1px solid $tech-accent;
+    transition: border 0.2s linear;
   }
 
   .site-nav{
-    top: 45px;
+    top: 30px;
     border: none;
     border-radius: none;
+    padding: 10px;
   }
   
 }
