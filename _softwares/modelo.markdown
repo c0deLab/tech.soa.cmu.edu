@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Modelo"
-thumbnail: modelo.jpg
+thumbnail: Modelo.jpg
 tile-name: "Modelo"
 date: 2020-04-16
 

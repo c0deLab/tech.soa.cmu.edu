@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Windows 10"
-thumbnail: windows10.jpg
+thumbnail: Windows10.jpg
 tile-name: "Windows 10"
 date: 2020-04-16
 

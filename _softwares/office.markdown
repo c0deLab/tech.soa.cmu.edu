@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Microsoft Office"
-thumbnail: office.jpg
+thumbnail: Office.jpg
 tile-name: "Microsoft Office"
 date: 2020-04-16
 
