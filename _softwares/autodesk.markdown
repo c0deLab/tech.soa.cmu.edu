@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Autodesk"
-thumbnail: autodesk.jpg
+thumbnail: Autodesk.jpg
 tile-name: "Autodesk"
 date: 2020-04-16
 sticky: yes
