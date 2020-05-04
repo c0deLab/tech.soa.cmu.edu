@@ -28,7 +28,7 @@ permalink: /tags/
 
 <div class="tag-section">
   {% for tag in tags %}
-    <a href="#{{ tag }}">
+    <a class="tag-link" href="#{{ tag }}">
       <div class="tag-container {{ tag }}">
         <p class="tag-text">{{ tag }}</p>
       </div>
@@ -40,15 +40,14 @@ permalink: /tags/
 {% for tag in tags %}
   <div class="row">
 
-    <a name="{{ tag }}"><h3 class="tag-title section-heading">{{ tag }}</h3></a>
+    <a class="blackLink" name="{{ tag }}"><h3 class="section-heading">{{ tag }}</h3></a>
 
     {% for tutorials in site.tutorials %}
       {% if tutorials.tags contains tag %}
         <div class="small-12 medium-3 columns thumbnail-tile">
-          <a class="post-link" href="{{ tutorials.url | prepend: site.baseurl }}">
               <div class="thumbnail-container">
-                <img class="thumbnail-image" src="/img/thumbnails/{{ tutorials.thumbnail | prepend: site.baseurl }}">
-                <span class="thumbnail-text">{{ tutorials.tile-name }}</span>
+              <span class="thumbnail-text">{{ tutorials.tile-name }}</span>
+              <img class="thumbnail-image" src="/img/thumbnails/{{ tutorials.thumbnail | prepend: site.baseurl }}">
               </div>
           </a>
         </div>
@@ -59,8 +58,8 @@ permalink: /tags/
       {% if reference.tags contains tag %}
         <div class="small-12 medium-3 columns">
           <div class="reference-container">
-            <p class="metadata"><a target="_blank" href="{{ reference.link }}">{{ reference.link | truncate: 30 }}</a></p>
-            <p class="reference-title"><a href="{{ reference.url }}">{{ reference.title }}</a></p>
+            <p class="reference-title"><a class="blackLink" href="{{ reference.url }}">{{ reference.title }}</a></p>
+            <p class="metadata"><a class="blackLink" target="_blank" href="{{ reference.link }}">{{ reference.link | truncate: 30 }}</a></p>
             <p class="description">{{ reference.content | truncate: 150 }}</p>
           </div>
         </div>
@@ -72,8 +71,8 @@ permalink: /tags/
         <div class="small-12 medium-3 columns">
           <div class="reference-container">
             <p class="reference-title">
-              <a href="{{ workshop.url }}">{{ workshop.title }}</a>
-              <a target="_blank" href="{{ workshop.registration }}">
+              <a class="blackLink" href="{{ workshop.url }}">{{ workshop.title }}</a>
+              <a class="blackLink" target="_blank" href="{{ workshop.registration }}">
                 {% if workshop.registration %}
                 <span class="registration-container">
                   <span class="registration-text">Register</span>
@@ -92,11 +91,9 @@ permalink: /tags/
               </time>
             </p>
 
-<!--            <p class="description">{{ workshop.content | truncate: 150 | strip_html }}</p>-->
-
             <div class="tag-section">
               {% for tag in workshop.tags %}
-                <a href="/tags/#{{ tag  | prepend: site.baseurl }}">
+                <a class="tag-link" href="/tags/#{{ tag  | prepend: site.baseurl }}">
                   <div class="tag-container {{ tag }}">
                     <p class="tag-text">{{ tag }}</p>
                   </div>

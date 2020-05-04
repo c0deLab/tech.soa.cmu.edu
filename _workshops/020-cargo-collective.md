@@ -9,6 +9,7 @@ instructor: Christoph Eckrich
 tags: [Cargo]
 ---
 
-This workshop is tailored to the current Thesis cohorts, but will have useful information for all. Tune if if you are interested!
+This workshop is tailored to the Spring 2020 Thesis cohorts, but will have useful information for all. Tune if if you are interested!
 
 
+[link](https://cmu.zoom.us/rec/share/pusocpvA9j9IUoXk7WHie_4fT43Baaa8g3RI_qFfyhu1V3wrf7qLBIilmH4T4YJd)

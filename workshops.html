@@ -1,12 +1,13 @@
 ---
 layout: page
+title: Workshops
 permalink: /workshops/
 ---
 
 <div class="reference-container"> 
   <h4>Important Notes</h4>
   <ul>
-    <li>Complete <a href="https://goo.gl/forms/VXWJe9xYqwTRoQS42"><b class="highlight-link">this survey</b></a> before registering.<br></li>
+    <li>Complete <a class="blackLink" href="https://goo.gl/forms/VXWJe9xYqwTRoQS42"><b class="highlight-link">this survey</b></a> before registering.<br></li>
     <li>For <div class="tag-container"><p class="tag-text">Digital Representation</p></div> and <div class="tag-container"><p class="tag-text">Computation</p></div> workshops, you must bring your own laptop with the necessary software installed.</li>
     <li><div class="tag-container"><p class="tag-text">Digital Fabrication</p></div> workshops are limited to 15 students per session.</li>
   </ul>
@@ -14,10 +15,10 @@ permalink: /workshops/
   
 {% for workshop in site.workshops %}
   <div class="reference-container small-12 medium-6 columns">
-<!--    <p class="metadata">{{ workshop.details | truncate: 30 }}</p>-->
+
     <p class="reference-title">
-      <a href="{{ workshop.url }}">{{ workshop.title }}</a>
-      <a target="_blank" href="{{ workshop.registration }}">
+      <a class="blackLink" href="{{ workshop.url }}">{{ workshop.title }}</a>
+      <a class="blackLink" target="_blank" href="{{ workshop.registration }}">
         {% if workshop.registration %}
         <span class="registration-container">
           <span class="registration-text">Register</span>
@@ -34,7 +35,7 @@ permalink: /workshops/
     
       <div class="tag-section">
         {% for tag in workshop.tags %}
-          <a href="/tags/#{{ tag  | prepend: site.baseurl }}">
+          <a class="tag-link" href="/tags/#{{ tag  | prepend: site.baseurl }}">
             <div class="tag-container {{ tag }}">
               <p class="tag-text">{{ tag }}</p>
             </div>

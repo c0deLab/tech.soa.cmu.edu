@@ -29,28 +29,17 @@ h3{
   /*margin-top: 40px;*/
 }
 
-a {
-  color: $tech-black;
-  &:visited{
-    color: $tech-black;
-  }
-  &:hover{
-    color: $tech-accent-dark;
-    transition: color 0.2s linear;
-    text-decoration: none;
-  }
-}
 
 
-a.link{
+a{
   color: $tech-accent-dark;
   background-color: transparent;
   text-decoration: none;
-  font-weight: $bold;
+  font-weight: 700;
   padding: 5px 2px 5px 2px;
   transition: background-color 0.2s linear, color 0.2s linear;
   &:visited{
-     color: $tech-accent-dark;
+    color: $tech-accent-dark;
   }
   &:hover{
     color: $tech-accent-dark;
@@ -59,6 +48,24 @@ a.link{
     transition: background-color 0.2s linear, color 0.2s linear;
   }
 }
+
+
+a.blackLink {
+  color: $tech-black;
+  text-decoration: none;
+  background-color: transparent;
+  &:visited{
+    color: $tech-black;
+    background-color: transparent;
+  }
+  &:hover{
+    color: $tech-accent-dark;
+    text-decoration: none;
+    transition: color 0.2s linear;
+    background-color: transparent;
+  }
+}
+
 
 
 .post-content h4{
@@ -83,7 +90,7 @@ a.link{
   font-weight: $bold;
   margin-top: 30px;
   text-transform: uppercase;
-  letter-spacing: .3em;
+  letter-spacing: .2em;
 
   a{
     color: $tech-black;
@@ -132,10 +139,18 @@ header{
   .site-title{
     font-size: 48px;
     font-weight: $bold;
-  }
-  
-  .site-title, .site-title:visited{
     color: $tech-black;
+    background-color: transparent;
+    transition: color 0.2s linear;
+    &:visited {
+      color: $tech-black;
+      background-color: transparent;
+    }
+    &:hover {
+      color: $tech-accent-dark;
+      background-color: transparent;
+      transition: color 0.2s linear;
+    }
   }
   
   .nav{
@@ -147,10 +162,11 @@ header{
     color: $tech-black;
   }
   
-  .nav-item{
+  a.nav-item{
     color: $tech-black;
     padding-left: 10px;
     padding-right: 10px;
+    font-weight: 400;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid white;
@@ -158,7 +174,7 @@ header{
     transition: border 0.2s linear; 
   }
   
-  .nav-item:hover{ 
+  a.nav-item:hover{ 
     background-color: white;
     border: 1px solid $tech-accent;
     transition: border 0.2s linear;
@@ -296,20 +312,19 @@ header{
 
 .registration-container{
   padding: 0px 3px 0px 3px;
-  margin-left: 10px;
+  /*margin-left: 10px;*/
   border: 1px solid $tech-black;
   display: inline-flex;
-  
+  color: black;
   .registration-text{
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 3px;
     padding: 3px;
   }
-  
   &:hover{
-    background-color: $tech-accent;
-    border: 1px solid $tech-accent;
+    background-color: $tech-accent-dark;
+    border: 1px solid $tech-accent-dark;
     .registration-text{
       color: white;
     }
@@ -357,7 +372,8 @@ header{
 }
 
 .where-who{
-  font-weight: $light;
+  font-weight: 300;
+  font-size: 10px;
 }
 
 .where-who-meta{
@@ -389,6 +405,7 @@ header{
 }
 
 /*Tag Styling*/
+
 .tag-section{
   margin-top: 10px;
   margin-bottom: 20px;
@@ -400,21 +417,38 @@ header{
   display: inline-block;
   margin-bottom: 5px;
   font-style: none;
+  background-color: white;
+  transition: background-color 0.2s linear;
   .tag-text{
     font-size: 14px;
     margin-bottom: 0;
+    color: black;
+    font-weight: 400;
+    transition: color 0.2s linear;
+    background-color: transparent;
   }
-  a{
+  a.tag-link{
     color: $tech-black;
+    transition: color 0.2s linear;
+    background-color: transparent;
   }
 }
 
 .tag-container:hover{
   background-color: $tech-black;
-
-  
+  transition: background-color 0.2s linear;
   .tag-text{
     color: white;
+    background-color: transparent;
+    transition: color 0.2s linear;
+  }
+}
+
+
+a.tag-link {
+  background-color: transparent;
+  &:hover {
+    background-color: transparent;
   }
 }
 
@@ -478,7 +512,8 @@ ul{
 }
 
 .datetime{
-  font-weight: $light;
+  font-weight: 300;
+  font-size: 10px;
 }
 
 .noSelect{

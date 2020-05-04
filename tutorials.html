@@ -6,7 +6,7 @@ permalink: /tutorials/
 
 {% for tutorial in site.tutorials %}
 <div class="small-12 medium-4 columns thumbnail-tile">
-    <a class="post-link" href="{{ tutorial.url | prepend: site.baseurl }}">
+    <a class="post-link blackLink" href="{{ tutorial.url | prepend: site.baseurl }}">
         <div class="thumbnail-container">
 				<p class="thumbnail-text">{{ tutorial.tile-name }}</p>
         <img class="thumbnail-image" alt="{{tutorial.title}} logo link to page" src="../img/thumbnails/{{ tutorial.thumbnail}}">

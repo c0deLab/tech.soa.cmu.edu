@@ -14,7 +14,7 @@ permalink: /software/
 
 {% for software in site.softwares %}
 <div class="small-12 medium-4 large-2 columns thumbnail-tile">
-    <a class="post-link" href="{{ software.url | prepend: site.baseurl }}">
+    <a class="post-link blackLink" href="{{ software.url | prepend: site.baseurl }}">
         <div class="thumbnail-container">
         <p class="thumbnail-text">{{ software.tile-name }}</p>
         <img class="thumbnail-image" alt="{{software.title}} logo link to page" src="../img/thumbnails/{{software.thumbnail}}">
