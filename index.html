@@ -57,7 +57,7 @@ layout: default
     <p>Slack is a community-oriented massive chat platform that works great with both desktop and mobile device notifications. Technical support is crowd sourced here, as well as questions and events. Channels can be requested / created for specific topics, organizations, and activities. It's a great way to stay connected with the school community for non-course / non-FERPA protected content (see <a class="link" target="_blank" href="https://slack.com/privacy-policy"> Privacy Policy</a>).<a class="link" target="_blank" href="https://join.slack.com/t/cmusoa/shared_invite/zt-dtplac0h-rQTK6fTxN7aulSxNSFbZwQ"><br> Join Slack Now!! </a></p>
   </div>
   <div class="small-12 medium-4 columns">
-    <div><a class="blackLink" target="_blank" href="https://join.slack.com/t/cmusoa/shared_invite/zt-dtplac0h-rQTK6fTxN7aulSxNSFbZwQ"><img src="img/soa-slack.jpg"></a></div>
+    <div><a class="blackLink" target="_blank" href="https://join.slack.com/t/cmusoa/shared_invite/zt-dtplac0h-rQTK6fTxN7aulSxNSFbZwQ"><img alt="SoA is on Slack!" title="SoA is on Slack!" src="img/soa-slack.jpg"></a></div>
   </div>
 
 
@@ -81,7 +81,7 @@ layout: default
     {% assign software_order = site.softwares | sort: "sticky" | reverse %}
     {% for software in software_order limit: 5 %}
     <div class="small-4 medium-3 large-2 columns thumbnail-tile">
-        <a class="post-link blackLink" href="{{ software.url | prepend: site.baseurl }}">
+        <a class="post-link blackLink" alt="{{ software.title }}" title="{{ software.title }}" href="{{ software.url | prepend: site.baseurl }}">
             <div class="thumbnail-container">
             <span class="thumbnail-text">{{ software.tile-name }}</span>
             <img class="thumbnail-image" alt="{{software.title}} logo link to page" src="../img/thumbnails/{{ software.thumbnail}}">
@@ -135,18 +135,18 @@ layout: default
 <!-- left column -->
 <div class="small-12 medium-8 columns">
   <div>
-    <h1 class="section-heading"><a href="https://vimeo.com/showcase/6694487">SoA Lecture Series</a></h1>
-    <p>The Carnegie Mellon School of Architecture Lecture Series is world-renowned. This series of lectures is strategically unstrategic and intentionally eclectic, reflecting the expansive diversity of the field. Watch the lectures on <a class="link" href="https://vimeo.com/showcase/6694487">Vimeo.</a></p>
-    <a class="blackLink" target="_blank" href="https://vimeo.com/showcase/6694487"><img src="img/soa-lecture-series.png"></a>
+    <h1 class="section-heading"><a title="SoA Lecture Series" alt="SoA Lecture Series" href="https://vimeo.com/showcase/6694487">SoA Lecture Series</a></h1>
+    <p>The Carnegie Mellon School of Architecture Lecture Series is world-renowned. This series of lectures is strategically unstrategic and intentionally eclectic, reflecting the expansive diversity of the field. Watch the lectures on <a title="SoA Lecture Series" alt="SoA Lecture Series"class="link" href="https://vimeo.com/showcase/6694487">Vimeo.</a></p>
+    <a title="SoA Lecture Series" alt="SoA Lecture Series" class="blackLink" target="_blank" href="https://vimeo.com/showcase/6694487"><img  alt="SoA Lecture Series" src="img/soa-lecture-series.png"></a>
   </div>
 
   <div>
-    <h1 class="section-heading"><a href="/tutorials">Tutorials</a></h1>
+    <h1 class="section-heading"><a title="Go to Tutorials page" alt="Go to Tutorials page" href="/tutorials">Tutorials</a></h1>
       
       {% assign tutorial_order = site.tutorials | sort:date | reverse %}
       {% for tutorial in tutorial_order limit: 12 %}
       <div class="small-12 medium-6 columns thumbnail-tile">
-          <a class="blackLink" href="{{ tutorial.url | prepend: site.baseurl }}">
+          <a class="blackLink" alt="{{ tutorial.title }}"  title="{{ tutorial.title }}" href="{{ tutorial.url | prepend: site.baseurl }}">
               <div class="thumbnail-container">
               <span class="thumbnail-text">{{ tutorial.tile-name }}</span>
               <img class="thumbnail-image" src="img/thumbnails/{{ tutorial.thumbnail }}">
@@ -154,7 +154,9 @@ layout: default
           </a>
       </div>
       {% endfor %}
-      <a href="/tutorials">Show More Tutorials  &rarr;</a>
+      <div class="small-12 medium-6 columns">
+        <a title="Go to Tutorials page" alt="Go to Tutorials page" href="/tutorials">Show More Tutorials  &rarr;</a>
+      </div>
   </div>
 </div>
 
@@ -163,12 +165,12 @@ layout: default
 <!-- right column -->
 <div class="small-12 medium-4 columns">
   <div>
-    <h1 class="section-heading"><a href="/workshops">Workshops</a></h1>
+    <h1 class="section-heading"><a title="Go to Workshops page" alt="Go to Workshops page" href="/workshops">Workshops</a></h1>
     
     {% assign reference_order = site.workshops | sort:date | reverse %}
     {% for workshop in reference_order limit: 3 %}
     <div class="workshop-container">
-      <h5 class="workshop-title"><a class="blackLink" href="{{ workshop.url }}">{{ workshop.title }}</a></h5>
+      <h5 class="workshop-title"><a title="{{workshop.title}}" alt="{{workshop.title}}"class="blackLink" href="{{ workshop.url }}">{{ workshop.title }}</a></h5>
       <p class="metadata">
         <time datetime="{{ workshop.start-date | date_to_xmlschema }}" itemprop="dateTimeStart">{{ workshop.start-date | date: "%A, %b %-d, %Y at %I:%M%P" }}</time> - <time datetime="{{ workshop.end-date | date_to_xmlschema }}" itemprop="dateTimeEnd">{{ workshop.end-date | date: "%I:%M%P" }}</time>
       </p>
@@ -186,7 +188,7 @@ layout: default
         </div>
     </div>
     {% endfor %}
-    <a href="/workshops">Show More Workshops &rarr;</a>
+    <a title="Go to Workshops page" alt="Go to Workshops page" href="/workshops">Show More Workshops &rarr;</a>
   </div>
 <!--   
   <div>

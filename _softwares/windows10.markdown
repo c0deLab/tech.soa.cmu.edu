@@ -7,7 +7,7 @@ date: 2020-04-16
 
 
 author: CMU SoA Computing
-tags: [software]
+tags: [software, Windows]
 ---
 
 - This is only for advanced users in case the operating system needs to be reinstalled.

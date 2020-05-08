@@ -52,17 +52,19 @@ a{
 
 a.blackLink {
   color: $tech-black;
-  text-decoration: none;
   background-color: transparent;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0;
+  transition: background-color 0.2s linear, color 0.2s linear;
   &:visited{
     color: $tech-black;
-    background-color: transparent;
   }
   &:hover{
     color: $tech-accent-dark;
     text-decoration: none;
-    transition: color 0.2s linear;
     background-color: transparent;
+    transition: background-color 0.2s linear, color 0.2s linear;
   }
 }
 
@@ -171,13 +173,13 @@ header{
     border-radius: 5px;
     border: 1px solid white;
     background-color: white;
-    transition: border 0.2s linear; 
+    transition: border 0.1s linear; 
   }
   
   a.nav-item:hover{ 
     background-color: white;
     border: 1px solid $tech-accent;
-    transition: border 0.2s linear;
+    transition: border 0.1s linear;
   }
 
   .site-nav{
@@ -209,7 +211,7 @@ header{
 /*    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);*/
-    padding:6px;
+    padding:10px 6px 10px 6px;
     color: $tech-black;
     background-color: rgba(255, 255, 255, .8);
     opacity: 1;
@@ -218,6 +220,7 @@ header{
     font-size: 16px !important;
     text-align: center;
     line-height: 1.2;
+    font-weight: 400
   }
   .thumbnail-container:hover .thumbnail-text {
     opacity: 1;
@@ -261,8 +264,7 @@ header{
 }
 
 .reference-container{
-  
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   
   p{
     padding: 0;
@@ -404,11 +406,61 @@ header{
   }
 }
 
+.tagsPageSection {
+  margin-bottom: 50px;
+}
+
+.tagsPageSoftwares {
+  margin-bottom: 0px;
+}
+
+.tag-heading{
+  font-size: 30px;
+  font-weight: $bold;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  a{
+    color: $tech-black;
+    &:hover{
+      text-decoration: none;
+      color: $tech-accent-dark;
+      background-color: transparent;
+      transition: color 0.2s linear;
+    }
+    &:visited{
+      text-decoration: none;
+      color: $black
+    }
+  }
+}
+
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;;
+  border: 1px solid $tech-accent-dark;
+  outline: none;
+  background-color: transparent;
+  color: $tech-accent-dark;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  transition: background-color 0.2s linear;
+  &:hover {
+    background-color: $tech-accent-light;
+    transition: background-color 0.2s linear;
+  }
+
+}
+
+
 /*Tag Styling*/
 
 .tag-section{
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 5px;
+  /*margin-bottom: 5px;*/
 }
 
 .tag-container{
@@ -445,7 +497,7 @@ header{
 }
 
 
-a.tag-link {
+.tag-link {
   background-color: transparent;
   &:hover {
     background-color: transparent;
@@ -513,7 +565,7 @@ ul{
 
 .datetime{
   font-weight: 300;
-  font-size: 10px;
+  font-size: .8em;
 }
 
 .noSelect{
