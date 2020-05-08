@@ -7,7 +7,7 @@ date: 2020-04-16
 sticky: yes
 
 author: CMU SoA Computing
-tags: [software]
+tags: [software, AutoDesk]
 ---
 
 Autodesk is an industry standard collection of CAD software to be used by design / engineering students and professionals.

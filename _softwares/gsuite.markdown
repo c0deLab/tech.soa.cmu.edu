@@ -6,7 +6,7 @@ tile-name: "Google Suite"
 date: 2020-04-16
 
 author: CMU SoA Computing
-tags: [software]
+tags: [software, Google Suite]
 ---
 
 - Continues to be a reliable storage and backup solution. CMU students have unlimited storage.

@@ -7,7 +7,7 @@ date: 2020-04-16
 importance: 0
 
 author: CMU SoA Computing
-tags: [software]
+tags: [software, Canvas]
 ---
 
 Canvas is a cloud-based platform that streamlines all of the digital tools and content required for a more connected learning experience.

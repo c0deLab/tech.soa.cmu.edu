@@ -6,7 +6,7 @@ tile-name: "Modelo"
 date: 2020-04-16
 
 author: CMU SoA Computing
-tags: [software]
+tags: [software, Modelo, modeling]
 ---
 
 Modelo is a no-frills 3D model, PDF, and image communication and markup tool. It can be used to upload Rhino, Revit and Sketchup models for the purpose of design review and discussion.

@@ -7,7 +7,7 @@ date: 2020-04-16
 sticky: yes
 
 author: CMU SoA Computing
-tags: [software]
+tags: [software, Adobe CC]
 ---
 
 Adobe Creative Cloud encompasses a number of multimedia editing apps.

@@ -7,7 +7,7 @@ date: 2020-04-16
 sticky: yes
 
 author: CMU SoA Computing
-tags: [software]
+tags: [software, Zoom]
 ---
 
 [Zoom](https://www.cmu.edu/computing/services/comm-collab/web-conferencing/zoom/how-to/attend-class.html) is the university’s primary web conference tool and has been a valuable resource as we transition to remote learning. Zoom meetings can be joined using an invitation link or a Meeting ID that the host is assigned while starting a meeting. It is important to download the Zoom desktop/mobile application in order to gain access to a meeting easily.

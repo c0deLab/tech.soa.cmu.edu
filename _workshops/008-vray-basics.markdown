@@ -7,7 +7,7 @@ end-date: 2017-08-18 13:00:00 -0400
 registration: https://www.eventbrite.com/e/vray-for-rhino-basics-tickets-36914478198
 location: CFA 214
 instructor: Eddy Man Kim
-tags: [Digital Representation, Rhino, Vray]
+tags: [Digital Representation, Rhino, Vray, Rendering]
 ---
 ### Workshop Outline
 

@@ -6,7 +6,7 @@ tile-name: "Microsoft Office"
 date: 2020-04-16
 
 author: CMU SoA Computing
-tags: [software]
+tags: [software, Microsoft Office]
 ---
 
 - Microsoft Office remains to be an essential office productivity software.

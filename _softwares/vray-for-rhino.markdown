@@ -7,7 +7,7 @@ date: 2020-04-16
 sticky: yes
 
 author: CMU SoA Computing
-tags: [software]
+tags: [software, Rhino, Vray, rendering]
 ---
 
 V-Ray for Rhino is a photorealistic rendering software. Students at the School of Architecture are free to use SoA network licenses via the VPN. 

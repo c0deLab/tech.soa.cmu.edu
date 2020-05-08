@@ -13,7 +13,9 @@ permalink: /workshops/
   </ul>
 </div>
   
-{% for workshop in site.workshops %}
+
+{% assign workshop_order = site.workshops | sort:date | reverse %}
+{% for workshop in workshop_order %}
   <div class="reference-container small-12 medium-6 columns">
 
     <p class="reference-title">

@@ -6,7 +6,7 @@ tile-name: "Slack"
 date: 2020-04-16
 
 author: CMU SoA Computing
-tags: [software]
+tags: [software, Slack]
 ---
 
 Slack is a community-oriented massive chat platform that allows for collaboration and communication with unlimited channels.

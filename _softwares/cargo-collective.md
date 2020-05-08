@@ -6,7 +6,7 @@ tile-name: "Cargo Collective"
 date: 2020-04-16
 
 author: CMU SoA Computing
-tags: [software]
+tags: [software, Cargo]
 ---
 
 Cargo Collective is a long-standing, no-frills website builder with a content management platform.

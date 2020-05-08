@@ -7,7 +7,7 @@ date: 2020-04-16
 sticky: yes
 
 author: CMU SoA Computing
-tags: [software]
+tags: [software, Rhino]
 ---
 
 Rhino 6 is the School of Architecture's primary 3D modeling software. At present, there are 90 network licenses owned by the school/university that are available.
