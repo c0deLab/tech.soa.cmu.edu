@@ -1,0 +1,4 @@
+I"h<p>Easily get the intersection of geometries using the Intersect command. This will find the boundary of any intersections between multiple geometries, which can then be used to make a surface or other geometry at the intersection!</p>
+
+<p><img src="../img/tips/IntersectRhinoGif.gif" alt="Intersect Command Gif Demo" title="Intersect Command Gif Demo" /></p>
+:ET

@@ -4,13 +4,11 @@ title: Tags
 permalink: /tags/
 ---
 
-<button onclick="topFunction()" id="backToTop" title="Go to top">Top</button>
-
-
 {% assign tags_tut =  site.tutorials | map: 'tags' | join: ','  | split: ',' | uniq %}
 {% assign tags_ref =  site.references | map: 'tags' | join: ','  | split: ',' | uniq %}
 {% assign tags_wor =  site.workshops | map: 'tags' | join: ','  | split: ',' | uniq %}
 {% assign tags_sof =  site.softwares | map: 'tags' | join: ','  | split: ',' | uniq %}
+{% assign tags_tp =  site.tips | map: 'tags' | join: ','  | split: ',' | uniq %}
 
 {% assign tags = site.emptyArray %}
 
@@ -30,11 +28,16 @@ permalink: /tags/
   {% assign tags = tags | push: tag %}
 {% endfor %}
 
+{% for tag in tags_tp %}
+  {% assign tags = tags | push: tag %}
+{% endfor %}
+
 <!-- Creates a single list of all tags to comapre againsts -->
 {% assign tags = tags | sort | uniq %}
 
 <div class="small-12 medium-3 columns tagsPageSection">
   <!-- <h3 class="tag-heading">All Tags</h3> -->
+  <p>This page is an index of all content on tech.soa.</p>
   <p>Use the following tags to look for specific content on the site! </p>
 </div>
 
@@ -50,122 +53,111 @@ permalink: /tags/
   </div>
 </div>
 
+<div class="small-12 columns line">
+</div>
 
-<!-- index section -->
+<!-- index section start -->
 
-
+<!-- title -->
 {% for tag in tags %}
 <div class="small-12 columns tagsPageTitle">
   <a class="blackLink" name="{{ tag }}"><h3 class="tag-heading">{{ tag }}</h3></a>
 </div>
 
-<div class="small-12 columns tagsPageSoftwares">
-  {% for softwares in site.softwares %}
-    {% if softwares.tags contains tag %}
-      <div class="small-12 medium-3 large-2 columns thumbnail-tile">
-        <a class="post-link blackLink" alt="{{ softwares.tile-name }}"title="{{ softwares.tile-name }}" href="{{ softwares.url | prepend: site.baseurl }}">
-          <div class="thumbnail-container">
-            <span class="thumbnail-text">{{ softwares.tile-name }}</span>
-            <img class="thumbnail-image" src="/img/thumbnails/{{ softwares.thumbnail | prepend: site.baseurl }}">
-          </div>
-        </a>
+<!-- for softwares -->
+<div class="small-12 columns ">
+{% for softwares in site.softwares %}
+  {% if softwares.tags contains tag %}
+  <div class="small-12 medium-2 columns thumbnail-tile tagsPageSoftwares ">
+    <a class="post-link blackLink" alt="{{ softwares.tile-name }}"title="{{ softwares.tile-name }}" href="{{ softwares.url | prepend: site.baseurl }}">
+      <div class="thumbnail-container">
+        <span class="thumbnail-text">{{ softwares.tile-name }}</span>
+        <img class="thumbnail-image" src="/img/thumbnails/{{ softwares.thumbnail | prepend: site.baseurl }}">
       </div>
-    {% endif %}
-  {% endfor %}
+    </a>
+  </div>
+  {% endif %}
+{% endfor %}
 </div>
 
-
-
-<div class="small-12 columns tagsPageSection">
-
-  {% for tutorials in site.tutorials %}
-    {% if tutorials.tags contains tag %}
-      <a class="post-link blackLink" href="{{ tutorials.url | prepend: site.baseurl }}">
-        <div class="small-12 medium-4 large-3 columns thumbnail-tile">
-          <div class="thumbnail-container">
-            <span class="thumbnail-text">{{ tutorials.tile-name }}</span>
-            <img class="thumbnail-image" src="/img/thumbnails/{{ tutorials.thumbnail | prepend: site.baseurl }}">
-          </div>
-        </div>
-      </a>
-    {% endif %}
-  {% endfor %}
-
-  {% for reference in site.references %}
-    {% if reference.tags contains tag %}
-      <div class="small-12 medium-4 large-3 columns">
-        <div class="reference-container">
-          <p class="reference-title"><a class="blackLink" alt="{{ reference.title }}" title="{{ reference.title }}" href="{{ reference.url }}">{{ reference.title | truncate: 25 }}</a></p>
-          <p class="metadata"><a class="blackLink" alt="{{ reference.link }}" title="{{ reference.link }}" target="_blank" href="{{ reference.link }}">{{ reference.link | truncate: 25 }}</a></p>
-          <p class="description">{{ reference.content | truncate: 75 }}</p>
-        </div>
-      </div>
-    {% endif %}
-  {% endfor %}
-
-  {% for workshop in site.workshops %}
-    {% if workshop.tags contains tag %}
-      <div class="small-12 medium-4 large-3 columns">
-        <div class="reference-container">
-          <p class="reference-title">
-            <a class="blackLink" alt="{{ workshop.title }}" title="{{ workshop.title }}" href="{{ workshop.url }}">{{ workshop.title | truncate: 25 }}</a>
-<!--             <a class="blackLink" target="_blank" href="{{ workshop.registration }}">
-              {% if workshop.registration %}
-              <span class="registration-container">
-                <span class="registration-text">Register</span>
-              </span>
-              {% endif %}
-            </a> -->
-          </p>
-
-          <p class="datetime">
-            <time datetime="{{ workshop.start-date | date_to_xmlschema }}" itemprop="dateTimeStart">
-              {{ workshop.start-date | date: "%b %-d, %Y %I:%M%P" }}
-            </time> 
-            - 
-            <time datetime="{{ workshop.end-date | date_to_xmlschema }}" itemprop="dateTimeEnd">
-              {{ workshop.end-date | date: "%b %-d, %Y %I:%M%P" }}
-            </time>
-          </p>
-          <p class="description">Instructor: {{ workshop.instructor }}</p>
-
-<!--           <div class="tag-section">
-            {% for tag in workshop.tags %}
-              <a class="tag-link" href="/tags/#{{ tag  | prepend: site.baseurl }}">
-                <div class="tag-container {{ tag }}">
-                  <p class="tag-text">{{ tag }}</p>
-                </div>
-              </a>
-            {% endfor %}
-          </div> -->
-        </div>
-      </div>
-    {% endif %}
-  {% endfor %}
-
-
+<!-- for posted tips -->
+<div class="small-12 columns ">
+{% for tip in site.tips %}
+  {% if tip.tags contains tag %}
+  <div class="small-12 medium-4 columns tag-item-max-height"> 
+    <div class="reference-container">
+      <p class="reference-title"><a alt="{{ tip.title }}" title="{{ tip.title }}" class="blackLink" href="{{ tip.url }}">Tip: {{ tip.title }}</a></p>
+      <p class="metadata">Author: {{ tip.author }}</p>
+      <p class="description">{{ tip.content | truncate: 250 }}</p>
+    </div>
+  </div>
+  {% endif %}
+{% endfor %}
 </div>
+
+<!-- for tutorials -->
+<div class="small-12 columns ">
+{% for tutorials in site.tutorials %}
+  {% if tutorials.tags contains tag %}
+  <div class="">
+    <a class="post-link blackLink" href="{{ tutorials.url | prepend: site.baseurl }}">
+      <div class="small-12 medium-4 columns thumbnail-tile tagsPageSection">
+        <div class="thumbnail-container">
+          <span class="thumbnail-text">{{ tutorials.tile-name }}</span>
+          <img class="thumbnail-image" src="/img/thumbnails/{{ tutorials.thumbnail | prepend: site.baseurl }}">
+        </div>
+      </div>
+    </a>
+  </div>
+  {% endif %}
+{% endfor %}
+</div>
+
+<!-- for references -->
+<div class="small-12 columns ">
+{% for reference in site.references %}
+  {% if reference.tags contains tag %}
+    <div class="small-12 medium-4 columns tag-item-max-height">
+      <div class="reference-container">
+        <p class="reference-title"><a class="blackLink" alt="{{ reference.title }}" title="{{ reference.title }}" href="{{ reference.url }}">Reference: {{ reference.title | truncate: 25 }}</a></p>
+        <p class="metadata"><a class="blackLink" alt="{{ reference.link }}" title="{{ reference.link }}" target="_blank" href="{{ reference.link }}">{{ reference.link | truncate: 50 }}</a></p>
+        <p class="description">{{ reference.content | truncate: 300 }}</p>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+</div>
+
+<!-- for workshops -->
+<div class="small-12 columns ">
+{% for workshop in site.workshops %}
+  {% if workshop.tags contains tag %}
+    <div class="small-12 medium-4 columns tag-item-max-height">
+      <div class="reference-container">
+        <p class="reference-title">
+          <a class="blackLink" alt="{{ workshop.title }}" title="{{ workshop.title }}" href="{{ workshop.url }}">Workshop: {{ workshop.title | truncate: 25 }}</a>
+        </p>
+
+        <p class="datetime">
+          <time datetime="{{ workshop.start-date | date_to_xmlschema }}" itemprop="dateTimeStart">
+            {{ workshop.start-date | date: "%b %-d, %Y %I:%M%P" }}
+          </time> 
+          - 
+          <time datetime="{{ workshop.end-date | date_to_xmlschema }}" itemprop="dateTimeEnd">
+            {{ workshop.end-date | date: "%b %-d, %Y %I:%M%P" }}
+          </time>
+        </p>
+        <p class="description">Instructor: {{ workshop.instructor }}</p>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+</div>
+
+<div class="small-12 columns line">
+</div>
+
 {% endfor %}
 
 
-<script>
-//Get the button
-var mybutton = document.getElementById("backToTop");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
+<!-- index section end -->

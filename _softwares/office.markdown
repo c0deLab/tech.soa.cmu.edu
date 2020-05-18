@@ -9,11 +9,8 @@ author: CMU SoA Computing
 tags: [software, Microsoft Office]
 ---
 
-- Microsoft Office remains to be an essential office productivity software.
+Microsoft Office remains to be an essential office productivity software.
 
-- License should be portable.
+License should be portable.
 
-- [Free for students](https://products.office.com/en-us/student/office-in-education)
-
-
----
+[Microsoft Office is free for CMU students.](https://products.office.com/en-us/student/office-in-education)

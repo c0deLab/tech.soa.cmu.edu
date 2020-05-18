@@ -1,0 +1,56 @@
+I"�<p>Welcome to the documentation for my work in Spring 2020. For whoever works on the site next, I hope this helps tech.soa onboarding. 😇</p>
+
+<p>With Love,
+Selena Zhen</p>
+
+<h2 id="basics">Basics</h2>
+
+<p>tech.soa is built using <a href="https://jekyllrb.com/">Jekyll</a>, and hosted through <a href="https://github.com/c0deLab/tech.soa.cmu.edu">GitHub</a>. If you’re working on the site, you’ll need to do a few things in order to run the site locally.</p>
+
+<ol>
+  <li>Create a GitHub account and clone the <a href="https://github.com/c0deLab/tech.soa.cmu.edu">repo</a> on your computer</li>
+  <li>Set up a <a href="https://jekyllrb.com/docs/installation/#requirements">dev environment</a></li>
+  <li>Run the site using <code class="highlighter-rouge">jekyll s</code> (in the terminal or on GitHub command line)</li>
+  <li>Edit</li>
+</ol>
+
+<p><strong>The frontend uses the <a href="https://get.foundation/sites/docs/">Foundation</a> framework.</strong> It’s similar to Bootstrap, Semantic UI, or other similar systems. This site really only uses the framework’s <a href="https://get.foundation/sites/docs/grid.html">Grid</a> system, which is a 12-column, nestable Foundation grid.</p>
+
+<p><strong>Additionally, you may need to learn more about the <a href="https://shopify.github.io/liquid/">Liquid Coding Language</a></strong> to work with making/editing how dynamic content works.</p>
+
+<h2 id="site-structure">Site Structure</h2>
+
+<p>Jekyll puts the site together with a kit of parts/templates that can be reused over and over again. To edit certain things, see the following locations:</p>
+
+<ul>
+  <li>Home page - <code class="highlighter-rouge">index.html</code></li>
+  <li>Nav Bar - <code class="highlighter-rouge">_includes/header.html</code></li>
+  <li>HTML head (metadata and head elements) - <code class="highlighter-rouge">_includes/head.html</code></li>
+  <li>Footer Banner - <code class="highlighter-rouge">_includes/footer.html</code></li>
+  <li>Templates for page layouts in <code class="highlighter-rouge">_includes</code> folder
+    <ul>
+      <li>Posts (for individual softwares, posted tips, references, tutorials, etc) <code class="highlighter-rouge">_layouts/post.html</code></li>
+      <li>Pages (for pages that compile softwares, posted tips, references, tutorials) <code class="highlighter-rouge">_layouts/page.html</code></li>
+      <li>etc!</li>
+    </ul>
+  </li>
+  <li>CSS: This site uses SASS. <code class="highlighter-rouge">css/tech.scss</code></li>
+  <li>All main pages, such as <code class="highlighter-rouge">tech.soa.cmu.edu/software</code>, <code class="highlighter-rouge">tech.soa.cmu.edu/tags</code>, <code class="highlighter-rouge">tech.soa.cmu.edu/tips</code>, <code class="highlighter-rouge">tech.soa.cmu.edu/tutorials</code>, and <code class="highlighter-rouge">tech.soa.cmu.edu/workshops</code>, are located in the general repo folder, named such as <code class="highlighter-rouge">software.html</code>.</li>
+</ul>
+
+<p><img src="../img/onboarding/allfiles.png" alt="All Files in Repo" title="All Files in Repo" /></p>
+
+<hr />
+
+<p>All of the dynamic content on the site are placed in ‘buckets’ that each page calls for (using Liquid). For example, all markdown software pages are placed in the bucket <code class="highlighter-rouge">_software</code>, which <code class="highlighter-rouge">software.html</code> calls for. See the following image for an example of how it calls for each item, and for specific meta data within each item.</p>
+
+<p><img src="../img/onboarding/forloop.png" alt="For Loop" title="For Loop" /></p>
+
+<hr />
+
+<p>Within each markdown file in a bucket is a set of metadata that you can call for in the for loops. See the following images as examples of data that can be set for each item.</p>
+
+<p><img src="../img/onboarding/forloop.png" alt="Markdown Metadata Example 1" title="Markdown Metadata Example 1" />
+<img src="../img/onboarding/forloop.png" alt="Markdown Metadata Example 2" title="Markdown Metadata Example 2" /></p>
+
+:ET

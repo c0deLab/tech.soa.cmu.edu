@@ -1,0 +1,11 @@
+I"b<p>Illustrator Tip - Draw Angle Gradient Effect</p>
+
+<ol>
+  <li>Draw a circle with Radial Gradient effect</li>
+  <li>Select the circle, Click Object - Expand</li>
+  <li>Ungroup the Circle, and release clipping mask</li>
+  <li>Draw a rectangular with Liner Gradient effect and send it to back</li>
+  <li>select both the circle and rectangular, then click Envelope Distort - Make with Top Object</li>
+  <li>Set Envelope Options: Select ‘Anti - Alias’ using Clipping Mask, Then set Fidelity to 100, then select ‘Distort Appearance’ and ‘Distort Liner Gradient Fills’. Then you can make it!</li>
+</ol>
+:ET

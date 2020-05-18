@@ -9,17 +9,24 @@ author: CMU SoA Computing
 tags: [software]
 ---
 
-- The course folders can be accessed from off campus by logging with your Andrew ID via [VPN](https://www.cmu.edu/computing/services/endpoint/network-access/vpn/how-to/).
+The course folders can be accessed from off campus by logging with your Andrew ID via [VPN](https://www.cmu.edu/computing/services/endpoint/network-access/vpn/how-to/).
 
-- Please contact [soa-ithelp@andrew.cmu.edu](mailto:soa-ithelp@andrew.cmu.edu) for server related issues
-
-- For advanced users, following is the school server information:
-
-*Windows
-\\archpcnas (not as reliable)
-\\128.2.102.51
-Mac
-smb://128.2.102.51*
-
+Please contact [soa-ithelp@andrew.cmu.edu](mailto:soa-ithelp@andrew.cmu.edu) for server related issues
 
 ---
+
+### **Server Information**
+
+For advanced users, following is the school server information: 
+
+**Windows**
+
+`\\archpcnas` (not as reliable)
+
+`\\128.2.102.51`
+
+
+**Mac**
+
+`smb://128.2.102.51`
+

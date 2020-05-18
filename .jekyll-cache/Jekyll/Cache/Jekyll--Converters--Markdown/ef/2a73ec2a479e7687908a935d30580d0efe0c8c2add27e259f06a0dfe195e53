@@ -1,0 +1,195 @@
+I"'<p>Welcome to the documentation for my work in Spring 2020. For whoever works on the site next, I hope this helps tech.soa onboarding. 😇</p>
+
+<p>With Love,
+Selena Zhen</p>
+
+<h2 id="basics">Basics</h2>
+
+<p>tech.soa is built using <a href="https://jekyllrb.com/">Jekyll</a>, and hosted through <a href="https://github.com/c0deLab/tech.soa.cmu.edu">GitHub</a>. If you’re working on the site, you’ll need to do a few things in order to run the site locally.</p>
+
+<ol>
+  <li>Create a GitHub account and clone the <a href="https://github.com/c0deLab/tech.soa.cmu.edu">repo</a> on your computer</li>
+  <li>Set up a <a href="https://jekyllrb.com/docs/installation/#requirements">dev environment</a></li>
+  <li>Run the site using <code class="highlighter-rouge">jekyll s</code> (in the terminal or on GitHub command line)</li>
+  <li>Edit</li>
+</ol>
+
+<p><strong>The frontend uses the <a href="https://get.foundation/sites/docs/">Foundation</a> framework.</strong> It’s similar to Bootstrap, Semantic UI, or other similar systems. This site really only uses the framework’s <a href="https://get.foundation/sites/docs/grid.html">Grid</a> system, which is a 12-column, nestable Foundation grid.</p>
+
+<p><strong>Additionally, you may need to learn more about the <a href="https://shopify.github.io/liquid/">Liquid Coding Language</a></strong> to work with making/editing how dynamic content works.</p>
+
+<h2 id="site-structure">Site Structure</h2>
+
+<p>Jekyll puts the site together with a kit of parts/templates that can be reused over and over again. To edit certain things, see the following locations:</p>
+
+<ul>
+  <li>Home page - <code class="highlighter-rouge">index.html</code></li>
+  <li>Nav Bar - <code class="highlighter-rouge">_includes/header.html</code></li>
+  <li>HTML head (metadata and head elements) - <code class="highlighter-rouge">_includes/head.html</code></li>
+  <li>Footer Banner - <code class="highlighter-rouge">_includes/footer.html</code></li>
+  <li>Templates for page layouts in <code class="highlighter-rouge">_includes</code> folder
+    <ul>
+      <li>Posts (for individual softwares, posted tips, references, tutorials, etc) <code class="highlighter-rouge">_layouts/post.html</code></li>
+      <li>Pages (for pages that compile softwares, posted tips, references, tutorials) <code class="highlighter-rouge">_layouts/page.html</code></li>
+      <li>etc!</li>
+    </ul>
+  </li>
+  <li>CSS: This site uses SASS. <code class="highlighter-rouge">css/tech.scss</code></li>
+  <li>All main pages, such as <code class="highlighter-rouge">tech.soa.cmu.edu/software</code>, <code class="highlighter-rouge">tech.soa.cmu.edu/tags</code>, <code class="highlighter-rouge">tech.soa.cmu.edu/tips</code>, <code class="highlighter-rouge">tech.soa.cmu.edu/tutorials</code>, and <code class="highlighter-rouge">tech.soa.cmu.edu/workshops</code>, are located in the general repo folder, named such as <code class="highlighter-rouge">software.html</code>.</li>
+</ul>
+
+<p>All of the dynamic content on the site are placed in ‘buckets’ that each page calls for (using Liquid). For example, all software pages are placed in <code class="highlighter-rouge">_software</code>, which software.html calls for.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'''
+&lt;div class="small-12 medium-4 large-2 columns thumbnail-tile"&gt;
+    &lt;a class="post-link blackLink" href="/softwares/adobe-creative-cloud.html"&gt;
+        &lt;div class="thumbnail-container"&gt;
+        &lt;span class="thumbnail-text"&gt;Adobe Creative Cloud&lt;/span&gt;
+        &lt;img class="thumbnail-image" alt="Adobe Creative Cloud logo link to page" src="../img/thumbnails/Adobe-Creative-Cloud.jpg"&gt;
+        
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+''
+&lt;div class="small-12 medium-4 large-2 columns thumbnail-tile"&gt;
+    &lt;a class="post-link blackLink" href="/softwares/autodesk.html"&gt;
+        &lt;div class="thumbnail-container"&gt;
+        &lt;span class="thumbnail-text"&gt;Autodesk&lt;/span&gt;
+        &lt;img class="thumbnail-image" alt="Autodesk logo link to page" src="../img/thumbnails/Autodesk.jpg"&gt;
+        
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+''
+&lt;div class="small-12 medium-4 large-2 columns thumbnail-tile"&gt;
+    &lt;a class="post-link blackLink" href="/softwares/canvas.html"&gt;
+        &lt;div class="thumbnail-container"&gt;
+        &lt;span class="thumbnail-text"&gt;Canvas&lt;/span&gt;
+        &lt;img class="thumbnail-image" alt="Canvas logo link to page" src="../img/thumbnails/Canvas.jpg"&gt;
+        
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+''
+&lt;div class="small-12 medium-4 large-2 columns thumbnail-tile"&gt;
+    &lt;a class="post-link blackLink" href="/softwares/cargo-collective.html"&gt;
+        &lt;div class="thumbnail-container"&gt;
+        &lt;span class="thumbnail-text"&gt;Cargo Collective&lt;/span&gt;
+        &lt;img class="thumbnail-image" alt="Cargo Collective logo link to page" src="../img/thumbnails/Cargo-Collective.jpg"&gt;
+        
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+''
+&lt;div class="small-12 medium-4 large-2 columns thumbnail-tile"&gt;
+    &lt;a class="post-link blackLink" href="/softwares/gsuite.html"&gt;
+        &lt;div class="thumbnail-container"&gt;
+        &lt;span class="thumbnail-text"&gt;Google Suite&lt;/span&gt;
+        &lt;img class="thumbnail-image" alt="Google Suite logo link to page" src="../img/thumbnails/GSuite.jpg"&gt;
+        
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+''
+&lt;div class="small-12 medium-4 large-2 columns thumbnail-tile"&gt;
+    &lt;a class="post-link blackLink" href="/softwares/laptop-computer-recommendations.html"&gt;
+        &lt;div class="thumbnail-container"&gt;
+        &lt;span class="thumbnail-text"&gt;Laptop Computer Recommendations&lt;/span&gt;
+        &lt;img class="thumbnail-image" alt="Laptop Computer Recommendations logo link to page" src="../img/thumbnails/Laptop-Computer-Recommendations.jpg"&gt;
+        
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+''
+&lt;div class="small-12 medium-4 large-2 columns thumbnail-tile"&gt;
+    &lt;a class="post-link blackLink" href="/softwares/miro.html"&gt;
+        &lt;div class="thumbnail-container"&gt;
+        &lt;span class="thumbnail-text"&gt;Miro&lt;/span&gt;
+        &lt;img class="thumbnail-image" alt="Miro logo link to page" src="../img/thumbnails/Miro.jpg"&gt;
+        
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+''
+&lt;div class="small-12 medium-4 large-2 columns thumbnail-tile"&gt;
+    &lt;a class="post-link blackLink" href="/softwares/modelo.html"&gt;
+        &lt;div class="thumbnail-container"&gt;
+        &lt;span class="thumbnail-text"&gt;Modelo&lt;/span&gt;
+        &lt;img class="thumbnail-image" alt="Modelo logo link to page" src="../img/thumbnails/Modelo.jpg"&gt;
+        
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+''
+&lt;div class="small-12 medium-4 large-2 columns thumbnail-tile"&gt;
+    &lt;a class="post-link blackLink" href="/softwares/office.html"&gt;
+        &lt;div class="thumbnail-container"&gt;
+        &lt;span class="thumbnail-text"&gt;Microsoft Office&lt;/span&gt;
+        &lt;img class="thumbnail-image" alt="Microsoft Office logo link to page" src="../img/thumbnails/Office.jpg"&gt;
+        
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+''
+&lt;div class="small-12 medium-4 large-2 columns thumbnail-tile"&gt;
+    &lt;a class="post-link blackLink" href="/softwares/rhino.html"&gt;
+        &lt;div class="thumbnail-container"&gt;
+        &lt;span class="thumbnail-text"&gt;Rhino 6 for Windows&lt;/span&gt;
+        &lt;img class="thumbnail-image" alt="Rhino 6 for Windows logo link to page" src="../img/thumbnails/Rhino.jpg"&gt;
+        
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+''
+&lt;div class="small-12 medium-4 large-2 columns thumbnail-tile"&gt;
+    &lt;a class="post-link blackLink" href="/softwares/school-file-servers.html"&gt;
+        &lt;div class="thumbnail-container"&gt;
+        &lt;span class="thumbnail-text"&gt;School File Servers&lt;/span&gt;
+        &lt;img class="thumbnail-image" alt="School File Servers logo link to page" src="../img/thumbnails/School-File-Servers.jpg"&gt;
+        
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+''
+&lt;div class="small-12 medium-4 large-2 columns thumbnail-tile"&gt;
+    &lt;a class="post-link blackLink" href="/softwares/slack.html"&gt;
+        &lt;div class="thumbnail-container"&gt;
+        &lt;span class="thumbnail-text"&gt;Slack&lt;/span&gt;
+        &lt;img class="thumbnail-image" alt="Slack logo link to page" src="../img/thumbnails/Slack.jpg"&gt;
+        
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+''
+&lt;div class="small-12 medium-4 large-2 columns thumbnail-tile"&gt;
+    &lt;a class="post-link blackLink" href="/softwares/vray-for-rhino.html"&gt;
+        &lt;div class="thumbnail-container"&gt;
+        &lt;span class="thumbnail-text"&gt;V-Ray for Rhino&lt;/span&gt;
+        &lt;img class="thumbnail-image" alt="V-Ray for Rhino logo link to page" src="../img/thumbnails/VRay.jpg"&gt;
+        
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+''
+&lt;div class="small-12 medium-4 large-2 columns thumbnail-tile"&gt;
+    &lt;a class="post-link blackLink" href="/softwares/windows10.html"&gt;
+        &lt;div class="thumbnail-container"&gt;
+        &lt;span class="thumbnail-text"&gt;Windows 10&lt;/span&gt;
+        &lt;img class="thumbnail-image" alt="Windows 10 logo link to page" src="../img/thumbnails/Windows10.jpg"&gt;
+        
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+''
+&lt;div class="small-12 medium-4 large-2 columns thumbnail-tile"&gt;
+    &lt;a class="post-link blackLink" href="/softwares/zoom.html"&gt;
+        &lt;div class="thumbnail-container"&gt;
+        &lt;span class="thumbnail-text"&gt;Zoom&lt;/span&gt;
+        &lt;img class="thumbnail-image" alt="Zoom logo link to page" src="../img/thumbnails/Zoom.jpg"&gt;
+        
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+
+</code></pre></div></div>
+:ET

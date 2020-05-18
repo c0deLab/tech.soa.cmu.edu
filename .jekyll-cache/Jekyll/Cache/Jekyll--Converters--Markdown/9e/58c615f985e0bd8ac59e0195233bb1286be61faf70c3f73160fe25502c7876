@@ -1,0 +1,99 @@
+I"�<p>Welcome to the documentation for my work in Spring 2020. For whoever works on the site next, I hope this helps with the tech.soa onboarding. 😇</p>
+
+<p>With Love,
+Selena Zhen</p>
+
+<hr />
+
+<h2 id="basics"><strong>Basics</strong></h2>
+
+<p>tech.soa is built using <a href="https://jekyllrb.com/">Jekyll</a>, and hosted through <a href="https://github.com/c0deLab/tech.soa.cmu.edu">GitHub</a>. If you’re working on the site, you’ll need to do a few things in order to run the site locally.</p>
+
+<ol>
+  <li>Create a GitHub account and clone the <a href="https://github.com/c0deLab/tech.soa.cmu.edu">repo</a> on your computer</li>
+  <li>Set up a <a href="https://jekyllrb.com/docs/installation/#requirements">dev environment</a></li>
+  <li>Run the site using <code class="highlighter-rouge">jekyll s</code> (in the terminal or on GitHub command line)</li>
+  <li>Edit and have fun. 😎</li>
+</ol>
+
+<p><strong>The frontend uses the <a href="https://get.foundation/sites/docs/">Foundation</a> framework.</strong> It’s similar to Bootstrap, Semantic UI, or other similar systems. This site really only uses the framework’s <a href="https://get.foundation/sites/docs/grid.html">Grid</a> system, which is a 12-column, nestable Foundation grid.</p>
+
+<p><strong>Additionally, you may need to learn more about the <a href="https://shopify.github.io/liquid/">Liquid Coding Language</a></strong> to work with making/editing how dynamic content works.</p>
+
+<hr />
+
+<h2 id="site-structure"><strong>Site Structure</strong></h2>
+
+<p>Jekyll puts the site together with a kit of parts/templates that can be reused over and over again. To edit certain things, see the following locations:</p>
+
+<ul>
+  <li>Home page - <code class="highlighter-rouge">index.html</code></li>
+  <li>Nav Bar - <code class="highlighter-rouge">_includes/header.html</code></li>
+  <li>HTML head (metadata and head elements) - <code class="highlighter-rouge">_includes/head.html</code></li>
+  <li>Footer Banner - <code class="highlighter-rouge">_includes/footer.html</code></li>
+  <li>Templates for page layouts in <code class="highlighter-rouge">_includes</code> folder
+    <ul>
+      <li>Posts (for individual softwares, posted tips, references, tutorials, etc) <code class="highlighter-rouge">_layouts/post.html</code></li>
+      <li>Pages (for pages that compile softwares, posted tips, references, tutorials) <code class="highlighter-rouge">_layouts/page.html</code></li>
+      <li>etc!</li>
+    </ul>
+  </li>
+  <li>CSS: This site uses SASS. <code class="highlighter-rouge">css/tech.scss</code></li>
+  <li>All main pages, such as <code class="highlighter-rouge">tech.soa.cmu.edu/software</code>, <code class="highlighter-rouge">tech.soa.cmu.edu/tags</code>, <code class="highlighter-rouge">tech.soa.cmu.edu/tips</code>, <code class="highlighter-rouge">tech.soa.cmu.edu/tutorials</code>, and <code class="highlighter-rouge">tech.soa.cmu.edu/workshops</code>, are located in the general repo folder, named such as <code class="highlighter-rouge">software.html</code>.</li>
+</ul>
+
+<p><img src="../img/onboarding/allfiles.png" alt="All Files in Repo" title="All Files in Repo" /></p>
+
+<hr />
+
+<h2 id="buckets-of-markdown-pages"><strong>Buckets of Markdown Pages</strong></h2>
+
+<p>All of the dynamic content on the site are placed in ‘buckets’ that each page calls for (using Liquid). For example, all markdown software pages are placed in the bucket <code class="highlighter-rouge">_software</code>, which <code class="highlighter-rouge">software.html</code> calls for. See the following image for an example of how it calls for each item, and for specific meta data within each item.</p>
+
+<p><img src="../img/onboarding/forloop.png" alt="For Loop" title="For Loop" /></p>
+
+<p>Within each markdown file in a bucket is a set of metadata that you can call for in the for loops. See the following images as examples of data that can be set for each item.</p>
+
+<p><img src="../img/onboarding/example1.png" alt="Markdown Metadata Example 1" title="Markdown Metadata Example 1" /></p>
+
+<p><img src="../img/onboarding/example2.png" alt="Markdown Metadata Example 2" title="Markdown Metadata Example 2" /></p>
+
+<p>Following that metadata information is the rest of the page. Fill out this space as you would for any markdown document. The following image is what the site creates based on the markdown file.</p>
+
+<p><img src="../img/onboarding/completepage.png" alt="Complete Markdown Page Example" title="Complete Markdown Page Example" /></p>
+
+<p>When creating a new page, be sure to follow the same format as the other pages in the bucket, with the same metadata information and page hierarchy. Name the markdown file similarly, and make sure it is in the correct bucket. This will ensure graphic consistency as well as the site’s ability to maintain the right information on the right pages.</p>
+
+<hr />
+
+<h2 id="tags"><strong>Tags</strong></h2>
+
+<p>Note the tags in the metadata for each markdown page – this is used to create a navigational index of the entire website in the <a href="../tags/">Tags</a> page. This pulls from all buckets to ensure that everything is represented.</p>
+
+<p><img src="../img/onboarding/tagspage.png" alt="Tags Page Example" title="Tags Page Example" /></p>
+
+<p>Be sure to add these tags in the metadata in order to ensure the Tag page is automatically and dynamically updated. Be as descriptive as possible, and reference the Tags page if you need inspiration!</p>
+
+<hr />
+
+<h2 id="posted-tips"><strong>Posted Tips</strong></h2>
+
+<p>The posted tips page was created as a compilation of posts from the VTF members’ posts on Slack. The page serves as an index for all posts, which one can navigate via post name. Additionally, the page allows as a continuous feed for all posted tips, for casual browsing.</p>
+
+<p><img src="../img/onboarding/postedtips.png" alt="Posted Tips Page Example" title="Posted Tips Page Example" /></p>
+
+<p>In the future, I hope that all of the great gif content created on Slack can be migrated here, in the form of Markdown files.</p>
+
+<hr />
+
+<h2 id="styles"><strong>Styles</strong></h2>
+
+<p>Other than working on the site structure, a lot of time was spent on visual elements, such as tidying up the styles, adding more dynamic interactions, and page hierachy.</p>
+
+<p>One thing to note, is that all basic links (with <code class="highlighter-rouge">&lt;a href="..."&gt;...&lt;/a&gt;</code>)have been styled with the green tech-accent color, in order to allow the link interactions to appear on the individual markdown post pages. Unfortunately, that just means that if you want a link that looks black instead of green, use the class <code class="highlighter-rouge">blackLink</code>.</p>
+
+<p>All in all, I hope that my improvements helped with the user experience, and make the site more usable, as well as beautiful!</p>
+
+<hr />
+
+:ET

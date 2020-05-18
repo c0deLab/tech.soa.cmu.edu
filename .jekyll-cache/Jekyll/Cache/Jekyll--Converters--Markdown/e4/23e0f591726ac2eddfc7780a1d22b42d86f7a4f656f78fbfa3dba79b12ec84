@@ -1,0 +1,10 @@
+I"p<p>Welcome to the tech.soa onboarding document for my work in Spring 2020. For whoever works on the site next, I hope this helps. 😇</p>
+
+<p>’- Selena Zhen</p>
+
+<h3 id="structure">Structure</h3>
+
+<p>tech.soa is built using Jekyll, and hosted through GitHub. Make sure you create a Github Account and clone the</p>
+
+<p>If you think you’ve found a bug open a issue <a href="https://github.com/c0deLab/tech.soa.cmu.edu/issues">here.</a> You will need a GitHub account to do so. When opening a issue be precise as possible for quickest response. Images / screenshots are great ways to help pass the information along.</p>
+:ET

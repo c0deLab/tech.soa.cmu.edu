@@ -24,12 +24,6 @@ html, body, h1, h2, h3, h4, h5, h6{
   /*font-family: 'Muli', sans-serif;*/
   color: $tech-black;
 }
- 
-h3{
-  /*margin-top: 40px;*/
-}
-
-
 
 a{
   color: $tech-accent-dark;
@@ -48,7 +42,6 @@ a{
     transition: background-color 0.2s linear, color 0.2s linear;
   }
 }
-
 
 a.blackLink {
   color: $tech-black;
@@ -122,7 +115,11 @@ a.blackLink {
   font-size: 14px;
 }
 
-
+.line {
+  border-top: 1px $tech-grey solid;
+  margin: 28px 0 28px 0;
+  padding: 0;
+}
 
 ::selection {
   background: $tech-accent; /* WebKit/Blink Browsers */
@@ -166,20 +163,18 @@ header{
   
   a.nav-item{
     color: $tech-black;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px 15px 10px 15px;
     font-weight: 400;
-    padding: 10px;
     border-radius: 5px;
     border: 1px solid white;
     background-color: white;
-    transition: border 0.1s linear; 
+    transition: all 0.1s linear; 
   }
   
   a.nav-item:hover{ 
     background-color: white;
     border: 1px solid $tech-accent;
-    transition: border 0.1s linear;
+    transition: all 0.1s linear;
   }
 
   .site-nav{
@@ -238,8 +233,8 @@ header{
   }
 
 .workshop-container{
-  
   margin-bottom: 40px;
+  clear: both;
   
   p{
     padding: 0;
@@ -263,8 +258,9 @@ header{
   }
 }
 
+
 .reference-container{
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   
   p{
     padding: 0;
@@ -286,9 +282,37 @@ header{
   }
 }
 
+.tip-container{
+  max-width: 850px;
+  margin: 0 auto;
+  position: relative;
+  
+  p{
+    padding: 0;
+    margin: 0;
+  }
+  .metadata{
+    font-size: 14px;
+    font-weight: $light;
+  }
+  .tip-title{
+    font-size: 20px;
+    font-weight: $bold;
+  }
+  .description{
+    
+  }
+  li{
+    margin-bottom: 10px;
+  }
+}
+
+.tips-page-title {
+  text-align: center; 
+  margin-bottom: 50px;
+}
 
 .software-container{
-  
   margin-bottom: 40px;
   
   p{
@@ -310,7 +334,6 @@ header{
     margin-bottom: 10px;
   }
 }
-
 
 .registration-container{
   padding: 0px 3px 0px 3px;
@@ -411,7 +434,7 @@ header{
 }
 
 .tagsPageSoftwares {
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 .tag-heading{
@@ -434,6 +457,14 @@ header{
   }
 }
 
+.tag-item-max-height {
+  max-height: 160px;
+  overflow: hidden;
+  margin-bottom: 10px;
+
+}
+
+
 #backToTop {
   display: none;
   position: fixed;
@@ -442,7 +473,7 @@ header{
   z-index: 99;;
   border: 1px solid $tech-accent-dark;
   outline: none;
-  background-color: transparent;
+  background-color: white;
   color: $tech-accent-dark;
   cursor: pointer;
   padding: 15px;
@@ -565,7 +596,7 @@ ul{
 
 .datetime{
   font-weight: 300;
-  font-size: .8em;
+  /*font-size: .8em;*/
 }
 
 .noSelect{

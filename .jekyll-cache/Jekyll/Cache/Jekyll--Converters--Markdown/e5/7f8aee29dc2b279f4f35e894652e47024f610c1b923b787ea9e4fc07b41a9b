@@ -1,0 +1,24 @@
+I"�<p>Welcome to the documentation for my work in Spring 2020. For whoever works on the site next, I hope this helps tech.soa onboarding. 😇</p>
+
+<p>With Love,
+Selena Zhen</p>
+
+<h2 id="basics">Basics</h2>
+
+<p>tech.soa is built using <a href="https://jekyllrb.com/">Jekyll</a>, and hosted through <a href="https://github.com/c0deLab/tech.soa.cmu.edu">GitHub</a>. If you’re working on the site, you’ll need to do a few things in order to run the site locally.</p>
+
+<ol>
+  <li>Create a GitHub account and clone the <a href="https://github.com/c0deLab/tech.soa.cmu.edu">repo</a> on your computer</li>
+  <li>Set up a <a href="https://jekyllrb.com/docs/installation/#requirements">dev environment</a></li>
+  <li>Run the site using <code class="highlighter-rouge">jekyll s</code> (in the terminal or on GitHub command line)</li>
+  <li>Edit</li>
+</ol>
+
+<p><strong>The frontend uses the <a href="https://get.foundation/sites/docs/">Foundation</a> framework.</strong> It’s similar to Bootstrap, Semantic UI, or other similar systems. This site really only uses the framework’s <a href="https://get.foundation/sites/docs/grid.html">Grid</a> system, which is a 12-column, nestable Foundation grid.</p>
+
+<p><strong>Additionally, you may need to learn more about the <a href="https://shopify.github.io/liquid/">Liquid Coding Language</a></strong> to work with making/editing how dynamic content works.</p>
+
+<h2 id="site-structure">Site Structure</h2>
+
+<p>SASS file: <code class="highlighter-rouge">css/tech.scss</code></p>
+:ET

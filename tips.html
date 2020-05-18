@@ -1,0 +1,58 @@
+---
+layout: page
+title: Posted Tips
+permalink: /tips/
+---
+
+
+<div class="small-12 medium-5 columns">
+  <p>This page is a compiled list of software, workflow, and design tips. Use the following index to look for tips by name.</p>
+  <p>Another way to navigate through posted tips is by going to the <a href="../tags/" alt="Tags Page">Tags</a> page and searching for a specific tag. </p>
+  <p>
+</div>
+
+
+<div class="small-12 medium-7 columns">
+  {% assign tip_order = site.tips | sort:date | reverse %}
+  {% for tip in tip_order %}
+    <div class="small-12 medium-6 columns">
+      <p><a class="blackLink" href="#{{ tip.title }}">{{ tip.title }}</a></p>
+    </div>
+  {% endfor %}
+</div>
+
+
+<div class="small-12 columns line">
+</div>
+
+
+<div class="small-12 columns">
+  <h3 class="tips-page-title">Posted Tips Feed</h3>
+</div>
+
+{% assign tip_order = site.tips | sort:date | reverse %}
+{% for tip in tip_order %}
+<div class="small-12 columns">
+  <div class="tip-container" id="{{ tip.title }}">
+    <p class="tip-title"><a class="blackLink" alt="{{ tip.title }}" title="{{ tip.title }}" href="{{ tip.url }}">{{ tip.title }}</a></p>
+
+      <div class="tag-section">
+        {% for tag in tip.tags %}
+          <a class="tag-link" href="/tags/#{{ tag  | prepend: site.baseurl }}">
+            <div class="tag-container {{ tag }}">
+              <p class="tag-text">{{ tag }}</p>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+    <p class="metadata">Author: {{ tip.author }}</p>
+    <p class="description">{{ tip.content }}</p>
+
+    <div class="small-12 columns line">
+    </div>
+
+  </div>
+</div>
+
+{% endfor %}
+

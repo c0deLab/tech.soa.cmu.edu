@@ -4,7 +4,7 @@ title: Workshops
 permalink: /workshops/
 ---
 
-<div class="reference-container"> 
+<div> 
   <h4>Important Notes</h4>
   <ul>
     <li>Complete <a class="blackLink" href="https://goo.gl/forms/VXWJe9xYqwTRoQS42"><b class="highlight-link">this survey</b></a> before registering.<br></li>
@@ -12,13 +12,16 @@ permalink: /workshops/
     <li><div class="tag-container"><p class="tag-text">Digital Fabrication</p></div> workshops are limited to 15 students per session.</li>
   </ul>
 </div>
+
+<div class="small-12 columns line">
+</div>
   
 
 {% assign workshop_order = site.workshops | sort:date | reverse %}
 {% for workshop in workshop_order %}
-  <div class="reference-container small-12 medium-6 columns">
+  <div class="workshop-container small-12 medium-8 columns">
 
-    <p class="reference-title">
+    <p class="workshop-title">
       <a class="blackLink" href="{{ workshop.url }}">{{ workshop.title }}</a>
       <a class="blackLink" target="_blank" href="{{ workshop.registration }}">
         {% if workshop.registration %}
@@ -29,9 +32,9 @@ permalink: /workshops/
       </a>
     </p>
     
-    <p class="datetime"><time datetime="{{ workshop.start-date | date_to_xmlschema }}" itemprop="dateTimeStart">{{ workshop.start-date | date: "%A, %b %-d %Y %I:%M%P" }}</time> - <time datetime="{{ workshop.end-date | date_to_xmlschema }}" itemprop="dateTimeEnd">{{ workshop.end-date | date: "%I:%M%P" }}</time></p>
+    <p class="datetime metadata"><time datetime="{{ workshop.start-date | date_to_xmlschema }}" itemprop="dateTimeStart">{{ workshop.start-date | date: "%A, %b %-d %Y %I:%M%P" }}</time> - <time datetime="{{ workshop.end-date | date_to_xmlschema }}" itemprop="dateTimeEnd">{{ workshop.end-date | date: "%I:%M%P" }}</time></p>
     {% if workshop.location %}
-    <p class="where-who">Location: {{ workshop.location }}</p>
+    <p class="where-who metadata">Location: {{ workshop.location }}</p>
     {% endif %}
     <p class="description">{{ workshop.details | truncate: 150 }}</p>
     

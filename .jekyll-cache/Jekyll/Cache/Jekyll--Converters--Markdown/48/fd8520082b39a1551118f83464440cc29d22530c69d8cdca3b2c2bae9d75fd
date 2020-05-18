@@ -1,0 +1,15 @@
+I"�<p>Welcome to the documentation for my work in Spring 2020. For whoever works on the site next, I hope this helps tech.soa onboarding. 😇</p>
+
+<p>With Love,
+Selena Zhen</p>
+
+<h3 id="basics">Basics</h3>
+
+<p>tech.soa is built using <a href="https://jekyllrb.com/">Jekyll</a>, and hosted through <a href="https://github.com/c0deLab/tech.soa.cmu.edu">GitHub</a>. If you’re working on the site, you’ll need to create a Github Account and clone the repo in order to do anything.</p>
+
+<p><strong>The frontend is created using the <a href="https://get.foundation/sites/docs/">Foundation</a> framework.</strong> It’s similar to Bootstrap, Semantic UI, or other similar systems and tech.soa really only uses the framework’s <a href="https://get.foundation/sites/docs/grid.html">Grid</a> system, which is a 12-column, nestable Foundation grid.</p>
+
+<h3 id="site-structure">Site Structure</h3>
+
+<p>If you think you’ve found a bug open a issue <a href="https://github.com/c0deLab/tech.soa.cmu.edu/issues">here.</a> You will need a GitHub account to do so. When opening a issue be precise as possible for quickest response. Images / screenshots are great ways to help pass the information along.</p>
+:ET
