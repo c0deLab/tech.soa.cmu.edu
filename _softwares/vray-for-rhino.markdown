@@ -19,11 +19,11 @@ V-Ray for Rhino is a photorealistic rendering software. Students at the School o
 **Installation Instructions**
 ![alt text](../img/software/installation.png)
 
-1. Make sure [Rhino is installed](https://drive.google.com/drive/folders/1wCTRnF4LN5J2-UyHIXnTLYNrmbe7Sohl?usp=sharing) and functional.
+1. Make sure Rhino is installed and functional.
 
 2. Close all instances of Rhino.
  
-3. Open the V-ray Installer.
+3. [Download](https://drive.google.com/drive/folders/1wCTRnF4LN5J2-UyHIXnTLYNrmbe7Sohl?usp=sharing) and open the V-ray Installer.
 
 4. The End User License Agreement opens, click `I Agree`
  
