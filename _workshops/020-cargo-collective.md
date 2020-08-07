@@ -13,7 +13,7 @@ This workshop is tailored to the Spring 2020 Thesis cohorts, but will have usefu
 
 
 [Zoom Tutorial Link](https://cmu.zoom.us/rec/share/pusocpvA9j9IUoXk7WHie_4fT43Baaa8g3RI_qFfyhu1V3wrf7qLBIilmH4T4YJd)  
-Password: `X8.58!4%`
+Password: `7G=Z&Hs^`
 
 ---
 
