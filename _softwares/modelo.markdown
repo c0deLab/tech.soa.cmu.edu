@@ -36,6 +36,5 @@ tags: [software, Modelo, modeling]
 
 Modelo is free for anyone - with some [limitations](https://modelo.io/pricing.html). 
 
-For CMU Students:   
-If you’ve received an invitation, please sign up as soon as you can. If you haven't, email a request for license to [eddymankim@cmu.edu](mailto:eddymankim@cmu.edu).
+Full licenses maybe available for SoA Students. Email a request for license to [eddymankim@cmu.edu](mailto:eddymankim@cmu.edu).
 
