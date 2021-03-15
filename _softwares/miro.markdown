@@ -42,4 +42,6 @@ Can be used for the purpose of mapping and diagramming.
 
 **Using Miro**
 
-If you’ve received an invitation, please sign up as soon as you can. If you haven't, email a request for license to [eddymankim@cmu.edu](mailto:eddymankim@cmu.edu).
+- Go to the [login page](https://miro.com/login/) 
+- Click on `Sign in with SSO`
+- Log in with your Andrew ID and password
