@@ -17,7 +17,7 @@ tags: [software, Cargo]
 
 **Using Cargo:**
 
-CMU students can use the promotion code `81a04a0a` to upgrade their accounts for free.
+CMU students can use the promotion code `81a04a0a` to upgrade their accounts for free until the end of the calendar year.
 
 [Check it out here!](https://cargo.site/)
 
